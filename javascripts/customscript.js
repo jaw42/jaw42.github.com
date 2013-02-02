@@ -7,7 +7,7 @@ function toggle_visibility(id) {
 		e.style.display = 'block';
 }
 
-function visible (id) {
+function visible(id) {
 	var c = document.getElementById(id);
 	c.style.display = 'block';
 }
