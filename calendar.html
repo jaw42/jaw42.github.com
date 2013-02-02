@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Josh Wainwright</title>
+
+		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			// Toggle visibility
+		   function toggle_visibility(id) {
+		      var e = document.getElementById(id);
+		      if(e.style.display == 'block')
+		         e.style.display = 'none';
+		      else
+		         e.style.display = 'block';
+		   }
+			// Row highlight in table
+			window.onload=function(){
+				var tfrow = document.getElementById('tfhover').rows.length;
+				var tbRow=[];
+				for (var i=1;i<tfrow;i++) {
+					tbRow[i]=document.getElementById('tfhover').rows[i];
+					tbRow[i].onmouseover = function(){
+						this.style.backgroundColor = '#f3f8aa';
+					};
+					tbRow[i].onmouseout = function() {
+						this.style.backgroundColor = '#ffffff';
+					};
+				}
+			};
+		</script>
+
+		<style type="text/css">
+		   <!--
+		   a { border: none; }
+		   -->
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Josh Wainwright</h1>
+					<p></p>
+
+					<p class="view"><a href="https://github.com/jaw42">View My GitHub Profile</a></p>
+					<p><a class="smoothScroll" href="#compmodH">Computational Modelling of Physical Systems</a></p>
+					<p><a class="smoothScroll" href="#teachingH">Physics Teaching in Schools</a></p>
+
+			</header>
+			<section>
+				<h2>Calendar</h2>
+					
+					
+			</section>
+			<footer>
+				<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+			</footer>
+		</div>
+		<script src="javascripts/scale.fix.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+		
+	</body>
+</html>

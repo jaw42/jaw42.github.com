@@ -12,16 +12,30 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script type="text/javascript">
-			<!--
-			    function toggle_visibility(id) {
-			       var e = document.getElementById(id);
-			       if(e.style.display == 'block')
-			          e.style.display = 'none';
-			       else
-			          e.style.display = 'block';
-			    }
-			//-->
+			// Toggle visibility
+		   function toggle_visibility(id) {
+		      var e = document.getElementById(id);
+		      if(e.style.display == 'block')
+		         e.style.display = 'none';
+		      else
+		         e.style.display = 'block';
+		   }
+			// Row highlight in table
+			window.onload=function(){
+				var tfrow = document.getElementById('tfhover').rows.length;
+				var tbRow=[];
+				for (var i=1;i<tfrow;i++) {
+					tbRow[i]=document.getElementById('tfhover').rows[i];
+					tbRow[i].onmouseover = function(){
+						this.style.backgroundColor = '#f3f8aa';
+					};
+					tbRow[i].onmouseout = function() {
+						this.style.backgroundColor = '#ffffff';
+					};
+				}
+			};
 		</script>
+
 		<style type="text/css">
 		   <!--
 		   a { border: none; }
@@ -45,45 +59,48 @@
 
 					<a href="#" onclick="toggle_visibility('compmod');" id="compmodH" ><h3>Computational Modelling of Physical Systems</h3></a>
 					<div id="compmod" style="display: none">
-						<p>This is some text that i have entered in a paragraph environment</p>
-						<p>This is a second paragraph to make the section longer.</p>
+						<table id="tfhover">
+							<tr>
+								<th>Due Date</th>
+								<th>Worksheet</th>
+								<th>Grade</th>
+							</tr>
+							<tr>
+								<td>10 October 2012</td>
+								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet1/Worksheet1_jaw097.pdf">Worksheet 1</a></td>
+								<td>15/20</td>
+							</tr>
+							<tr>
+								<td>17 October 2012</td>
+								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet2/Worksheet2_jaw097.pdf">Worksheet 2</a></td>
+								<td>13/20</td>
+							</tr>
+							<tr>
+								<td>24 October 2012</td>
+								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet3/Worksheet3_jaw097.pdf">Worksheet 3</a></td>
+								<td>16/20</td>
+							</tr>
+							<tr>
+								<td>31 October 2012</td>
+								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet4/Worksheet4_jaw097.pdf">Worksheet 4</a></td>
+								<td>17/20</td>
+							</tr>
+							<tr>
+								<td>07 November 2012</td>
+								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet5/Worksheet5_jaw097.pdf">Worksheet 5</a></td>
+								<td>15/20</td>
+							</tr>
+							<tr>
+								<td>07 December 2012</td>
+								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/Project/Report/jaw097_FDTD.pdf">Project</a></td>
+								<td>86/100</td>
+							</tr>
+						</table>
 					</div>
 
 					<a href="#" onclick="toggle_visibility('teaching');" id="teachingH"><h3>Physics Teaching in Schools</h3></a>
 					<div id="teaching" style="display: none">
-						<!-- Row Highlight Javascript -->
-						<script type="text/javascript">
-							window.onload=function(){
-								var tfrow = document.getElementById('tfhover').rows.length;
-								var tbRow=[];
-								for (var i=1;i<tfrow;i++) {
-									tbRow[i]=document.getElementById('tfhover').rows[i];
-									tbRow[i].onmouseover = function(){
-										this.style.backgroundColor = '#f3f8aa';
-									};
-									tbRow[i].onmouseout = function() {
-										this.style.backgroundColor = '#ffffff';
-									};
-								}
-							};
-						</script>
-
-						<style type="text/css">
-							/*table.tftable {color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}*/
-							table.tftable th {background:#f8f8f8;
-												border:1px solid #e5e5e5;
-												padding:8px 15px;
-												border-radius:5px;
-												overflow-x: auto;
-												text-align:left;}
-							table.tftable td {border:1px solid #e5e5e5;
-												padding:8px 15px;
-												border-radius:5px;
-												overflow-x: auto;
-												text-align:left;}
-						</style>
-
-						<table id="tfhover" class="tftable" border="1">
+						<table id="tfhover">
 							<tr>
 								<th>Date</th>
 								<th>Log Sheet</th>

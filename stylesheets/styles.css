@@ -78,9 +78,11 @@ table {
 }
 
 th, td {
+  border:1px solid #e5e5e5;
+  padding:8px 15px;
+  border-radius:5px;
+  overflow-x: auto;
   text-align:left;
-  padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
 }
 
 dt {
@@ -89,8 +91,12 @@ dt {
 }
 
 th {
-  color:#444;
-}
+  background:#f8f8f8;
+  border:1px solid #e5e5e5;
+  padding:8px 15px;
+  border-radius:5px;
+  overflow-x: auto;
+  text-align:left;}
 
 img {
   max-width:100%;
