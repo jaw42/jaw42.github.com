@@ -11,40 +11,12 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<script type="text/javascript">
-			// Toggle visibility
-		   function toggle_visibility(id) {
-		      var e = document.getElementById(id);
-		      if(e.style.display == 'block')
-		         e.style.display = 'none';
-		      else
-		         e.style.display = 'block';
-		   }
-			// Row highlight in table
-			window.onload=function(){
-				var tfrow = document.getElementById('tfhover').rows.length;
-				var tbRow=[];
-				for (var i=1;i<tfrow;i++) {
-					tbRow[i]=document.getElementById('tfhover').rows[i];
-					tbRow[i].onmouseover = function(){
-						this.style.backgroundColor = '#f3f8aa';
-					};
-					tbRow[i].onmouseout = function() {
-						this.style.backgroundColor = '#ffffff';
-					};
-				}
-			};
-		</script>
+		<script type="text/javascript" src="javascripts/customscript.js"></script>
 
-		<style type="text/css">
-		   <!--
-		   a { border: none; }
-		   -->
-		</style>
 	</head>
 	<body>
 		<div class="wrapper">
-			<header>
+			<header id="menu_pannel">
 				<h1>Josh Wainwright</h1>
 					<p></p>
 
@@ -54,9 +26,12 @@
 
 			</header>
 			<section>
-				<h2>Calendar</h2>
-					
-
+				<!-- <a href="#" onclick="toggle_visibility('calendar');" onclick="shrink_menu_panel('menu_pannel');" id="calendarH" ><h2>Calendar</h2></a> -->
+				<a href="#" onclick="shrink_menu_panel('menu_pannel');" id="calendarH" ><h2>Calendar</h2></a>
+					<!-- <div id="calendar" style="display: none"> -->
+					<div id="calendar">
+						<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=rnr33jjf9u1drvr6io5qikfrq4%40group.calendar.google.com&amp;color=%23856508&amp;src=s0ljum1r4fmou4dl9cj8i39k34%40group.calendar.google.com&amp;color=%23711616&amp;src=m9m8ob9tsm88a14qik81qcm7n4%40group.calendar.google.com&amp;color=%232F6309&amp;src=ianjuliew%40gmail.com&amp;color=%23AB8B00&amp;src=ad5ps3ul7r0femj18ngjq82s4g%40group.calendar.google.com&amp;color=%231B887A&amp;src=h9qe31b1b7vh96ltnfaajee4qk%40group.calendar.google.com&amp;color=%23060D5E&amp;src=wainwright.ja%40gmail.com&amp;color=%235229A3&amp;ctz=Europe%2FLondon" style=" border-width:0 " width="600" height="500" frameborder="0" scrolling="no"></iframe>
+					</div>
 			</section>
 			<footer>
 				<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
