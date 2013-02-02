@@ -7,6 +7,7 @@
 
 		<link rel="stylesheet" href="stylesheets/styles.css">
 		<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+		<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,25 +20,29 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<a href="http://jaw42.github.com/"><h1>Josh Wainwright</h1></a>
+				<a href="http://jaw42.github.com/"><h1>Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
 					<p></p>
 
-					<p class="view"><a href="https://github.com/jaw42">View My GitHub Profile</a></p>
-					<p class="view"><a href="http://en.m.wikipedia.org/wiki/Physics">Physics</a></p>
-						<p>&emsp;<a class="smoothScroll" onclick="visible('compmod');" href="#compmodH">Computational Modelling</a> <a class="smoothScroll" href="#compmodH" onclick="toggle_visibility('compmod');"> +</a></p>
+					<p class="view"><a href="https://github.com/jaw42"><i class="icon-github"></i> View My GitHub Profile</a></p>
+					<p class="view"><a href="#" onclick="toggle_visibility('physics-menu');" class="smoothScroll" href="#physics">Physics</a></p>
+						<div id="physics-menu" style="display: none">
+							<p>&emsp;<a class="smoothScroll" onclick="visible('compmod');" href="#compmodH">Computational Modelling</a> <a class="smoothScroll" href="#compmodH" onclick="toggle_visibility('compmod');"> <i class="icon-double-angle-right"></i></a></p>
 
-						<p>&emsp;<a class="smoothScroll" onclick="visible('teaching');" href="#teachingH">Physics Teaching in Schools</a> <a class="smoothScroll" href="#teachingH" onclick="toggle_visibility('teaching');"> +</a></p>
+							<p>&emsp;<a class="smoothScroll" onclick="visible('teaching');" href="#teachingH">Physics Teaching in Schools</a> <a class="smoothScroll" href="#teachingH" onclick="toggle_visibility('teaching');"> <i class="icon-double-angle-right"></i></a></p>
 
-						<p>&emsp;<a class="smoothScroll" onclick="visible('image');" href="#imageH">Image Processing</a> <a class="smoothScroll" href="#imageH" onclick="toggle_visibility('image');"> +</a></p>
+							<p>&emsp;<a class="smoothScroll" onclick="visible('image');" href="#imageH">Image Processing</a> <a class="smoothScroll" href="#imageH" onclick="toggle_visibility('image');"> <i class="icon-double-angle-right"></i></a></p>
 
-						<p>&emsp;<a class="smoothScroll" onclick="visible('critique');" href="#critiqueH">Physics Critique</a> <a class="smoothScroll" href="#critiqueH" onclick="toggle_visibility('critique');"> +</a></p>
+							<p>&emsp;<a class="smoothScroll" onclick="visible('critique');" href="#critiqueH">Physics Critique</a> <a class="smoothScroll" href="#critiqueH" onclick="toggle_visibility('critique');"> <i class="icon-double-angle-right"></i></a></p>
 
+							<p>&emsp;<a class="smoothScroll" onclick="visible('labs');" href="#labsH">Laboratory Report</a> <a class="smoothScroll" href="#labsH" onclick="toggle_visibility('labs');"> <i class="icon-double-angle-right"></i></a></p>
+						</div>
+					<p class="view"><a class="smoothScroll" href="#computers">Computer Science</a></p>
 					<p><a href="http://jaw42.github.com/calendar">Calendar</a></p>
 					<p><a href="http://jaw42.github.com/ace">Ace</a> | <a href="http://prose.io/">Prose</a></p>
 			</header>
 			<section>
-				<h2 style="float:left">Physics</h2>
-				<a href="https://github.com/jaw42/year3physics/blob/master/Semester%202%20Timetable.pdf?raw=true"><h2 style="color:#777; font-weight:bold; float:right ">#</h2></a>
+				<h2 id="physics" style="float:left" href="http://en.m.wikipedia.org/wiki/Physics">Physics</h2>
+				<a href="https://github.com/jaw42/year3physics/blob/master/Semester%202%20Timetable.pdf?raw=true"><h2 style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
 				<div style="clear: both;"></div>
 					<p>Physics and Astronomy: <a href="http://www.ph.bham.ac.uk/">www.ph.bham.ac.uk</a></p>
 					<p>These are some of the documents associated with my degree in Physics and Astronomy.</p>
@@ -156,9 +161,19 @@
 							</tr>
 						</table>
 					</div>
+
+					<a href="#" onclick="toggle_visibility('labs');" id="labsH"><h3>Laboratory Report</h3></a>
+					<div id="labs" style="display: none">
+						<table id="tfhover">
+							<tr>
+								<td>Nuclear Labs</td>
+								<td><a href="https://github.com/jaw42/year3physics/blob/master/Y3%20Lab/Report/main.pdf?raw=true">Laboratory Report</a></td>
+							</tr>
+						</table>
+					</div>
 			<section>
-				<h2 class=heading-not-first style="float:left;">Computer Science</h2>
-				<a href="http://www.cs.bham.ac.uk/internal/timetables/"><h2 class=heading-not-first style="color:#777; font-weight:bold; float:right ">#</h2></a>
+				<h2 id="computers" class=heading-not-first style="float:left;">Computer Science</h2>
+				<a href="http://www.cs.bham.ac.uk/internal/timetables/"><h2 class=heading-not-first style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
 				<div style="clear: both;"></div>
 					<p>Start date: 30th September 2013</p>
 					<p>Computer Science: <a href="http://www.cs.bham.ac.uk/">www.cs.bham.ac.uk</a></p>
