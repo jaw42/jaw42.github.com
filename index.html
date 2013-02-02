@@ -18,6 +18,14 @@
 		   a { border: none; }
 		   -->
 		</style>
+		<style type="text/css">
+			.clock {
+				display: block; 
+				position:fixed;
+				bottom:20px;
+				left:20px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -169,7 +177,14 @@
 
 			</section>
 			<footer>
-				<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+				<div class="clock">
+					<span>This is where the date will go<span>
+					<script language="javascript">
+					<!--
+					document.write(Date());
+					-->
+					</script>
+				</div>
 			</footer>
 		</div>
 		<script src="javascripts/scale.fix.js"></script>
