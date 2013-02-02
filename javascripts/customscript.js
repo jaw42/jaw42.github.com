@@ -7,9 +7,9 @@ function toggle_visibility(id) {
 		e.style.display = 'block';
 }
 
-function visible(id){
-	var e = document.getElementById(id);
-	e.style.display = 'block';
+function visible (id) {
+	var c = document.getElementById(id);
+	c.style.display = 'block';
 }
 
 function shrink_menu_panel(id){
@@ -20,7 +20,7 @@ function shrink_menu_panel(id){
 		header.style.width == "70px";
 }
 
-Row highlight in table
+// Row highlight in table
 window.onload=function(){
 	var tfrow = document.getElementById('tfhover').rows.length;
 	var tbRow=[];
