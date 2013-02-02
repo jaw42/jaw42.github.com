@@ -178,12 +178,14 @@
 			</section>
 			<footer>
 				<div class="clock">
-					<span>This is where the date will go<span>
-					<script language="javascript">
-					<!--
-					document.write(Date());
-					-->
-					</script>
+					<script type="text/javascript">
+						var months = ['January','February','March','April','May','June','July',
+						'August','September','October','November','December'];       
+						var tomorrow = new Date();
+						tomorrow.setTime(tomorrow.getTime() + (1000*3600*24));       
+						document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear();
+				    </script>
+				    <span id="spanDate"></span>
 				</div>
 			</footer>
 		</div>
