@@ -166,11 +166,20 @@
 			</section>
 			<footer>
 				<div class="clock">
-				    <span  id="spanTime"></span><br>
+				    <span  id="spanTime"></span>
+				    <span  style="font-size:20px;" id="spanPOSIX"></span><br>
 				    <span  id="spanDate"></span>
 					<script type="text/javascript">
+
+						var date = new Date();
+						var hours = date.getHours();
+						var minutes = date.getMinutes();
+						var seconds = date.getSeconds();
+						var formattedTime = hours + ':' + minutes + ':' + seconds;
+						document.getElementById("spanTime").innerHTML = formattedTime;
 						var now = new Date();
-						document.getElementById("spanTime").innerHTML = now.getTime();
+						document.getElementById("spanPOSIX").innerHTML = now.getTime();
+
 						var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];  
 						var today = new Date();
 						document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
