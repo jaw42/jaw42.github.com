@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -13,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
+  /*font-family: "Droid Serif";*/
   margin:0 0 20px;
 }
 
