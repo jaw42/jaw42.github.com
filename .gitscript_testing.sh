@@ -8,6 +8,5 @@ if [ -z "$comment" ]
 then 
 	comment="Auto comment $DATE"
 fi
-echo $comment
 git commit -a -v -m "$comment"
 git push -v
