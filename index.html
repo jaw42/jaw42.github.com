@@ -14,12 +14,6 @@
 		<![endif]-->
 		<script type="text/javascript" src="javascripts/customscript.js"></script>
 		<script type="text/javascript" src="javascripts/webtoolkit.md5.js"></script>
-		<script type="text/javascript">
-			function FocusOnInput(){
-				document.getElementById("myField").focus();
-				// document.getElementById('myField').onkeypress = passWord() ;
-			}
-		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -28,24 +22,20 @@
 					<p></p>
 
 					<p class="view"><a href="https://github.com/jaw42"><i class="icon-github"></i> View My GitHub Profile</a></p>
-					<p class="view"><a href="university.html">Physics</a></p>
-					<p class="view"><a href="computerscience.html">Computer Science</a></p>
+					<p class="view"><a href="javascript:showOverlay();">University</a></p>
 					<p><a href="calendar.html">Calendar</a></p>
 					<p><a href="ace.html">Ace</a> | <a href="http://prose.io/">Prose</a></p>
 					<p><a href="password.html">Login</a></p>
 			</header>
 			<section>
-				<div id="overlay" onload="FocusOnInput()"></div>
-				<div id="overlay-pass">
+				<div id="overlay"></div>
+				<div id="overlay-pass" onload="FocusOnInput()">
 					<SCRIPT>
 						function passWord() {
 							var pass1 = document.getElementById('myField').value;
 							var md5 = MD5(pass1);
 							if (md5.toLowerCase() == "954207b9903c9744be764e0885407460") {
-								location.href = "calendar.html";
-							}else if (md5.toLowerCase() == "f94adcc3ddda04a8f34928d862f404b4") {
-								location.href = "index.html";
-								alert('Hello Josh, welcome.');
+								location.href = "university.html";
 							}else{
 								alert('Password Incorrect, Please Try Again.');
 							}

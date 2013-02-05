@@ -40,6 +40,7 @@ function showOverlay() {
 	o.style.visibility = 'visible';
 	var p = document.getElementById('overlay-pass');
 	p.style.visibility = 'visible';
+	document.getElementById("myField").focus();
 }
 function hideOverlay() {
 	var o = document.getElementById('overlay');

@@ -226,7 +226,7 @@ div#overlay-pass {
   opacity: 1.0;
   background: #fff;
   visibility:hidden;
-  border-width: 10px;
+  padding: 20px;
 }
 
 @media print, screen and (max-width: 960px) {
