@@ -205,6 +205,30 @@ footer {
   margin-top: 2cm; 
 }
 
+div#overlay {
+  z-index:1000;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:#000;
+  opacity:0.45;
+  -moz-opacity:0.45;
+  filter:alpha(opacity=45);
+  visibility:hidden;
+}
+
+div#overlay-pass {
+  top: 30%;
+  z-index: 1001;
+  position: absolute;
+  opacity: 1.0;
+  background: #fff;
+  visibility:hidden;
+  border-width: 10px;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {

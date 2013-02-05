@@ -13,9 +13,13 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script type="text/javascript" src="javascripts/customscript.js"></script>
-		<style type="text/css">
-
-		</style>
+		<script type="text/javascript" src="javascripts/webtoolkit.md5.js"></script>
+		<script type="text/javascript">
+			function FocusOnInput(){
+				document.getElementById("myField").focus();
+				// document.getElementById('myField').onkeypress = passWord() ;
+			}
+		</script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -24,161 +28,44 @@
 					<p></p>
 
 					<p class="view"><a href="https://github.com/jaw42"><i class="icon-github"></i> View My GitHub Profile</a></p>
-					<p class="view"><a href="#" onclick="toggle_visibility('physics-menu');" class="smoothScroll" href="#physics">Physics</a></p>
-						<div id="physics-menu" style="display: none">
-							<p>&emsp;<a class="smoothScroll" onclick="visible('compmod');" href="#compmodH">Computational Modelling</a> <a class="smoothScroll" href="#compmodH" onclick="toggle_visibility('compmod');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('teaching');" href="#teachingH">Physics Teaching in Schools</a> <a class="smoothScroll" href="#teachingH" onclick="toggle_visibility('teaching');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('image');" href="#imageH">Image Processing</a> <a class="smoothScroll" href="#imageH" onclick="toggle_visibility('image');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('critique');" href="#critiqueH">Physics Critique</a> <a class="smoothScroll" href="#critiqueH" onclick="toggle_visibility('critique');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('labs');" href="#labsH">Laboratory Report</a> <a class="smoothScroll" href="#labsH" onclick="toggle_visibility('labs');"> <i class="icon-double-angle-right"></i></a></p>
-						</div>
-					<p class="view"><a class="smoothScroll" href="#computers">Computer Science</a></p>
-					<p><a href="http://jaw42.github.com/calendar">Calendar</a></p>
-					<p><a href="http://jaw42.github.com/ace">Ace</a> | <a href="http://prose.io/">Prose</a></p>
-					<p><a href="http://jaw42.github.com/password">Login</a></p>
+					<p class="view"><a href="university.html">Physics</a></p>
+					<p class="view"><a href="computerscience.html">Computer Science</a></p>
+					<p><a href="calendar.html">Calendar</a></p>
+					<p><a href="ace.html">Ace</a> | <a href="http://prose.io/">Prose</a></p>
+					<p><a href="password.html">Login</a></p>
 			</header>
 			<section>
-				<h2 id="physics" style="float:left" href="http://en.m.wikipedia.org/wiki/Physics">Physics</h2>
-				<!-- <a href="https://github.com/jaw42/year3physics/blob/master/Semester%202%20Timetable.pdf?raw=true"><h2 style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a> -->
-				<a href="http://jaw42.github.com/timetable.pdf"><h2 style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
-				<div style="clear: both;"></div>
-					<p>Physics and Astronomy: <a href="http://www.ph.bham.ac.uk/">www.ph.bham.ac.uk</a></p>
-					<p>These are some of the documents associated with my degree in Physics and Astronomy.</p>
+				<div id="overlay" onload="FocusOnInput()"></div>
+				<div id="overlay-pass">
+					<SCRIPT>
+						function passWord() {
+							var pass1 = document.getElementById('myField').value;
+							var md5 = MD5(pass1);
+							if (md5.toLowerCase() == "954207b9903c9744be764e0885407460") {
+								location.href = "calendar.html";
+							}else if (md5.toLowerCase() == "f94adcc3ddda04a8f34928d862f404b4") {
+								location.href = "index.html";
+								alert('Hello Josh, welcome.');
+							}else{
+								alert('Password Incorrect, Please Try Again.');
+							}
+							return " ";
+						} 
+					</SCRIPT>
+					<form action="">
+						<p>Login Password</p>
+						<input type="password" id="myField" name="decoded" value="" onkeyup="this.form.hash.value=MD5(this.form.decoded.value)" onkeydown="if (event.keyCode == 13) passWord()" style="width: 25em;">
+						<p></p>
+						<p>Calculated MD5 hash <br>
+						<input type="text" name="hash" value="" style="width: 25em;"><br><br>
+						<input type="button" value="Continue" onClick="passWord()">
+						<input type="button" value="Cancel" onClick="hideOverlay()">
+						</p>
+					</form>
+				</div>
 
-					<a href="#" onclick="toggle_visibility('compmod');" id="compmodH" ><h3>Computational Modelling of Physical Systems</h3></a>
-					<div id="compmod" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<th>Due Date</th>
-								<th>Worksheet</th>
-								<th>Grade</th>
-							</tr>
-							<tr>
-								<td>10 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet1/Worksheet1_jaw097.pdf">Worksheet 1</a></td>
-								<td>15/20</td>
-							</tr>
-							<tr>
-								<td>17 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet2/Worksheet2_jaw097.pdf">Worksheet 2</a></td>
-								<td>13/20</td>
-							</tr>
-							<tr>
-								<td>24 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet3/Worksheet3_jaw097.pdf">Worksheet 3</a></td>
-								<td>16/20</td>
-							</tr>
-							<tr>
-								<td>31 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet4/Worksheet4_jaw097.pdf">Worksheet 4</a></td>
-								<td>17/20</td>
-							</tr>
-							<tr>
-								<td>07 November 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet5/Worksheet5_jaw097.pdf">Worksheet 5</a></td>
-								<td>15/20</td>
-							</tr>
-							<tr>
-								<td>07 December 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/Project/Report/jaw097_FDTD.pdf">Project</a></td>
-								<td>86/100</td>
-							</tr>
-						</table>
-					</div>
 
-					<a href="#" onclick="toggle_visibility('teaching');" id="teachingH"><h3>Physics Teaching in Schools</h3></a>
-					<div id="teaching" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<th>Date</th>
-								<th>Log Sheet</th>
-							</tr>
-							<tr>
-								<td>7th Jan 2013 to 13th Jan 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week1_alt.html">Log Sheet 1</a></td>
-							</tr>
-							<tr>
-								<td>14th Jan 2013 to 20th Jan 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week2.html">Log Sheet 2</a></td>
-							</tr>
-							<tr>
-								<td>21st Jan 2013 to 27th Jan 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week3.html">Log Sheet 3</a></td>
-							</tr>
-							<tr>
-								<td>28th Jan 2013 to 3rd Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week4.html">Log Sheet 4</a></td>
-							</tr>
-							<tr>
-								<td>4th Feb 2013 to 10th Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week5.html">Log Sheet 5</a></td>
-							</tr>
-							<tr>
-								<td>11th Feb 2013 to 17th Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week6.html">Log Sheet 6</a></td>
-							</tr>
-							<tr>
-								<td>18th Feb 2013 to 24th Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week7.html">Log Sheet 7</a></td>
-							</tr>
-							<tr>
-								<td>25th Feb 2013 to 3rd Mar 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week8.html">Log Sheet 8</a></td>
-							</tr>
-							<tr>
-								<td>4th Mar 2013 to 10th Mar 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week9.html">Log Sheet 9</a></td>
-							</tr>
-							<tr>
-								<td>11th Mar 2013 to 17th Mar 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week10.html">Log Sheet 10</a></td>
-							</tr>
-						</table>
-					</div>
-
-					<a href="#" onclick="toggle_visibility('image');" id="imageH"><h3>Image Processing</h3></a>
-					<div id="image" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<th>Due Date</th>
-								<th>Work Sheet</th>
-							</tr>
-							<tr>
-								<td>14th Feb 2013</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/ImageProcessing/Assessed_Exercise1/mainfile.pdf">Assessed Problem 1</a></td>
-							</tr>
-						</table>
-					</div>
-
-					<a href="#" onclick="toggle_visibility('critique');" id="critiqueH"><h3>Physics Critique - Quantum Computing</h3></a>
-					<div id="critique" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<td>Quantum Computing</td>
-								<td><a href="https://github.com/jaw42/year3physics/blob/master/Critique/Qubits/mainfile.pdf?raw=true">Physics Critique</a></td>
-							</tr>
-						</table>
-					</div>
-
-					<a href="#" onclick="toggle_visibility('labs');" id="labsH"><h3>Laboratory Report</h3></a>
-					<div id="labs" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<td>Nuclear Labs</td>
-								<td><a href="https://github.com/jaw42/year3physics/blob/master/Y3%20Lab/Report/main.pdf?raw=true">Laboratory Report</a></td>
-							</tr>
-						</table>
-					</div>
-			<section>
-				<h2 id="computers" class=heading-not-first style="float:left;">Computer Science</h2>
-				<a href="http://www.cs.bham.ac.uk/internal/timetables/"><h2 class=heading-not-first style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
-				<div style="clear: both;"></div>
-					<p>Start date: 30th September 2013</p>
-					<p>Computer Science: <a href="http://www.cs.bham.ac.uk/">www.cs.bham.ac.uk</a></p>
+				<a href="javascript:showOverlay();">Goto locked webpage</a>
 			</section>
 			<footer>
 				<div class="clock">

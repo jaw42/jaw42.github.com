@@ -34,3 +34,16 @@ window.onload=function(){
 		};
 	}
 };
+
+function showOverlay() {
+	var o = document.getElementById('overlay');
+	o.style.visibility = 'visible';
+	var p = document.getElementById('overlay-pass');
+	p.style.visibility = 'visible';
+}
+function hideOverlay() {
+	var o = document.getElementById('overlay');
+	o.style.visibility = 'hidden';
+	var p = document.getElementById('overlay-pass');
+	p.style.visibility = 'hidden';
+}
