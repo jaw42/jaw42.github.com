@@ -13,23 +13,64 @@
 		<![endif]-->
 		<script type="text/javascript" src="javascripts/FeedEk/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="javascripts/FeedEk/FeedEk.js"></script>
+
+		<script type="text/javascript" >
+			$(document).ready(function(){
+				$('#divRss').FeedEk({
+					FeedUrl : 'http://jaw42.blogspot.com/feeds/posts/default',
+					MaxCount : 50,
+					ShowDesc : true,
+					ShowPubDate: true
+				});
+			});
+		</script>
+		<style>
+		#divRss {
+		    width:75%;
+		    padding: 0px 3px 3px 5px;
+			margin-top:3px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.ItemTitle{
+			font-family: "Raleway";
+			line-height:1.1;  
+			color:#393939;
+			font-size:28px;
+			font-weight:bold;
+			margin:5px 0px 0px 0px;
+			padding-top:3px;
+		}
+		/*.ItemTitle a{ color:#4EBAFF; text-decoration:none }*/
+		.ItemTitle a:hover{ text-decoration:underline }
+
+		.ItemContent{
+			padding:10px 3px 30px 3px;
+			border-bottom:1px solid #D3CAD7;
+			color:#3E3E3E;
+		}
+		.ItemDate{
+			font-size:11px;
+			font-weight: 600;
+			color:#AAA;
+		}
+
+		#divSrc{
+			color:#888888;
+			font-size:11px;
+			width:460px;
+		}
+		</style>
 	</head>
 	<body>
 		<a href="index.html"><h1>Josh Wainwright | Blog</h1></a>
 
-		<script type="text/javascript">
-			$('#feedek').FeedEk({
-				FeedUrl : 'http://jaw42.blogspot.com/feeds/posts/default',
-				MaxCount : 5,
-				ShowDesc : true,
-				ShowPubDate:true
-			});
-		</script>
-		<div id="feedek"></div>
+		<div id="divRss"></div>
 
-		<div style="top: -20px;">
+		<!-- <div style="top: -20px;">
 			<iframe width="100%" frameborder="0" src="http://jaw42.blogspot.com" height="800"></iframe>
-		</div>
+		</div> -->
 		<footer>
 		</footer>
 
