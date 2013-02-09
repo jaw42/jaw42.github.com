@@ -179,22 +179,25 @@
 
 			<section>
 				<h1>Welcome</h1>
-				<a href="homepage.html"></a>
-				<a href="javascript:showOverlay();">Goto locked webpage</a>
 
 				<div class="clock">
-				    <span  id="spanTime"></span>
-				    <span  style="font-size:20px;" id="spanPOSIX"></span><br>
-				    <span  id="spanDate"></span>
+					<span  id="spanTime"></span>
+					<span  style="font-size:20px;" id="spanPOSIX"></span><br>
+					<p><span  id="spanDate"></span></p>
 
-				    <script type="text/javascript">
+					<hr>
+					<script type="text/javascript">
 						<!--
-						document.write('<p class="accent">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '!</p>');
+						document.write('<p class="accent">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '.</p>');
 						// -->
 					</script>
 					
-					<script type="text/javascript">
+					<hr>
 
+					<h2>This is another heading</h2>
+
+					<hr>
+					<script type="text/javascript">
 						var date = new Date();
 						var hours = date.getHours();
 						var minutes = date.getMinutes();
@@ -207,7 +210,7 @@
 						var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];  
 						var today = new Date();
 						document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
-				    </script>
+					</script>
 				</div>
 
 			</section>

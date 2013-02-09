@@ -98,7 +98,16 @@ th {
   padding:8px 15px;
   border-radius:5px;
   overflow-x: auto;
-  text-align:left;}
+  text-align:left;
+}
+
+tr:hover{
+  background:#D8F7D5; 
+}
+
+td:hover{
+  background:#eee; 
+}
 
 img {
   max-width:100%;
@@ -193,7 +202,7 @@ footer {
 }
 
 .clock {
-  font-size:50px;
+  font-size:30px;
 }
 
 .heading-not-first{
