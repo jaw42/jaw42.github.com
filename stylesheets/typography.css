@@ -38,7 +38,7 @@ a {
   -o-transition: width 2s; /* Opera */
 }
 .image:target{
-  width: 500px;
+  width: 400px;
 }
 
 @media print, screen and (max-width: 720px) {
@@ -46,7 +46,7 @@ a {
     padding:30px;
   }  
   .image:target{
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -55,6 +55,6 @@ a {
     padding:0px;
   }  
   .image:target{
-    width: 100%;
+    width: 80%;
   }
 }
