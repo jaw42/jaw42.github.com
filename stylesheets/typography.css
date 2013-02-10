@@ -30,7 +30,8 @@ a {
 }
 
 .image{
-  width: 100px;
+  width: 90px;
+  vertical-align:top;
   transition: width 2s;
   -moz-transition: width 2s; /* Firefox 4 */
   -webkit-transition: width 2s; /* Safari and Chrome */
@@ -40,3 +41,20 @@ a {
   width: 500px;
 }
 
+@media print, screen and (max-width: 720px) {
+  body {
+    padding:30px;
+  }  
+  .image:target{
+    width: 70%;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:0px;
+  }  
+  .image:target{
+    width: 100%;
+  }
+}

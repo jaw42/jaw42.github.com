@@ -15,19 +15,12 @@
 			function zoomtype() {
 				var e1 = document.getElementById("typography");
 					if(e1.style.width == "100%"){
-						e1.style.width = "2500px";
-					} else if(e1.style.width == "2500px"){
-						e1.style.width = "4000px";
+						// e1.style.width = "2500px";
+						e1.style.width = "200%";
+					} else if(e1.style.width == "200%"){
+						e1.style.width = "300%";
 					} else {
 						e1.style.width = "100%";
-					}
-    		} 
-			function zoomimage(name) {
-				var e1 = document.getElementById(name);
-					if(e1.style.width == "100px"){
-						e1.style.width = "600px";
-					} else {
-						e1.style.width = "100px";
 					}
     		} 
 		</script>
@@ -42,20 +35,21 @@
 		<br/>
 		<br/>
 
-		<a href="#serif">				<img class="image" id="serif" src="files/1-serif.jpg"></img></a>
-		<a href="#transitionalserif">	<img class="image" id="transitionalserif" src="files/1-transitionalserif.jpg"></img></a>
-		<a href="#slabserif">			<img class="image" id="slabserif" src="files/1-slabserif.jpg"></img></a>
-		<a href="#oldstyleserif">		<img class="image" id="oldstyleserif" src="files/1-oldstyleserif.jpg"></img></a>
-		<a href="#geometricsansserif">	<img class="image" id="geometricsansserif" src="files/1-geometricsansserif.jpg"></img></a>
-		<a href="#modernserif">			<img class="image" id="modernserif" src="files/1-modernserif.jpg"></img></a>
-		<a href="#grotesquesansserif">	<img class="image" id="grotesquesansserif" src="files/1-grotesquesansserif.jpg"></img></a>
-		<a href="#neogrotesquesansserif"><img class="image" id="neogrotesquesansserif" src="files/1-neogrotesquesansserif.jpg"></img></a>
-		<a href="#sansserif">			<img class="image" id="sansserif" src="files/1-sansserif.jpg"></img></a>
-		<a href="#humanistsansserif">	<img class="image" id="humanistsansserif" src="files/1-humanistsansserif.jpg"></img></a>
-		<a href="#casualscript">		<img class="image" id="casualscript" src="files/1-casualscript.jpg"></img></a>
-		<a href="#display">				<img class="image" id="display" src="files/1-display.jpg"></img></a>
-		<a href="#formalscript">		<img class="image" id="formalscript" src="files/1-formalscript.jpg"></img></a>
-		<a href="#mood">				<img class="image" id="mood" src="files/1-mood.jpg"></img></a>
-
+		<div style="white-space:nowrap; overflow:auto; padding:4px;">
+			<a href="#serif">				<img class="image" id="serif" src="files/1-serif.jpg"></img></a>
+			<a href="#transitionalserif">	<img class="image" id="transitionalserif" src="files/1-transitionalserif.jpg"></img></a>
+			<a href="#slabserif">			<img class="image" id="slabserif" src="files/1-slabserif.jpg"></img></a>
+			<a href="#oldstyleserif">		<img class="image" id="oldstyleserif" src="files/1-oldstyleserif.jpg"></img></a>
+			<a href="#geometricsansserif">	<img class="image" id="geometricsansserif" src="files/1-geometricsansserif.jpg"></img></a>
+			<a href="#modernserif">			<img class="image" id="modernserif" src="files/1-modernserif.jpg"></img></a>
+			<a href="#grotesquesansserif">	<img class="image" id="grotesquesansserif" src="files/1-grotesquesansserif.jpg"></img></a>
+			<a href="#neogrotesquesansserif"><img class="image" id="neogrotesquesansserif" src="files/1-neogrotesquesansserif.jpg"></img></a>
+			<a href="#sansserif">			<img class="image" id="sansserif" src="files/1-sansserif.jpg"></img></a>
+			<a href="#humanistsansserif">	<img class="image" id="humanistsansserif" src="files/1-humanistsansserif.jpg"></img></a>
+			<a href="#casualscript">		<img class="image" id="casualscript" src="files/1-casualscript.jpg"></img></a>
+			<a href="#display">				<img class="image" id="display" src="files/1-display.jpg"></img></a>
+			<a href="#formalscript">		<img class="image" id="formalscript" src="files/1-formalscript.jpg"></img></a>
+			<a href="#mood">				<img class="image" id="mood" src="files/1-mood.jpg"></img></a>
+		</div>
 	</body>
 </html>
