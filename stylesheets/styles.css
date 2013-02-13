@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
   padding:50px;
@@ -27,8 +28,9 @@ h1 {
 }
 
 h1 a {
-  
-  color:#ff0000;
+  font-weight: 600;
+  font-size:28px;
+  color:#222;
 }
 
 h2 {
@@ -51,6 +53,19 @@ a small {
   color:#777;
   margin-top:-0.6em;
   display:block;
+}
+
+.image{
+  width: 90px;
+  vertical-align:top;
+  transition: width 2s;
+  -moz-transition: width 2s; /* Firefox 4 */
+  -webkit-transition: width 2s; /* Safari and Chrome */
+  -o-transition: width 2s; /* Opera */
+}
+
+.image:target{
+  width: 400px;
 }
 
 .wrapper {
@@ -114,9 +129,9 @@ td:hover{
   background:#eee; 
 }
 
-img {
+/*img {
   max-width:100%;
-}
+}*/
 
 header {
   width:270px;
@@ -283,6 +298,11 @@ div#overlay-pass {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
+    padding:30px;
+  }
+
+  .image:target{
+    width: 60%;
   }
   
   header {
@@ -302,7 +322,9 @@ div#overlay-pass {
   body {
     padding:15px;
   }
-  
+  .image:target{
+    width: 80%;
+  }
   header ul {
     display:none;
   }
