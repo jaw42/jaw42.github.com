@@ -122,11 +122,11 @@ th {
 }
 
 tr:hover{
-  background:#D8F7D5; 
+  background:#eee; 
 }
 
 td:hover{
-  background:#eee; 
+  background:#D8F7D5; 
 }
 
 /*img {
