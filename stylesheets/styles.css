@@ -129,9 +129,23 @@ td:hover{
   background:#D8F7D5; 
 }
 
-/*img {
-  max-width:100%;
-}*/
+table.menu{
+  font-size:28px;
+  width:auto;
+}
+
+table.menu td{
+  border: 0px;
+  padding: 8px 8px 8px 0px;
+}
+
+table.menu td:hover, tr:hover{
+  background:none;
+}
+
+td.space{
+  width: 50px;
+}
 
 header {
   width:270px;

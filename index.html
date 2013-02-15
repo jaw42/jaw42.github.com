@@ -140,8 +140,8 @@
 			</script>
 	</head>
 	<body>
-		<div class="wrapper">
-			<header id="header">
+		<div class="wrapper" id="wrapper">
+			<header>
 				<a href="http://jaw42.github.com/"><h1>Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
 					<p></p>
 
@@ -152,6 +152,8 @@
 					<p><a href="ace.html">Ace</a> | <a href="http://prose.io/">Prose</a></p>
 					<p><a href="typography.html">Typography</a></p>
 					<p><a href="password.html">Login</a></p>
+					<p><span onclick="document.getElementById('wrapper').style.cssText = 'width:auto;';document.getElementById('section').style.cssText = 'width:calc(100% - 280px);';"><i class="icon-resize-horizontal icon-large"></i> Increase</span>
+					<span onclick="document.getElementById('wrapper').style.cssText = 'width:860px;';"> | Restore</span></p>
 			</header>
 				<div id="overlay"></div>
 				<div id="overlay-pass" onload="FocusOnInput()">
@@ -180,7 +182,7 @@
 				</div>
 
 
-			<section>
+			<section id="section">
 				<h1>Welcome</h1>
 
 				<div class="clock">
@@ -194,16 +196,40 @@
 						document.write('<p class="accent">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '.</p>');
 						// -->
 					</script>
-					
+				</div>
+				<div>					
 					<hr>
 					
-					<h2 onclick="document.getElementByClassName('wrapper').style.cssText = 'width:auto;';"><i class="icon-resize-horizontal icon-large"></i> Width</h2>
-
-					<h2><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-envelope icon-large"></i> Mail</a></h2>
-					<h2><a href="calendar.html"><i class="icon-calendar icon-large"></i> Calendar</a></h2>
-					<h2><a href="https://play.google.com/music/listen"><i class="icon-headphones icon-large"></i> Music</a></h2>
-
+					<table class="menu">
+						<tr>
+							<td><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-envelope icon-large"></i></a></td>
+							<td><a href="https://mail.google.com/mail/u/0/?shva=1#inbox">Mail</a></td>
+						</tr>
+						<tr>
+							<td><a href="calendar.html"><i class="icon-calendar icon-large"></i></a></td>
+							<td><a href="calendar.html">Calendar</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://www.google.com/reader"><i class="icon-rss icon-large"></i></a></td>
+							<td><a href="https://www.google.com/reader">Reader</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://play.google.com/music/listen"><i class="icon-headphones icon-large"></i></a></td>
+							<td><a href="https://play.google.com/music/listen">Music</a></td>
+						</tr>
+						<tr>
+							<td><a href="http://google.com"><i class="icon-search icon-large"></i></a></td>
+							<td><a href="http://google.com">Search</a></td>
+						</tr>
+					</table>
+					
 					<hr>
+
+					<p><i class="icon-quote-left icon-4x pull-left icon-muted"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at libero sed enim accumsan sollicitudin nec ac justo. Aliquam turpis neque, ultricies vel tincidunt eget, accumsan nec augue. Phasellus a tellus in arcu tincidunt tristique. Donec tincidunt dictum egestas. Vivamus at augue eu purus dapibus laoreet quis eget odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lobortis, est aliquam consequat adipiscing, erat lectus molestie enim, sed ultrices sapien risus pretium enim. Phasellus eu justo eu nibh mollis consectetur at nec sem. In libero nulla, vehicula et tincidunt id, elementum fermentum orci. Nam mi neque, tempus ut ullamcorper quis, fermentum eget ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt ligula id odio pretium vehicula. Maecenas vitae neque neque, tincidunt placerat risus. Pellentesque orci nulla, suscipit sit amet pretium sit amet, aliquam vitae lectus.</p>
+
+					<p>In id lorem est, in consectetur risus. Vestibulum et lectus vel velit convallis ullamcorper. Phasellus et felis et eros egestas tincidunt non sed leo. Morbi blandit elit eu nisi rutrum quis dictum nunc imperdiet. Nulla sit amet tortor vel metus faucibus placerat. Phasellus pretium facilisis est, at bibendum quam imperdiet vitae. Proin mi dolor, feugiat ac rhoncus sed, congue sit amet sapien. Aliquam non aliquam lectus.</p>
+
+					<p>Aliquam a tellus lorem, at interdum enim. Maecenas mi purus, condimentum vitae porttitor ac, dictum sit amet augue. Aenean sed leo sit amet ipsum dignissim bibendum. Fusce magna turpis, malesuada quis aliquam ut, iaculis sit amet ligula. Phasellus porttitor tellus elit, et vulputate dolor. Pellentesque ut turpis ligula, gravida dignissim augue. Aenean pharetra adipiscing augue vel tincidunt. Proin metus tellus, sodales quis sodales elementum, dignissim ultrices dolor. Donec pretium lacinia risus in venenatis. Nulla a diam felis. Sed imperdiet rutrum lectus. Pellentesque rutrum sagittis quam eget bibendum.</p>
 
 
 					<script type="text/javascript">
