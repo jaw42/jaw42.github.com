@@ -143,8 +143,12 @@ table.menu td:hover, tr:hover{
   background:none;
 }
 
-td.space{
+td.table_space{
   width: 50px;
+}
+
+td.icon{
+  text-align: center;
 }
 
 header {
