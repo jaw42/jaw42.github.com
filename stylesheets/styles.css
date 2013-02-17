@@ -277,6 +277,24 @@ div#overlay-pass {
   color:#777;
 }
 
+#mouse_over{
+  background-color: #880088;
+  height: 500px;
+  margin: auto;
+  margin-top: 2em;
+  overflow: hidden;
+  position: relative;
+  width: 750px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#mouse_over img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
