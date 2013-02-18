@@ -12,6 +12,50 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script type="text/javascript" src="javascripts/customscript.js"></script>
+		<style>
+		    .floatingHeader {
+		      position: fixed;
+		      top: 0px;
+		      visibility: hidden;
+		      color: #999;
+		      z-index:-100;
+		    }
+		</style>
+		<script>
+		    function UpdateTableHeaders() {
+		       $(".persist-area").each(function() {
+		           var el             = $(this),
+		               offset         = el.offset(),
+		               scrollTop      = $(window).scrollTop(),
+		               floatingHeader = $(".floatingHeader", this)
+		           
+		           if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
+		               floatingHeader.css({
+		                "visibility": "visible"
+		               });
+		           } else {
+		               floatingHeader.css({
+		                "visibility": "hidden"
+		               });      
+		           };
+		       });
+		    }
+		    
+		    // DOM Ready      
+		    $(function() {
+		       var clonedHeaderRow;
+		       $(".persist-area").each(function() {
+		           clonedHeaderRow = $(".persist-header", this);
+		           clonedHeaderRow
+		             .before(clonedHeaderRow.clone())
+		             .css("width", clonedHeaderRow.width())
+		             .addClass("floatingHeader");
+		       });
+		       $(window)
+		        .scroll(UpdateTableHeaders)
+		        .trigger("scroll");
+		    });
+		</script>
 
 	</head>
 	<body>
@@ -48,7 +92,8 @@
 					<span onClick="window.location.reload()"> | Restore</span></p>
 			</header>
 			<section id="section">
-				<h2 id="name">Josh Wainwright</h2>
+				<div class="persist-area">
+				<h2 id="name" class="persist-header">Josh Wainwright</h2>
 					<div>
 						<dl> 
 							<dt>Email</dt>
@@ -62,8 +107,46 @@
 								<dd>07933 776025</dd>    
 						</dl>
 					</div>
+				</div>
 
-				<h2 id="qualifications">Qualifications</h2>
+				<div class="persist-area">
+				<h2 id="qualifications" class="persist-header">Qualifications</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<div id="third_year">
 						<dl>
 							<dt>Current: University of Birmingham - Physics and Astronomy BSc (expected 2:1)</dt>
@@ -106,8 +189,10 @@
 								<dd>Completed two day first aid course which involved minor and major injuries, incident management and emergency CPR for both the work environment and more difficult outdoor situations.</dd>
 						</dl>
 					</div>
+				</div>
 
-				<h2 id="employment">Employment</h2>
+				<div class="persist-area">
+				<h2 id="employment" class="persist-header">Employment</h2>
 					<div id="third_year">
 						<dl>
 							<dt id="tour">Current - University Representative Tour Guide</dt>
@@ -130,8 +215,10 @@
 							</dt>
 						</dl>
 					</div>
+				</div>
 
-				<h2 id="interests">Interests</h2>
+				<div class="persist-area">
+				<h2 id="interests" class="persist-header">Interests</h2>
 					<div id="interests">
 						<dl>
 							<dt>Computing</dt>
@@ -150,8 +237,10 @@
 								<dd>I am also currently taking a walking qualification in summer mountain walk leading (ML). This involves leading and overseeing walks at high altitudes in all weathers, being responsible for a group of mixed age walkers and having sufficient first aid qualifications to cope with any negative situation that might occur.</dd>
 						</dl>
 					</div>
+				</div>
 
-				<h2 id="other">Other Information</h2>
+				<div class="persist-area">
+				<h2 id="other" class="persist-header">Other Information</h2>
 					<div id="other">
 						<dl>
 							<dt>Driving Licence</dt>
@@ -160,6 +249,8 @@
 								<dd>Client and personal references are available upon request</dd>
 						</dl>
 					</div>
+				</div>
+				<div style="margin-bottom: 90vh"></div>
 			</section>
 			<footer>
 			</footer>
