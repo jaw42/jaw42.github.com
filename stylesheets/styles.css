@@ -107,6 +107,9 @@ th, td {
   text-align:left;
 }
 
+dl {
+	padding: 0 0 0 30px;
+}
 dt {
   color:#444;
   font-weight:700;

@@ -17,218 +17,143 @@
 		</style>
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" id="wrapper">
 			<header>
-				<a href="http://jaw42.github.com/"><h1>Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
+				<a href="http://jaw42.github.com/"><h1>Josh Wainwright <i style="font-size:15px;" class="icon-home"></i></h1></a>
 					<p></p>
 
-					<p class="view"><a href="#" onclick="toggle_visibility('physics-menu');" class="smoothScroll" href="#physics">Physics</a></p>
-						<div id="physics-menu" style="display: none">
-							<p>&emsp;<a class="smoothScroll" onclick="visible('compmod');" href="#compmodH">Computational Modelling</a> <a class="smoothScroll" href="#compmodH" onclick="toggle_visibility('compmod');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('critique');" href="#critiqueH">Physics Critique</a> <a class="smoothScroll" href="#critiqueH" onclick="toggle_visibility('critique');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('labs');" href="#labsH">Laboratory Report</a> <a class="smoothScroll" href="#labsH" onclick="toggle_visibility('labs');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('image');" href="#imageH">Image Processing</a> <a class="smoothScroll" href="#imageH" onclick="toggle_visibility('image');"> <i class="icon-double-angle-right"></i></a></p>
-
-							<p>&emsp;<a class="smoothScroll" onclick="visible('teaching');" href="#teachingH">Physics Teaching in Schools</a> <a class="smoothScroll" href="#teachingH" onclick="toggle_visibility('teaching');"> <i class="icon-double-angle-right"></i></a></p>
-							
-                            <p>&emsp;<a class="smoothScroll" onclick="visible('galaxies');" href="#labsH">Formation of Galaxies</a> <a class="smoothScroll" href="#galaxiesH" onclick="toggle_visibility('galaxies');"> <i class="icon-double-angle-right"></i></a></p>
+					<p class="view"><a href="#" onclick="toggle_visibility('qualifications-menu');" class="smoothScroll" href="#qualifications">Qualifications</a></p>
+						<div id="qualifications-menu" style="display: none">
+							<p>&emsp;<a class="smoothScroll" href="#third_year">Current - Degree</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#second_year">2012 - Degree</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#first_year">2011 - Degree</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#school">2011 - School</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#first_aid">2012 - First Aid</a></p>
 						</div>
-					<p class="view"><a class="smoothScroll" href="#computers">Computer Science</a></p>
-					<p><a href="ace.html">Ace</a> | <a href="http://prose.io/">Prose</a></p>
+
+					<p class="view"><a href="#" onclick="toggle_visibility('employment-menu');" class="smoothScroll" href="#employment">Employment</a></p>
+						<div id="employment-menu" style="display: none">
+							<p>&emsp;<a class="smoothScroll" href="#tour">Current - University Tour Guide</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#detica">2012 - BAESystems Detica</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#golf_shop">2011 - Shop Assistant</a></p>
+						</div>
+
+					<p><a class="smoothScroll" href="#interests">Interests</a></p>
+
 					<p><a href="index.html">Home</a></p>
+					<p><span onclick="document.getElementById('wrapper').style.cssText = 'width:auto;';document.getElementById('section').style.cssText = 'width:calc(100% - 280px);';"><i class="icon-resize-horizontal icon-large"></i> Increase</span>
+					<span onclick="document.getElementById('wrapper').style.cssText = 'width:860px;';"> | Restore</span></p>
 			</header>
-			<section>
-				<h2 id="physics" style="float:left" href="http://en.m.wikipedia.org/wiki/Physics">Physics</h2>
-				<!-- <a href="https://github.com/jaw42/year3physics/blob/master/Semester%202%20Timetable.pdf?raw=true"><h2 style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a> -->
-				<a href="files/phys_sem2_timetable.pdf"><h2 style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
-				<div style="clear: both;"></div>
-					<p>Physics and Astronomy: <a href="http://www.ph.bham.ac.uk/">www.ph.bham.ac.uk</a></p>
-					<p>These are some of the documents associated with my degree in Physics and Astronomy.</p>
+			<section id="section">
+				<h2 id="name">Josh Wainwright</h2>
+					<div>
+						<dl> 
+							<dt>Email</dt>
+								<dd><a href="mailto:wainwright.ja@gmail.com">wainwright.ja@gmail.com</a></dd>
+							<dt>Address</dt> 
+								<dd>11 Green Meadows</dd> 
+								<dd>Danbury</dd> 
+								<dd>Essex</dd> 
+								<dd>CM3 4LD</dd> 
+							<dt>Tel:</dt> 
+								<dd>07933776025</dd>    
+						</dl>
+					</div>
+
+				<h2 id="qualifications">Qualifications</h2>
+					<div id="third_year">
+						<dl>
+							<dt>Current: University of Birmingham - Physics and Astronomy BSc</dt>
+								<dd>Third year modules include Computational Modelddng of Physical Systems, Digital Image Processing, Physics Teaching in Schools, Formationa and Evolution of Galaxies and Atomic Physics</dd>
+								<dd>Degree also included practicle laboratory work, Group Studies project, computing and programming, teamwork and presentation and communication skills.</dd>
+						</dl>
+					</div>
+
+					<div id="second_year">
+						<dl>
+							<dt>2012: University of Birmingham - Physics and Astronomy BSc</dt>
+								<dd>Gained upper 2nd (2:1) class degree level in second year of study. Second year modules included Nuclear Physics, Quantum and Classical Mechanics, Advanced Mathematics, Electromagnetism and Statistical Physics</dd>
+						</dl>
+					</div>
+
+					<div id="first_year">
+						<dl>
+							<dt>2011: University of Birmingham - Physics and Astronomy BSc</dt>
+								<dd>Gained 1st class degree level in first year of study. Modules included Optics and Waves, Quantum and Classical mechanics, Mathematics, Electronics and Electric circuits and Temperature and Material Properties.</dd>
+						</dl>
+					</div>
+
+					<div id="school">
+						<dl>
+						<dt>2010: The Sandon School</dt>
+							<dl>
+								<dt>A-Levels</dt>
+									<dd>Physics A; Mathematics A; Chemistry B.</dd>
+								<dt>AS-Levels</dt>
+									<dd>Further Mathematics A; Biology A.</dd>
+								<dt>GCSEs</dt>
+									<dd>Seven grade A* (including Mathematics, Physics, Chemistry and English literature); four grade A (including English Language and Biology) and one grade B.</dd>
+							</dl>
+						</dl>
+					</div>
+
+					<div id="first_aid">
+						<dl>
+							<dt>2012: ITC Emergency First Aid at Work and Outdoor Incident Management</dt>
+								<dd>Completed two day first aid course which involved minor and major injuries, incident management and emergency CPR for both the work environment and more difficult outdoor situations.</dd>
+						</dl>
+					</div>
+
+				<h2 id="employment">Employment</h2>
+					<div id="third_year">
+						<dl>
+							<dt id="tour">Current - University Representative Tour Guide</dt>
+								<dd>Involved giving tours to prospective students to university, involving leading a group on a tour of the campus, answering questions that they might have and spending time talking to both the students and parents concerning living and studying at university.</dd>
+							</dt>
+							<dt id="detica">2012 - BAESystems Detica</dt>
+								<dd>Worked in a golf equipment and accessories shop and driving range; participating in the giving of advice and the selling of golf equipment and accessories to the public. This involved talking to and recommending equipment and the safe and methodical transactions of large sums of money, as well as the general keeping of the shop and seeing to customers’ needs.</dd>
+							</dt>
+							<dt id="golf_shop">2007 - 2010 - Shop Assistant</dt>
+								<dd>Worked in a golf equipment and accessories shop and driving range; participating in the giving of advice and the selling of golf equipment and accessories to the public. This involved talking to and recommending equipment and the safe and methodical transactions of large sums of money, as well as the general keeping of the shop and seeing to customers’ needs.</dd>
+							</dt>
+							<dt id="golf_shop">2007, 2011 - Work Experience</dt>
+								<dd>Worked at a local primary school in 2007 and secondary school in 2011 assisting staff and teaching pupils in a number of age grouped classes. Worked closely with a number of staff members demonstrating ability to cooperate easily and effectively with experienced workers and to contribute to the running of a busy environment.</dd>
+							</dt>
+							<dt id="golf_shop">2006 - 2010 - Volunteering</dt>
+								<dd>Helping out at holiday youth club, working with large numbers of children of various ages and assisting in organising and running different activities over a number of days. Included interacting with childrenand parents and colleagues who were also helping in similar capacities, and dealing with technical equipment used throughout the sessions (eg video camera, audio visual equipment and lighting rigs).</dd>
+							</dt>
+							<dt id="golf_shop">2007 - 2008 - School Prefect</dt>
+								<dd>Undertook numerous responsibilities, including showing prospective students and parents around the school, and helping teachers in authoritative roles involving large numbers of students, demonstrating clear and effective leadership and communication skills.</dd>
+							</dt>
+						</dl>
+					</div>
+
+				<h2 id="interests">Interests</h2>
+					<div id="interests">
+						<dl>
+							<dt>Judo</dt>
+								<dd>Trained for a number of years achieving an upper brown belt (one before black) and competed on several occasions in regional and inter-regional competitions. Also assisted other judokas, both younger and older of varying grades and abilities, with teaching and coaching as well as leading warm up and training sessions.</dd>
+							<dt>Hockey</dt>
+								<dd>Helped with the running of a hockey club at school for younger years.</dd>
+							<dt>Swimming</dt>
+								<dd>Achieved Bronze Medallion Life Saving Certificate (incl. CPR).</dd>
+							<dt>Music</dt>
+								<dd>Taught myself piano and guitar. I am now at the standard where I can confidently play the piano with others playing a range of different instruments in the church service.</dd>
+							<dt>BSL</dt>
+								<dd>Currently taking a British Sign Language (BSL) course in my spare time as this is something that has interested me for some time and as I did not pursue languages academically is an area of experience I would like to broaden.</dd>
+							<dt>Walking</dt>
+								<dd>I am also currently taking a walking qualification in summer mountain walk leading (ML). This involves leading and overseeing walks at high altitudes in all weathers, being responsible for a group of mixed age walkers and having sufficient first aid qualifications to cope with any negative situation that might occur.</dd>
+
+						</dl>
+					</div>
 					
-					<h2>Term One</h2>
-					
-					<a href="#" onclick="toggle_visibility('compmod');" id="compmodH" ><h3>Computational Modelling of Physical Systems</h3></a>
-					<div id="compmod" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<th>Due Date</th>
-								<th>Worksheet</th>
-								<th>Grade</th>
-							</tr>
-							<tr>
-								<td>10 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet1/Worksheet1_jaw097.pdf">Worksheet 1</a></td>
-								<td>15/20</td>
-							</tr>
-							<tr>
-								<td>17 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet2/Worksheet2_jaw097.pdf">Worksheet 2</a></td>
-								<td>13/20</td>
-							</tr>
-							<tr>
-								<td>24 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet3/Worksheet3_jaw097.pdf">Worksheet 3</a></td>
-								<td>16/20</td>
-							</tr>
-							<tr>
-								<td>31 October 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet4/Worksheet4_jaw097.pdf">Worksheet 4</a></td>
-								<td>17/20</td>
-							</tr>
-							<tr>
-								<td>07 November 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/worksheet5/Worksheet5_jaw097.pdf">Worksheet 5</a></td>
-								<td>15/20</td>
-							</tr>
-							<tr>
-								<td>07 December 2012</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/CompMod/Project/Report/jaw097_FDTD.pdf">Project</a></td>
-								<td>86/100</td>
-							</tr>
-						</table>
+				<h2 id="other">Other Information</h2>
+					<div id="other">
+						<dl>
+							<dt>Driving Licence</dt>
+								<dd>Full, Clean UK Licence.</dd>
+						</dl>
 					</div>
-
-					<a href="#" onclick="toggle_visibility('critique');" id="critiqueH"><h3>Physics Critique - Quantum Computing</h3></a>
-					<div id="critique" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<td>Quantum Computing</td>
-								<td><a href="https://github.com/jaw42/year3physics/blob/master/Critique/Qubits/mainfile.pdf?raw=true">Physics Critique</a></td>
-							</tr>
-						</table>
-					</div>
-
-					<a href="#" onclick="toggle_visibility('labs');" id="labsH"><h3>Laboratory Report</h3></a>
-					<div id="labs" style="display: none">
-						<table id="tfhover">
-          		<tr>
-								<th>Due Date</th>
-								<th>Work Sheet</th>
-								<th>Grade</th>
-							</tr>
-							<tr>
-								<td>Nuclear Labs</td>
-								<td><a href="https://github.com/jaw42/year3physics/blob/master/Y3%20Lab/Report/main.pdf?raw=true">Laboratory Report</a></td>
-                <td>/100</td>
-							</tr>
-						</table>
-					</div>
-					
-					<h2>Term Two</h2>
-				
-					<a href="#" onclick="toggle_visibility('image');" id="imageH"><h3>Image Processing</h3></a>
-					<div id="image" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<th>Due Date</th>
-								<th>Work Sheet</th>
-                <th>Grade</th>
-							</tr>
-							<tr>
-								<td>14th Feb 2013</td>
-								<td><a href="https://github.com/jaw42/year3physics/raw/master/ImageProcessing/Assessed_Exercise1/mainfile.pdf">Assessed Problem 1</a></td>
-                <td>/100</td>
-							</tr>
-						</table>
-					</div>
-
-					<a href="#" onclick="toggle_visibility('teaching');" id="teachingH"><h3>Physics Teaching in Schools</h3></a>
-					<div id="teaching" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<th>Date</th>
-								<th>Log Sheet</th>
-							</tr>
-							<tr>
-								<td>7th Jan 2013 to 13th Jan 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week1_alt.html">Log Sheet 1</a></td>
-							</tr>
-							<tr>
-								<td>14th Jan 2013 to 20th Jan 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week2.html">Log Sheet 2</a></td>
-							</tr>
-							<tr>
-								<td>21st Jan 2013 to 27th Jan 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week3.html">Log Sheet 3</a></td>
-							</tr>
-							<tr>
-								<td>28th Jan 2013 to 3rd Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week4.html">Log Sheet 4</a></td>
-							</tr>
-							<tr>
-								<td>4th Feb 2013 to 10th Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week5.html">Log Sheet 5</a></td>
-							</tr>
-							<tr>
-								<td>11th Feb 2013 to 17th Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week6.html">Log Sheet 6</a></td>
-							</tr>
-							<tr>
-								<td>18th Feb 2013 to 24th Feb 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week7.html">Log Sheet 7</a></td>
-							</tr>
-							<tr>
-								<td>25th Feb 2013 to 3rd Mar 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week8.html">Log Sheet 8</a></td>
-							</tr>
-							<tr>
-								<td>4th Mar 2013 to 10th Mar 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week9.html">Log Sheet 9</a></td>
-							</tr>
-							<tr>
-								<td>11th Mar 2013 to 17th Mar 2013</td>
-								<td><a href="http://htmlpreview.github.com/?https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week10.html">Log Sheet 10</a></td>
-							</tr>
-							<tr>
-								<td>Teaching in Schools Project Proposal</td>
-								<td><a href="https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_Project_Proposal.pdf?raw=true">Proposal</a></td>
-							</tr>
-							<tr>
-								<td>11th Feb 2013</td>
-								<td><a href="https://github.com/jaw42/year3physics/blob/master/TeachingInSchools/Problems/Problems1_main.pdf?raw=true">Problems Sheet 1</a></td>
-							</tr>
-						</table>
-					</div>
-              
-              		<a href="#" onclick="toggle_visibility('galaxies');" id="galaxiesH"><h3>Formation and Evolution of Galaxies</h3></a>
-					<div id="galaxies" style="display: none">
-						<table id="tfhover">
-							<tr>
-								<td>Galaxies</td>
-								<td><a href="http://www.sr.bham.ac.uk/~tjp/FEG/">Galxies Website - Prof Ponman</a></td>
-							</tr>
-						</table>
-					</div>
-              
-			<section>
-				<h2 id="computers" class=heading-not-first style="float:left;">Computer Science</h2>
-				<a href="http://www.cs.bham.ac.uk/internal/timetables/"><h2 class=heading-not-first style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
-				<div style="clear: both;"></div>
-					<p>Start date: 30th September 2013</p>
-					<p>Computer Science: <a href="http://www.cs.bham.ac.uk/">www.cs.bham.ac.uk</a></p>
-				<div class="clock">
-					<span  id="spanTime"></span>
-					<a href="http://en.wikipedia.org/wiki/Unix_time" style="color:#777"><span style="font-size:20px;" id="spanPOSIX"></span></a><br>
-					<span  id="spanDate"></span>
-					<script type="text/javascript">
-
-						var date = new Date();
-						var hours = date.getHours();
-						var minutes = date.getMinutes();
-						var seconds = date.getSeconds();
-						var formattedTime = hours + ':' + minutes + ':' + seconds;
-						document.getElementById("spanTime").innerHTML = formattedTime;
-						var now = new Date();
-						document.getElementById("spanPOSIX").innerHTML = now.getTime();
-
-						var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];  
-						var today = new Date();
-						document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
-					</script>
-				</div>
 			</section>
 			<footer>
 			</footer>
