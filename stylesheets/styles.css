@@ -3,6 +3,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);*/
 @import url(http://fonts.googleapis.com/css?family=Merriweather:300);
 
+html {
+  height: 100%;
+  margin-bottom: 1px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+ }
 body {
   padding:50px;
   font:14px/1.5 sans-serif;
@@ -396,6 +402,14 @@ div#overlay-pass {
 
   #main_name {
 		margin: 0 0 0 0px;
+  }
+
+  table.menu {  
+    font-size: 15px;
+    width: 100%;
+  }
+  td.table_space{
+    width: 20px;
   }
 }
 
