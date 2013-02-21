@@ -128,6 +128,11 @@ dt {
   font-weight:700;
 }
 
+div.second_address{
+  float: right;
+  padding-right: 200px;
+}
+
 th {
   background:#f8f8f8;
   border:1px solid #e5e5e5;
