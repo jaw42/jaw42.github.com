@@ -130,7 +130,7 @@ dt {
 
 div.second_address{
   float: right;
-  padding-right: 200px;
+  padding-right: 20%;
 }
 
 th {
@@ -423,6 +423,9 @@ div#overlay-pass {
   }
   td.table_space{
     width: 20px;
+  }
+  div.second_address{
+    float: none;
   }
 }
 
