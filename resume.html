@@ -27,7 +27,7 @@
 		               offset         = el.offset(),
 		               scrollTop      = $(window).scrollTop(),
 		               floatingHeader = $(".floatingHeader", this)
-		           
+
 		           if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
 		               floatingHeader.css({
 		                "visibility": "visible"
@@ -35,12 +35,12 @@
 		           } else {
 		               floatingHeader.css({
 		                "visibility": "hidden"
-		               });      
+		               });
 		           };
 		       });
 		    }
-		    
-		    // DOM Ready      
+
+		    // DOM Ready
 		    $(function() {
 		       var clonedHeaderRow;
 		       $(".persist-area").each(function() {
@@ -54,6 +54,12 @@
 		        .scroll(UpdateTableHeaders)
 		        .trigger("scroll");
 		    });
+
+		    function generatePDF(){
+			  var conv = new ActiveXObject("pdfServMachine.converter");
+			  conv.convert("http://www.google.com", "/home/josh/google.pdf", false);
+			  WScript.Echo("finished conversion");
+			 }
 		</script>
 
 	</head>
@@ -88,32 +94,35 @@
 
 					<p><a class="smoothScroll" href="#references">References</a></p>
 
-					<p><a href="index.html">Home</a></p>
-					<p><span onclick="document.getElementById('wrapper').style.cssText = 'width:auto;';document.getElementById('section').style.cssText = 'width:calc(100% - 280px);';"><i class="icon-resize-horizontal icon-large"></i> Increase</span>
+					<p><a href="index.html"><i class="icon-double-angle-down"></i> Download PDF</a></p>
+					<p class="width_control" ><span onclick="document.getElementById('wrapper').style.cssText = 'width:auto;';document.getElementById('section').style.cssText = 'width:calc(100% - 280px);';"><i class="icon-resize-horizontal icon-large"></i> Increase</span>
 					<span onClick="window.location.reload()"> | Restore</span></p>
 			</header>
 			<section id="section">
 				<div class="persist-area">
+				<h2 id="main_name_print">Josh Wainwright</h2>
 				<h2 id="name" class="persist-header">Personal Details</h2>
 					<div>
-						<dl> 
+						<dl>
 							<dt>Email</dt>
 								<dd><a href="mailto:wainwright.ja@gmail.com">wainwright.ja@gmail.com</a></dd>
-							<dt>Address</dt> 
+							<dt>Address</dt>
 								<div class="second_address">
-									<dd>(Term Time)</dd>
+									<dd class="address-type">(Term Time)</dd>
 									<dd>86 Tiverton Road</dd>
 									<dd>Selly Oak</dd>
 									<dd>Birmingham</dd>
 									<dd>B29 6BP</dd>
 								</div>
-								<dd>(Holiday Time)</dd>
-								<dd>11 Green Meadows</dd> 
-								<dd>Danbury</dd> 
-								<dd>Essex</dd> 
-								<dd>CM3 4LD</dd> 
-							<dt>Telephone</dt> 
-								<dd>07933 776025</dd>    
+								<div class="first-address">
+									<dd class="address-type">(Holiday Time)</dd>
+									<dd>11 Green Meadows</dd>
+									<dd>Danbury</dd>
+									<dd>Essex</dd>
+									<dd>CM3 4LD</dd>
+								</div>
+							<dt>Telephone</dt>
+								<dd>07933 776025</dd>
 						</dl>
 					</div>
 					<hr>
@@ -232,7 +241,7 @@
 					<div id="references">
 						<dl>
 							<dt>References</dt>
-								<dd>Client and personal references are available upon request</dd>
+								<dd>Academic and personal references are available upon request</dd>
 						</dl>
 					</div>
 					<hr>
@@ -245,6 +254,6 @@
 		<!-- <script src="javascripts/scale.fix.js"></script> -->
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 		<!-- <script type="text/javascript" src="javascripts/smoothscroll.js"></script> -->
-		
+
 	</body>
 </html>

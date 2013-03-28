@@ -13,7 +13,7 @@ body {
   padding:50px;
   font:14px/1.5 "Merriweather", sans-serif;
   color:#555;
-  font-weight:300;
+  font-weight:normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +35,7 @@ h1 {
 }
 
 h1 a {
-  font-weight: 600;
+  font-weight: bold;
   font-size:28px;
   color:#222;
 }
@@ -56,7 +56,7 @@ h3, h4, h5, h6 {
 
 a {
   color:#39c;
-  font-weight:400;
+  font-weight:normal;
   text-decoration:none;
 }
 
@@ -100,7 +100,7 @@ code, pre {
 
 pre {
   padding:8px 15px;
-  background: #f8f8f8;  
+  background: #f8f8f8;
   border-radius:5px;
   border:1px solid #e5e5e5;
   overflow-x: auto;
@@ -125,7 +125,7 @@ dl {
 
 dt {
   color:#444;
-  font-weight:700;
+  font-weight:bold;
 }
 
 div.second_address{
@@ -143,11 +143,11 @@ th {
 }
 
 tr:hover{
-  background:#eee; 
+  background:#eee;
 }
 
 td:hover{
-  background:#D8F7D5; 
+  background:#D8F7D5;
 }
 
 table.menu{
@@ -181,9 +181,9 @@ header {
 header ul {
   list-style:none;
   height:40px;
-  
+
   padding:0;
-  
+
   background: #eee;
   background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
@@ -191,7 +191,7 @@ header ul {
   background: -o-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: -ms-linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
   background: linear-gradient(top, #f8f8f8 0%,#dddddd 100%);
-  
+
   border-radius:5px;
   border:1px solid #d2d2d2;
   box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
@@ -217,7 +217,7 @@ header ul a {
 
 strong {
   color:#222;
-  font-weight:700;
+  font-weight:bold;
 }
 
 header ul li + li {
@@ -265,14 +265,14 @@ footer {
 }
 
 .scrollpast:before {
-    display:block; 
-    content:""; 
-    height:30px; 
-    margin:-30px 0 0; 
+    display:block;
+    content:"";
+    height:30px;
+    margin:-30px 0 0;
 }
 
 .heading-not-first{
-  margin-top: 2cm; 
+  margin-top: 2cm;
 }
 
 div#overlay {
@@ -323,34 +323,38 @@ div#overlay-pass {
   left: 0;
 }
 
+#main_name_print{
+  display: none;
+}
+
 @media print, screen and (max-width: 960px) {
-  
+
   div.wrapper {
     width:auto;
     margin:0;
   }
-  
+
   header, section, footer {
     float:none;
     position:static;
     width:auto;
   }
-  
+
   header {
     padding-right:320px;
   }
-  
+
   section {
-    border:1px solid #e5e5e5;
+    /*border:1px solid #e5e5e5;*/
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
   }
-  
+
   header a small {
     display:inline;
   }
-  
+
   header ul {
     position:absolute;
     right:50px;
@@ -358,11 +362,19 @@ div#overlay-pass {
   }
 
   heading-not-first{
-    margin-top: 0.5cm; 
+    margin-top: 0.5cm;
   }
 
   #main_name {
 		margin: 0 0 0 0px;
+  }
+
+  #main_name_print{
+    display: none;
+  }
+
+  .width_control{
+    display: none;
   }
 }
 
@@ -375,15 +387,15 @@ div#overlay-pass {
   .image:target{
     width: 60%;
   }
-  
+
   header {
     padding:0;
   }
-  
+
   header ul, header p.view {
     position:static;
   }
-  
+
   pre, code {
     word-wrap:normal;
   }
@@ -391,9 +403,13 @@ div#overlay-pass {
   #main_name {
 	margin: 0 0 0 0px;
   }
+
+  #main_name_print{
+    display: none;
+  }
 }
 
-@media print, screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     padding:15px;
   }
@@ -410,14 +426,24 @@ div#overlay-pass {
     padding: 0;
   }
   dd{
-    margin: 10px 0 0 0;
+    /*margin: 10px 0 0 0;*/
+    margin: 0;
+    padding: 0;
+  }
+  dd.address-type{
+    font-weight: bold;
+    font-size: 80%;
+    margin: 5px 0 0 5px;
+  }
+  dt{
+    margin-left: -5px;
   }
 
   #main_name {
 		margin: 0 0 0 0px;
   }
 
-  table.menu {  
+  table.menu {
     font-size: 15px;
     width: 100%;
   }
@@ -426,6 +452,10 @@ div#overlay-pass {
   }
   div.second_address{
     float: none;
+  }
+
+  #main_name_print{
+    display: none;
   }
 }
 
@@ -438,5 +468,20 @@ div#overlay-pass {
     padding:0.3in;
     font-size:10pt;
     color:#444;
+  }
+
+  #main_name_print{
+    display: inherit;
+    text-align:center;
+    font-size: 29pt;
+    border: none;
+  }
+
+  hr{
+    display: none;
+  }
+
+  a{
+    color: #444;
   }
 }
