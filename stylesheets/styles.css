@@ -460,14 +460,19 @@ div#overlay-pass {
 }
 
 @media print {
-  header, .no_print, hr{
-    display: none;
-  }
-
   body {
-    padding:0.3in;
+    padding: 0;
+    margin: 0;
     font-size:10pt;
     color:#444;
+  }
+
+  section{
+    padding: 0;
+  }
+
+  header, .no_print, hr{
+    display: none;
   }
 
   #main_name_print{
@@ -477,11 +482,12 @@ div#overlay-pass {
     border: none;
   }
 
-  hr{
-    display: none;
-  }
-
   a{
     color: #444;
+  }
+
+  div.second_address{
+    float: right;
+    padding-right: 30%;
   }
 }
