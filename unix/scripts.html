@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Unix</title>
+
+		<link rel="stylesheet" href="../stylesheets/styles.css">
+		<link rel="stylesheet" href="../stylesheets/fontawesome.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="http://jaw42.github.com/"><h1 id="main_name">Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
+					<p></p>
+                    <ul class="menu">
+                        <li><a href="../unix.html">GNU/Linux</a></li>
+                        <ul>
+                            <li class="menu-current">Scripts</li>
+                            <ul>
+                                <li><a href="#open">Universal Open</a></li>
+                                <li><a href="#dwmstatus">dwm Status</a></li>
+                                <li><a href="#latextidy">LatexTidy</a></li>
+                                <li><a href="#arandr">ARandR</a></li>
+                            </ul>
+                            <li><a href="fortune.html">Fortune</a></li>
+                        </ul>
+                    </ul>
+			</header>
+			<section>
+                <h2 id="open">Universal Open</h2>
+                <p class="download-script"><a href="https://raw.github.com/jaw42/dotfiles/master/bin/open">Download</a></p>
+                <p>While introducing a friend to GNU/Linux, he got frustrated trying to remember what program opens what type of file and asked "Why can't I just type <code>open</code>? Thats all I want to do."</p>
+                <p>This isn't the reason I made this scripts, but it serves that purpose to. This is a <i>universal open</i> script. Basically, for the majority of standard filetypes, just type <code>open fileName</code> and it will use the configured program to open that file.</p>
+                <p>The main use I have for this is for further scripting or for filemanagers and the like. I do a lot of flitting between software, when I find something interesting I install it, play around for a week or so, then decide if I like it or not. This file means that I can easily configure all those programs quickly. If it might want to open a file with a different program, just <code>open</code> and it'll happen.</p>
+                <p>This also means, for the more stable programs that I am accustomed to, that if a different program changes, I don't have to go finding the right setting to change it, I just edit the script slightly.</p>
+                <p>For example, in a file manager, I want to open a pdf file, instead of having to remember that I'm using <code>xpdf</code> or <code>Zathura</code> or <code>Evince</code>, I just remember <code>open</code>.</p>
+                <p>This also means that when I inevitably change my pdf reader, I don't have to change it everywhere I might want to open one, file manager1, filemanager2, email handler, etc.</p>
+                <p>The script makes use of a feature of bash called <i>indrirection</i>. This basically means that the contents of a variable can be used as the name of another variable.</p>
+                <pre>$ var=foo
+$ foo=bar
+$ echo ${!var}
+bar</pre>
+                <p>This makes this script very extensible with no changes. The basic usage involves adding the filetype extensions you want to manage, along with the associated programs, at the top of the script and you're away.</p>
+                <p>When run, the script checks the extension of the file against the set extensions in the arrays set by the user. When it finds the right extension, it uses the array it found it in to define which program should be used to open/run that file. If the file has no extention, or the extension cannot be found or is not defined, the script will instead look at the <a href="https://en.wikipedia.org/wiki/Internet_media_type">mime-type</a> and use that instead.</p>
+
+                <hr>
+                <h2 id=dwmstatus>dwm Status</h2>
+                <p class="download-script"><a href="https://github.com/jaw42/dotfiles/raw/master/script/scripts.symlink/dwm/status.sh">Download</a></p>
+                <p>I use the <a href="">dwm</a> tiling window manager. This is an extremely lightweight, small source size window manager written entirely in C. It's perfect for my needs, lightning fast, very small (optionally zero) window footprint, and can be endlessly configured (literally) by editting the source code.</p>
+                <p>It uses the root's window name to print a status bar, or any arbitary text, which makes it very flexible since and output from any command can be used as the status bar contents. This script uses a number of functions to output some useful info which then gets piped to the window name and displayed at the status bar.</p>
+                <p>Currently it displays:
+                    <ul>
+                        <li>Currently playing song from mpd (along with pause/play state and progress percentage)</li>
+                        <li>Number of open system files (playing around with some commands - why not?).</li>
+                        <li>Number of updates to system packages with <code>pacman</code>.</li>
+                        <li>Number of unread feed items from <code>Rawdog</code> (see <a href="">here</a> for my setup and <a href="">here</a> for more details).</li>
+                        <li>Currently used percentage on the main <code>/root</code> partition.</li>
+                        <li>I.P. address of the current web connection.</li>
+                        <li>The signal strength of the current wifi connection.</li>
+                        <li>The uptime of the machine.</li>
+                        <li>And the current date and time.</li>
+                    </ul>
+                </p>
+                <p>The script writes all of these details to files in the <code>/tmp/dwm_status_bar/</code> directory and then collates them together into a single file which is used as the root window's name.</p>
+                <p><i>Note</i> - I use the <code>statuscolors</code> patch to add some colour to the status bar. This involves sending escaped colour sequence characters in the text which are interpretted to set the colour of the subsequent text. If you don't use that patch, simply remove all the strings that look like "<code>\x01</code>" and the script will work fine.</p>
+
+                <hr>
+                <h2 id="latextidy">LatexTidy</h2>
+                <p class="download-script"><a href="https://github.com/jaw42/dotfiles/raw/master/bin/LatextTidy">Download</a></p>
+                When building latex documents, I use <a href="http://phys.psu.edu/~collins/software/latexmk-jcc/">latexmk</a> since it has a built in option to watch for file changes and build the document when it detects one. But, as with any latex compiler, this produces a large number of auxilary files, relating to the table of contents, images etc. These are all ignored with a <code>.gitignore</code> file, but sometimes its nice to clean a directory up, for which I use this sciprt.</p>
+                <p>All it does is search through a directory and search for files with the specified extensions and delete them. It has options to do this recursively, incase you've got a number of folders with redundant latex files in, and a <code>dry-run</code> option to display which files would be deleted if it was run normally.</p>
+
+                <hr>
+                <h2 id="arandr">ARandR</h2>
+                <p class="download-script"><a href="https://github.com/jaw42/dotfiles/raw/master/system/screenlayout.symlink/default.sh">Download</a></p>
+                <p>This is a tiny script that I have set up to run automatically when I log in to set the screen layout on my dual screen setup. Change the resolutions as needed; currently I have a laptop connected to a larger main monitor.
+            <footer>
+			</footer>
+		</div>
+		
+	</body>
+</html>
