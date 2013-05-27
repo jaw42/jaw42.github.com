@@ -187,22 +187,6 @@ strong {
   font-weight:bold;
 }
 
-header ul li + li {
-  width:88px;
-  border-left:1px solid #fff;
-}
-
-header ul li + li + li {
-  border-right:none;
-  width:89px;
-}
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
-
 section {
   width:600px;
   float:right;
@@ -335,12 +319,6 @@ li.menu-current:before {
     display:inline;
   }
 
-  header ul {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
-
   heading-not-first{
     margin-top: 0.5cm;
   }
@@ -372,10 +350,6 @@ li.menu-current:before {
     padding:0;
   }
 
-  header ul, header p.view {
-    position:static;
-  }
-
   pre, code {
     word-wrap:normal;
   }
@@ -396,10 +370,6 @@ li.menu-current:before {
 
   .image:target{
     width: 80%;
-  }
-
-  header ul {
-    display:none;
   }
 
   dl {
@@ -455,7 +425,7 @@ li.menu-current:before {
     padding: 0;
   }
 
-  header, .no_print, hr{
+  .no_print {
     display: none;
   }
 
