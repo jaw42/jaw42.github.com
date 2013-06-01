@@ -118,7 +118,7 @@ table {
 th, td {
   border:1px solid #e5e5e5;
   padding:8px 15px;
-  border-radius:5px;
+/*  border-radius:5px;*/
   overflow-x: auto;
   text-align:left;
 }
@@ -141,7 +141,7 @@ th {
   background:#f8f8f8;
   border:1px solid #e5e5e5;
   padding:8px 15px;
-  border-radius:5px;
+/*  border-radius:5px;*/
   overflow-x: auto;
   text-align:left;
 }
@@ -165,7 +165,7 @@ table.menu td{
 }
 
 table.menu td:hover, tr:hover{
-  background:none;
+  background:#eee;
 }
 
 td.table_space{
@@ -264,8 +264,6 @@ div#overlay-pass {
   overflow: hidden;
   position: relative;
   width: 750px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
 }
 
 #mouse_over img {
