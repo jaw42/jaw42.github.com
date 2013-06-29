@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Unix</title>
+
+		<link rel="stylesheet" href="../../stylesheets/styles.css">
+		<link rel="stylesheet" href="../../stylesheets/fontawesome.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="http://jaw42.github.com/"><h1 id="main_name">Josh Wainwright <i
+										style="font-size:15px"; class="icon-home"></i></h1></a>
+					<p></p>
+					<ul class="menu">
+						<li><a href="../../unix.html">GNU/Linux</a></li>
+						<ul>
+							<li><a href="../setup.html">Current Setup</a></li>
+							<li><a href="../scripts.html">Scripts</a></li>
+							<ul>
+								<li class="menu-current">Universal Open</li>
+								<li><a href="dwmstatus.html">dwm Status</a></li>
+								<li><a href="latextidy.html">LatexTidy</a></li>
+								<li><a href="arandr.html">ARandR</a></li>
+							</ul>
+							<li><a href="fortune.html">Fortune</a></li>
+						</ul>
+					</ul>
+			</header>
+			<section>
+				<p class="path"><a href="http://jaw42.github.io">Josh</a> / <a
+						href="../../unix.html">Linux</a> / <a href="../scripts.html">Scripts</a>
+				/ UniversalOpen</p>
+				<h2 id="open">Universal Open</h2>
+				<p class="download-script"><a
+						href="https://github.com/jaw42/bin/blob/master/open">Download</a></p>
+				<p>While introducing a friend to GNU/Linux, he got frustrated trying to
+				remember what program opens what type of file and asked "Why can't I
+				just type <code>open</code>? Thats all I want to do."</p>
+				<p>This isn't the reason I made this scripts, but it serves that purpose
+				to. This is a <i>universal open</i> script. Basically, for the majority
+				of standard filetypes, just type <code>open fileName</code> and it will
+				use the configured program to open that file.</p>
+				<p>The main use I have for this is for further scripting or for
+				filemanagers and the like. I do a lot of flitting between software, when
+				I find something interesting I install it, play around for a week or so,
+				then decide if I like it or not. This file means that I can easily
+				configure all those programs quickly. If it might want to open a file
+				with a different program, just <code>open</code> and it'll happen.</p>
+				<p>This also means, for the more stable programs that I am accustomed
+				to, that if a different program changes, I don't have to go finding the
+				right setting to change it, I just edit the script slightly.</p>
+				<p>For example, in a file manager, I want to open a pdf file, instead of
+				having to remember that I'm using <code>xpdf</code> or
+				<code>Zathura</code> or <code>Evince</code>, I just remember
+				<code>open</code>.</p>
+				<p>This also means that when I inevitably change my pdf reader, I don't
+				have to change it everywhere I might want to open one, file manager1,
+				filemanager2, email handler, etc.</p>
+				<p>The script makes use of a feature of bash called <i>indrirection</i>.
+				This basically means that the contents of a variable can be used as the
+				name of another variable.</p>
+				<pre>$ var=foo
+$ foo=bar
+$ echo ${!var}
+bar</pre>
+				<p>This makes this script very extensible with no changes. The basic
+				usage involves adding the filetype extensions you want to manage, along
+				with the associated programs, at the top of the script and you're
+				away.</p>
+				<p>When run, the script checks the extension of the file against the set
+				extensions in the arrays set by the user. When it finds the right
+				extension, it uses the array it found it in to define which program
+				should be used to open/run that file. If the file has no extention, or
+				the extension cannot be found or is not defined, the script will instead
+				look at the <a
+				href="https://en.wikipedia.org/wiki/Internet_media_type">mime-type</a>
+		and use that instead.</p>
+
+			<footer>
+			</footer>
+		</div>
+
+	</body>
+</html>
