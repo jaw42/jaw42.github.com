@@ -12,7 +12,7 @@ html {
 body {
   padding:50px;
   font:14px/1.5 "Merriweather", sans-serif;
-  color:#555;
+  color:#444;
   font-weight:normal;
 }
 
@@ -93,7 +93,7 @@ blockquote {
 }
 
 code, pre {
-  font-family"Courier New", Courier, monospace;:
+  font-family:"Courier New", Courier, monospace;:
   color:#333;
   font-size:15px;
   color:#cc6532;
@@ -347,6 +347,7 @@ li.menu-current:before {
   }
 
   header {
+  	display: none;
     padding:0;
   }
 
@@ -416,7 +417,7 @@ li.menu-current:before {
     font-size:10px;
     color:#444;
   }
- 
+
   h2 {
     font-size:25px;
   }
