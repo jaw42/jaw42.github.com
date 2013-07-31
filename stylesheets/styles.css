@@ -347,7 +347,6 @@ li.menu-current:before {
   }
 
   header {
-  	display: none;
     padding:0;
   }
 
@@ -424,6 +423,10 @@ li.menu-current:before {
 
   section{
     padding: 0;
+  }
+
+  header{
+  	display: none;
   }
 
   .no_print {
