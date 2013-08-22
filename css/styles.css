@@ -371,7 +371,7 @@ img {
   }
 
   img {
-    width: 300px;
+    width: 400px;
     height: auto;
     text-align:center;
     margin-left: 0em;
@@ -403,6 +403,14 @@ img {
 
   #main_name_print{
     display: none;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+    text-align:center;
+    margin-left: 0em;
+    margin-right: 0em;
   }
 }
 
