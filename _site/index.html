@@ -1,273 +1,175 @@
 <!doctype html>
 <html>
-	<head profile="http://www.w3.org/2005/10/profile">
-		<link rel="icon" type="image/png" href="files/favicon.png">
+	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<meta http-equiv=”Page-Enter” content=”blendtrans(duration=2.0)”>
-		<title>Josh Wainwright</title>
+		<title> Home | Josh Wainwright</title>
 
-		<link rel="stylesheet" href="stylesheets/styles.css">
-		<!-- <link rel="stylesheet" href="stylesheets/font-awesome.min.css"> -->
-		<!-- <link rel="stylesheet" href="font/fontawesome.css"> -->
-		<link rel="stylesheet" href="stylesheets/fontawesome.css">
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/fontawesome.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<script type="text/javascript" src="javascripts/customscript.js"></script>
-		<script type="text/javascript" src="javascripts/webtoolkit.md5.js"></script>
-		<script type="text/javascript">
-			<!--
-			var BrowserDetect = {
-				init: function () {
-					this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
-					this.version = this.searchVersion(navigator.userAgent)
-						|| this.searchVersion(navigator.appVersion)
-						|| "an unknown version";
-					this.OS = this.searchString(this.dataOS) || "an unknown OS";
-				},
-				searchString: function (data) {
-					for (var i=0;i<data.length;i++)	{
-						var dataString = data[i].string;
-						var dataProp = data[i].prop;
-						this.versionSearchString = data[i].versionSearch || data[i].identity;
-						if (dataString) {
-							if (dataString.indexOf(data[i].subString) != -1)
-								return data[i].identity;
-						}
-						else if (dataProp)
-							return data[i].identity;
-					}
-				},
-				searchVersion: function (dataString) {
-					var index = dataString.indexOf(this.versionSearchString);
-					if (index == -1) return;
-					return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
-				},
-				dataBrowser: [
-					{
-						string: navigator.userAgent,
-						subString: "Chrome",
-						identity: "Chrome"
-					},
-					{ 	string: navigator.userAgent,
-						subString: "OmniWeb",
-						versionSearch: "OmniWeb/",
-						identity: "OmniWeb"
-					},
-					{
-						string: navigator.vendor,
-						subString: "Apple",
-						identity: "Safari",
-						versionSearch: "Version"
-					},
-					{
-						prop: window.opera,
-						identity: "Opera",
-						versionSearch: "Version"
-					},
-					{
-						string: navigator.vendor,
-						subString: "iCab",
-						identity: "iCab"
-					},
-					{
-						string: navigator.vendor,
-						subString: "KDE",
-						identity: "Konqueror"
-					},
-					{
-						string: navigator.userAgent,
-						subString: "Firefox",
-						identity: "Firefox"
-					},
-					{
-						string: navigator.vendor,
-						subString: "Camino",
-						identity: "Camino"
-					},
-					{		// for newer Netscapes (6+)
-						string: navigator.userAgent,
-						subString: "Netscape",
-						identity: "Netscape"
-					},
-					{
-						string: navigator.userAgent,
-						subString: "MSIE",
-						identity: "Explorer",
-						versionSearch: "MSIE"
-					},
-					{
-						string: navigator.userAgent,
-						subString: "Gecko",
-						identity: "Mozilla",
-						versionSearch: "rv"
-					},
-					{ 		// for older Netscapes (4-)
-						string: navigator.userAgent,
-						subString: "Mozilla",
-						identity: "Netscape",
-						versionSearch: "Mozilla"
-					}
-				],
-				dataOS : [
-					{
-						string: navigator.platform,
-						subString: "Win",
-						identity: "Windows"
-					},
-					{
-						string: navigator.platform,
-						subString: "Mac",
-						identity: "Mac"
-					},
-					{
-						   string: navigator.userAgent,
-						   subString: "iPhone",
-						   identity: "iPhone/iPod"
-				    },
-					{
-						string: navigator.platform,
-						subString: "Linux",
-						identity: "Linux"
-					}
-				]
-
-			};
-			BrowserDetect.init();
-
-			// -->
-			</script>
 	</head>
 	<body>
-		<div class="wrapper" id="wrapper">
+		<div class="wrapper">
 			<header>
-				<a href="http://jaw42.github.com/"><h1 id="main_name">Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
-					<p></p>
+				<a href="http://jaw42.github.io/"><h1 id="main_name">Josh Wainwright</a> <a href="/index.html"><i style="font-size:15px"; class="icon-home"></i></h1></a>
 
-					<p class="view"><a href="javascript:showOverlay();">University</a></p>
-					<p><a href="resume.html">Resume</a></p>
-					<p><a href="calendar.html">Calendar</a></p>
-					<p><a href="unix.html">GNU/Linux</a></p>
-					<p><a href="bookmarks.html">Bookmarks</a></p>
-					<p><a href="blog.html">Blog</a> | <a href="http://www.blogger.com/blogger.g?blogID=8468652211767662962#overview">Blogger</a> | <a href="http://www.blogger.com/blogger.g?blogID=8468652211767662962#editor/src=dashboard">New Post</a></p>
-					<p><a href="ace.html">Ace</a> | <a href="http://paste.xinu.at/">FileBin</a> | <a href="https://write-box.appspot.com/">Write-Box</a></p>
-					<p><a href="typography.html">Typography</a></p>
-					<p><a href="password.html">Login</a></p>
-					<p><span onclick="document.getElementById('wrapper').style.cssText = 'width:auto;';document.getElementById('section').style.cssText = 'width:calc(100% - 280px);';"><i class="icon-resize-horizontal icon-large"></i> Increase</span>
-					<span onclick="document.getElementById('wrapper').style.cssText = 'width:860px;';"> | Restore</span></p>
+				<p></p>
+				<ul class="menu">
+	
+		
+			
+				<li><a href="/index.html">Home</a></li>
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+				<li><a href="/unix/index.html">Unix</a></li>
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		  <!-- page-category -->
+	
+		
+			
+				<li><a href="/blog.html">Blog</a></li>
+			
+		  <!-- page-category -->
+	
+</ul>
+
+
 			</header>
-				<div id="overlay"></div>
-				<div id="overlay-pass" onload="FocusOnInput()">
-					<SCRIPT>
-						function passWord() {
-							var pass1 = document.getElementById('myField').value;
-							var md5 = MD5(pass1);
-							if (md5.toLowerCase() == "954207b9903c9744be764e0885407460") {
-								location.href = "university.html";
-							}else{
-								alert('Password Incorrect, Please Try Again.');
-							}
-							return " ";
-						}
-					</SCRIPT>
-					<form action="">
-						<p>Login Password</p>
-						<input type="password" id="myField" name="decoded" value="" onkeyup="this.form.hash.value=MD5(this.form.decoded.value)" onkeydown="if (event.keyCode == 13) passWord()" style="width: 25em;">
-						<p></p>
-						<p>Calculated MD5 hash <br>
-						<input type="text" name="hash" value="" style="width: 25em;"><br><br>
-						<input type="button" value="Continue" onClick="passWord()">
-						<input type="button" value="Cancel" onClick="hideOverlay()">
-						</p>
-					</form>
-				</div>
+			<section>
+				<h1 id='welcome'>Welcome</h1>
+<table class='menu'>
+<tr>
+<td class='icon'><a href='https://mail.google.com/mail/u/0/?shva=1#inbox'><i class='icon-envelope icon-large' /></a></td>
+<td><a href='https://mail.google.com/mail/u/0/?shva=1#inbox'>Mail</a></td>
+<td class='table_space' />
+<td class='icon'><a href='https://www.dropbox.com/home'><i class='icon-cloud-upload icon-large' /></a></td>
+<td><a href='https://www.dropbox.com/home'>Dropbox</a></td>
+</tr>
+<tr>
+<td class='icon'><a href='calendar.html'><i class='icon-calendar icon-large' /></a></td>
+<td><a href='calendar.html'>Calendar</a></td>
+<td class='table_space' />
+<td class='icon'><a href='https://mail.google.com/mail/u/0/?shva=1#inbox'><i class='icon-github icon-large' /></a></td>
+<td><a href='https://github.com/jaw42'>Github</a></td>
+</tr>
+<tr>
+<td class='icon'><a href='http://htmlpreview.github.io/?https://raw.github.com/jaw42/Rawdog/master/output.html'><i class='icon-rss icon-large' /></a></td>
+<td><a href='http://htmlpreview.github.io/?https://raw.github.com/jaw42/Rawdog/master/output.html'>Reader</a></td>
+<td class='table_space' />
+<td class='icon'><a href='bookmarks.html'><i class='icon-bookmark-empty icon-large' /></a></td>
+<td><a href='bookmarks.html'>Bookmarks</a></td>
+</tr>
+<tr>
+<td class='icon'><a href='https://play.google.com/music/listen'><i class='icon-headphones icon-large' /></a></td>
+<td><a href='https://play.google.com/music/listen'>Music</a></td>
+</tr>
+<tr>
+<td class='icon'><a href='http://google.com'><i class='icon-search icon-large' /></a></td>
+<td><a href='http://google.com'>Search</a></td>
+</tr>
+</table>
+<blockquote>
+<p>There are some oddities in the perspective with which we see the world. The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be, but we have done various things over intellectual history to slowly correct some of our misapprehensions.</p>
+</blockquote>
 
+<p>Douglas Adams</p>
 
-			<section id="section">
-				<h1>Welcome</h1>
+<h2 id='another_quote'>Another Quote</h2>
 
-				<div class="clock">
-					<span  id="spanTime"></span>
-					<a href="http://en.wikipedia.org/wiki/Unix_time" style="color:#777"><span style="font-size:20px;" id="spanPOSIX"></span></a><br>
-					<p><span  id="spanDate"></span></p>
+<blockquote>
+<p>If you&#8217;d like to know, I can tell you that in your universe you move freely in three dimensions that you call space. You move in a straight line in a fourth, which you call time, and stay rooted to one place in a fifth, which is the first fundamental of probability. After that it gets a bit complicated, and there&#8217;s all sorts of stuff going on in dimensions thirteen to twenty-two that you really wouldn&#8217;t want to know about. All you really need to know for the moment is that the universe is a lot more complicated than you might think, even if you start from a position of thinking it&#8217;s pretty damn complicated in the first place. I can easily not say words like &#8216;damn&#8217; if it offends you.&#8221; &#8220;Say what you damn well like.</p>
+</blockquote>
 
-					<hr>
-					<script type="text/javascript">
-						<!--
-						document.write('<p class="accent">You\'re using ' + BrowserDetect.browser + ' ' + BrowserDetect.version + ' on ' + BrowserDetect.OS + '.</p>');
-						// -->
-					</script>
-				</div>
-				<div>
-					<hr>
+<p>Douglas Adams</p>
 
-					<table class="menu">
-						<tr>
-							<td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-envelope icon-large"></i></a></td>
-							<td><a href="https://mail.google.com/mail/u/0/?shva=1#inbox">Mail</a></td>
-							<td class="table_space"></td>
-							<td class="icon"><a href="https://www.dropbox.com/home"><i class="icon-cloud-upload icon-large"></i></a></td>
-							<td><a href="https://www.dropbox.com/home">Dropbox</a></td>
-						</tr>
-						<tr>
-							<td class="icon"><a href="calendar.html"><i class="icon-calendar icon-large"></i></a></td>
-							<td><a href="calendar.html">Calendar</a></td>
-							<td class="table_space"></td>
-							<td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-github icon-large"></i></a></td>
-							<td><a href="https://github.com/jaw42">Github</a></td>
-						</tr>
-						<tr>
-							<td class="icon"><a href="http://htmlpreview.github.io/?https://raw.github.com/jaw42/Rawdog/master/output.html"><i class="icon-rss icon-large"></i></a></td>
-							<td><a href="http://htmlpreview.github.io/?https://raw.github.com/jaw42/Rawdog/master/output.html">Reader</a></td>
-							<td class="table_space"></td>
-							<td class="icon"><a href="bookmarks.html"><i class="icon-bookmark-empty icon-large"></i></a></td>
-							<td><a href="bookmarks.html">Bookmarks</a></td>
-						</tr>
-						<tr>
-							<td class="icon"><a href="https://play.google.com/music/listen"><i class="icon-headphones icon-large"></i></a></td>
-							<td><a href="https://play.google.com/music/listen">Music</a></td>
-						</tr>
-						<tr>
-							<td class="icon"><a href="http://google.com"><i class="icon-search icon-large"></i></a></td>
-							<td><a href="http://google.com">Search</a></td>
-						</tr>
-					</table>
+<h2 id='code_blocks'>Code Blocks</h2>
 
-					<hr>
+<pre><code>#!/bin/bash
+echo &quot;Hello World!&quot;
+return 1</code></pre>
 
-					<p><i class="icon-quote-left icon-4x pull-left icon-muted"></i>There are some oddities in the perspective with which we see the world. The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be, but we have done various things over intellectual history to slowly correct some of our misapprehensions.</p>
-					<p class="quote">- Douglas Adams</p>
+<p>In id lorem est, in consectetur risus. Vestibulum et lectus vel velit convallis ullamcorper. Phasellus et felis et eros egestas tincidunt non sed leo. Morbi blandit elit eu nisi rutrum quis dictum nunc imperdiet. Nulla sit amet tortor vel metus faucibus placerat. Phasellus pretium facilisis est, at bibendum quam imperdiet vitae. Proin mi dolor, feugiat ac rhoncus sed, congue sit amet sapien. Aliquam non aliquam lectus.</p>
 
-					<p><i class="icon-quote-left icon-4x pull-left icon-muted"></i>"If you'd like to know, I can tell you that in your universe you move freely in three dimensions that you call space. You move in a straight line in a fourth, which you call time, and stay rooted to one place in a fifth, which is the first fundamental of probability. After that it gets a bit complicated, and there's all sorts of stuff going on in dimensions thirteen to twenty-two that you really wouldn't want to know about. All you really need to know for the moment is that the universe is a lot more complicated than you might think, even if you start from a position of thinking it's pretty damn complicated in the first place. I can easily not say words like 'damn' if it offends you." <br>"Say what you damn well like."</p>
-					<p class="quote">- Douglas Adams</p>
+<p>Aliquam a tellus lorem, at interdum enim. Maecenas mi purus, condimentum vitae porttitor ac, dictum sit amet augue. Aenean sed leo sit amet ipsum dignissim bibendum. Fusce magna turpis, malesuada quis aliquam ut, iaculis sit amet ligula. Phasellus porttitor tellus elit, et vulputate dolor. Pellentesque ut turpis ligula, gravida dignissim augue. Aenean pharetra adipiscing augue vel tincidunt. Proin metus tellus, sodales quis sodales elementum, dignissim ultrices dolor. Donec pretium lacinia risus in venenatis. Nulla a diam felis. Sed imperdiet rutrum lectus. Pellentesque rutrum sagittis quam eget bibendum.</p>
 
-					<p>In id lorem est, in consectetur risus. Vestibulum et lectus vel velit convallis ullamcorper. Phasellus et felis et eros egestas tincidunt non sed leo. Morbi blandit elit eu nisi rutrum quis dictum nunc imperdiet. Nulla sit amet tortor vel metus faucibus placerat. Phasellus pretium facilisis est, at bibendum quam imperdiet vitae. Proin mi dolor, feugiat ac rhoncus sed, congue sit amet sapien. Aliquam non aliquam lectus.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-					<p>Aliquam a tellus lorem, at interdum enim. Maecenas mi purus, condimentum vitae porttitor ac, dictum sit amet augue. Aenean sed leo sit amet ipsum dignissim bibendum. Fusce magna turpis, malesuada quis aliquam ut, iaculis sit amet ligula. Phasellus porttitor tellus elit, et vulputate dolor. Pellentesque ut turpis ligula, gravida dignissim augue. Aenean pharetra adipiscing augue vel tincidunt. Proin metus tellus, sodales quis sodales elementum, dignissim ultrices dolor. Donec pretium lacinia risus in venenatis. Nulla a diam felis. Sed imperdiet rutrum lectus. Pellentesque rutrum sagittis quam eget bibendum.</p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
+<h1 id='testing_headers'>Testing Headers</h1>
 
-					<script type="text/javascript">
-						var date = new Date();
-						var hours = date.getHours();
-						var minutes = date.getMinutes();
-						var seconds = date.getSeconds();
-						var formattedTime = hours + ':' + minutes + ':' + seconds;
-						document.getElementById("spanTime").innerHTML = formattedTime;
-						var now = new Date();
-						document.getElementById("spanPOSIX").innerHTML = now.getTime();
+<p>Here, we shall test some of the headers availible from markdown syntax.</p>
 
-						var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-						var today = new Date();
-						document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
-					</script>
-				</div>
+<ul>
+<li>Some bullet points</li>
 
+<li>I think</li>
+</ul>
+
+<h1 id='heading_number_1'>Heading Number 1</h1>
+
+<p>h1 header</p>
+
+<h2 id='heading_number_2'>Heading Number 2</h2>
+
+<p>h2 header</p>
+
+<h3 id='heading_number_3'>Heading Number 3</h3>
+
+<p>h3 header</p>
+
+<h4 id='heading_number_4'>Heading Number 4</h4>
+
+<p>h4 header</p>
+
+<h5 id='heading_number_5'>Heading Number 5</h5>
+
+<p>h5 header</p>
+
+<h6 id='heading_number_6'>Heading Number 6</h6>
+
+<p>h6 header</p>
 			</section>
 			<footer>
 			</footer>
 		</div>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	</body>
 </html>
