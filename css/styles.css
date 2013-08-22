@@ -369,6 +369,14 @@ img {
   .width_control{
     display: none;
   }
+
+  img {
+    width: 300px;
+    height: auto;
+    text-align:center;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -442,6 +450,15 @@ img {
   #main_name_print{
     display: none;
   }
+
+  img {
+    width: 200px;
+    height: auto;
+    text-align:center;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
 }
 
 @media print {
