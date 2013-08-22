@@ -1,0 +1,8 @@
+name: "Website"
+description: "Where I put things"
+
+url: "http://localhost:4000"
+
+permalinks: pretty
+
+category-list: [index,unix,scripts]

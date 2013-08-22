@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title> New Posts with Jekyll | Josh Wainwright</title>
+
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/fontawesome.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="http://jaw42.github.io/"><h1 id="main_name">Josh Wainwright</a> <a href="/index.html"><i style="font-size:15px"; class="icon-home"></i></h1></a>
+
+				<p></p>
+				<ul class="menu">
+	
+		
+			
+				<li><a href="/index.html">Home</a></li>
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+				<li><a href="/unix/index.html">Unix</a></li>
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		  <!-- page-category -->
+	
+		
+			
+				<li><a href="/blog.html">Blog</a></li>
+			
+		  <!-- page-category -->
+	
+</ul>
+
+				<p></p>
+
+				<ul class="blog_info">
+					<li>Recent Posts</li>
+					<ul>
+						
+							<li><a href="/2013/08/22/easyworship-alternatives-for-linux.html">EasyWorship Alternatives for Linux</a></li>
+						
+							<li><a href="/2013/08/21/todo-with-todo.txt.html">Todo with todo.txt</a></li>
+						
+							<li><a href="/2013/08/21/youtube-viewer.html">youtube-viewer</a></li>
+						
+							<li><a href="/2013/08/21/new-post-with-jekyll.html">New Posts with Jekyll</a></li>
+						
+							<li><a href="/2013/08/20/various-video-software.html">Various Video Softwares</a></li>
+						
+							<li><a href="/2013/08/20/big-day-end-of-subl.html">Big Day - End of subl</a></li>
+						
+							<li><a href="/2013/08/19/setting-up-jekyll.html">Setting up Jekyll</a></li>
+						
+							<li><a href="/2013/08/19/first-blog-with-jekyll.html">First Post With Jekyll</a></li>
+						
+					</ul>
+
+					<li>Tags</li>
+					<ul>
+						
+							<li>jekyll</li>
+						
+							<li>bash</li>
+						
+					</ul>
+				</ul>
+
+			</header>
+			<section>
+				<h1 class="blog_title">New Posts with Jekyll</h1>
+				<p>Jekyll makes writing blog posts extremely easy, as I&#8217;m <a href=''>discovering</a>, but to aid just that small amount more, I decided to use a short script to create the starting file that will be filled with the post entry.</p>
+
+<p>I used a script from <a href='http://nateeagle.com/2011/09/21/easier-post-creation-for-jekyll-with-bash/'>Nate Eagle</a> to start from and have just made a couple of changes - to make the script easier to read, and to add the creation date to the yaml front matter.</p>
+
+<pre><code>#!/bin/bash
+# Create a new post with today&#39;s date and prompt for the title.
+
+# Config
+editor=&quot;vim&quot;
+format=&quot;md&quot;
+
+# Get layout via getopts (-l)
+while getopts &quot;:l:&quot; opt; do
+	case $opt in
+    	l)
+        	layout=$OPTARG
+        	;;
+    	:) echo &quot;$opt requires an argument&quot; &gt;&amp;2
+        	exit 1
+        	;;
+	esac
+done
+
+# Set default config values
+: ${layout:=&quot;blog&quot;}
+
+
+# I like giving myself a polite greeting.
+echo &quot;---&quot;
+echo &quot;Creating a new ${layout} for&quot; `date +%A&quot;, &quot;%B&quot; &quot;%e&quot;, &quot;%Y`&quot;.&quot;
+echo &quot;&quot;
+read -p &quot;Enter the title: &quot; title
+
+# Turn spaces into dashes
+for word in $title
+do
+	dashedTitle=${dashedTitle}-${word}
+done
+
+# Convert title to lowercase
+dashedTitle=&quot;`echo ${dashedTitle} | tr &#39;[A-Z]&#39; &#39;[a-z]&#39;`&quot;
+
+# Create a filename with the date, dashed title, and format
+filename=&quot;`date +%Y-%m-%d`${dashedTitle}.${format}&quot;
+
+# Get current date and time
+date=&quot;`date &#39;+%Y-%m-%d %T&#39;`&quot;
+
+echo $filename
+
+touch $filename
+
+# Add initial YAML to the top of the new bit
+echo &quot;---&quot; &gt;&gt; $filename
+echo &quot;layout: ${layout}&quot; &gt;&gt; $filename
+echo &quot;date: ${date}&quot; &gt;&gt; $filename
+echo &quot;catagories: &quot; &gt;&gt; $filename
+echo &quot;title: \&quot;${title}\&quot;&quot; &gt;&gt; $filename
+echo &quot;---&quot; &gt;&gt; $filename
+echo &quot;&quot; &gt;&gt; $filename
+
+# Open in vim and go to the end of the file ( + )
+${editor} + $filename</code></pre>
+
+				<a NAME="bottom"></a>
+				<p><i>Published 2013-08-21 01:38:24 +0100</i></p>
+					<div id="disqus_thread"></div>
+						<script type="text/javascript">
+							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+							var disqus_shortname = 'jaw42'; // required: replace example with your forum shortname
+
+							/* * * DON'T EDIT BELOW THIS LINE * * */
+							(function() {
+								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+			</section>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

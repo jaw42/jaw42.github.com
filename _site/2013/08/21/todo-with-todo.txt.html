@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title> Todo with todo.txt | Josh Wainwright</title>
+
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/fontawesome.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="http://jaw42.github.io/"><h1 id="main_name">Josh Wainwright</a> <a href="/index.html"><i style="font-size:15px"; class="icon-home"></i></h1></a>
+
+				<p></p>
+				<ul class="menu">
+	
+		
+			
+				<li><a href="/index.html">Home</a></li>
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+				<li><a href="/unix/index.html">Unix</a></li>
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		
+			
+		  <!-- page-category -->
+	
+		  <!-- page-category -->
+	
+		
+			
+				<li><a href="/blog.html">Blog</a></li>
+			
+		  <!-- page-category -->
+	
+</ul>
+
+				<p></p>
+
+				<ul class="blog_info">
+					<li>Recent Posts</li>
+					<ul>
+						
+							<li><a href="/2013/08/22/easyworship-alternatives-for-linux.html">EasyWorship Alternatives for Linux</a></li>
+						
+							<li><a href="/2013/08/21/todo-with-todo.txt.html">Todo with todo.txt</a></li>
+						
+							<li><a href="/2013/08/21/youtube-viewer.html">youtube-viewer</a></li>
+						
+							<li><a href="/2013/08/21/new-post-with-jekyll.html">New Posts with Jekyll</a></li>
+						
+							<li><a href="/2013/08/20/various-video-software.html">Various Video Softwares</a></li>
+						
+							<li><a href="/2013/08/20/big-day-end-of-subl.html">Big Day - End of subl</a></li>
+						
+							<li><a href="/2013/08/19/setting-up-jekyll.html">Setting up Jekyll</a></li>
+						
+							<li><a href="/2013/08/19/first-blog-with-jekyll.html">First Post With Jekyll</a></li>
+						
+					</ul>
+
+					<li>Tags</li>
+					<ul>
+						
+							<li>todo.txt</li>
+						
+							<li>productivity</li>
+						
+							<li>utf8</li>
+						
+					</ul>
+				</ul>
+
+			</header>
+			<section>
+				<h1 class="blog_title">Todo with todo.txt</h1>
+				<p>I use the, somewhat, infamous todo list manager <a href='http://todo.txt'>todo.txt</a> to manage my todo list. <code>todo.txt</code> is more of a philosphy, or maybe even just a syntax, for making it easy to share your todo list around, using different programs on different devices such that they all have a single purpose and method of handling your list.</p>
+
+<p>The key ingreident is that the todo list should be nothing more than a flat text file with one todo item per line. That may seem obvious, or a little trite, but it makes a huge difference when you use an (almost[<a href='#bottom'>1</a>]) universally opperable format, then chuck that file in a Dropbox folder and are able to open, view, edit and share that same file from anywhere with an internet connection.</p>
+
+<p>My recent forray into getting my todo list under control involved keeping track of how long it takes to complete tasks. By default, when you invoke it, the todo list is presented, on the linux commandline, as</p>
+
+<pre><code>$todo.sh
+1 Go shopping
+2 (A) Phone mum
+3 (C) Buy petrol
+--
+TODO: 3 of 3 tasks shown</code></pre>
+
+<p>Simple. The letter in the brackets is an optional priority marker and the number is the way you refer to different tasks. So to mark task 1 as complete:</p>
+
+<pre><code>$todo.sh do 1
+1 x 2013-08-21 Go shopping
+TODO: 1 marked as done.
+x 2013-08-21 Go shopping
+TODO /home/----/.todo/todo.txt archived.
+
+$todo.sh
+1 (A) Phone mum
+2 (C) Buy petrol
+--
+TODO: 2 of 2 tasks shown</code></pre>
+
+<p>That is showing that task 1 has been marked as done and then moved into the archive file. When you show the list again, the tasks have moved up and are ready to be completed.</p>
+
+<p>When you look in the archive file, you&#8217;ll see, as is shown breifly above, that each completed task is prepended with the date it was completed. This can be might useful for looking back to find when you did something. But I wanted a way to add the date the task was created.</p>
+
+<p>After far too long looking about, I found that, with the help of</p>
+
+<pre><code>$todo.sh help</code></pre>
+
+<p>you can use the <code>-t</code> flag to automatically add the date you create a task to the task itself. Now, if I need to, I can go to the archive file and see a list of all my completed tasks with the date created and date completed. One minus the other gives the length of time required to do that job.</p>
+<div class='highlight'><pre><code class='ruby'><span class='k'>def</span> <span class='nf'>foo</span>
+  <span class='nb'>puts</span> <span class='s1'>&#39;foo&#39;</span>
+<span class='k'>end</span>
+</code></pre></div><hr />
+<h4 id='notes'>Notes</h4>
+
+<p>I say almost because there is still the possibility of encoding differences. I recently ran into a problem parsing a text file because it was generated by a server running windows and so was in UTF-16 not <a href='www.utf8everywhere.org/'>UTF-8</a>.</p>
+
+				<a NAME="bottom"></a>
+				<p><i>Published 2013-08-21 13:14:27 +0100</i></p>
+					<div id="disqus_thread"></div>
+						<script type="text/javascript">
+							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+							var disqus_shortname = 'jaw42'; // required: replace example with your forum shortname
+
+							/* * * DON'T EDIT BELOW THIS LINE * * */
+							(function() {
+								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+			</section>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

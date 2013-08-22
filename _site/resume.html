@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>Josh Wainwright</title>
+
+		<link rel="stylesheet" href="stylesheets/styles.css">
+		<link rel="stylesheet" href="stylesheets/fontawesome.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1,
+		user-scalable=no">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="javascripts/customscript.js"></script>
+		<style>
+			.floatingHeader {
+				position: fixed;
+				top: 0px;
+				visibility: hidden;
+				color: #999;
+			}
+		</style>
+		<script>
+			function UpdateTableHeaders() {
+				$(".persist-area").each(function() {
+					var el			  = $(this),
+						offset		  = el.offset(),
+						scrollTop	  = $(window).scrollTop(),
+						floatingHeader = $(".floatingHeader", this)
+
+					if ((scrollTop > offset.top) && (scrollTop < offset.top +
+									el.height())) {
+						floatingHeader.css({
+						"visibility": "visible"
+					});
+					} else {
+						floatingHeader.css({
+						"visibility": "hidden"
+						});
+					};
+				});
+			}
+
+			// DOM Ready
+			$(function() {
+				var clonedHeaderRow;
+					$(".persist-area").each(function() {
+						clonedHeaderRow = $(".persist-header", this);
+						clonedHeaderRow
+						.before(clonedHeaderRow.clone())
+						.css("width", clonedHeaderRow.width())
+						.addClass("floatingHeader");
+					});
+				$(window)
+					.scroll(UpdateTableHeaders)
+					.trigger("scroll");
+			});
+
+			function generatePDF(){
+				var conv = new ActiveXObject("pdfServMachine.converter");
+				conv.convert("http://www.google.com", "/home/josh/google.pdf", false);
+				WScript.Echo("finished conversion");
+			}
+		</script>
+
+	</head>
+	<body>
+		<div class="wrapper" id="wrapper">
+			<header>
+				<a href="http://jaw42.github.com/"><h1 id="main_name">Josh Wainwright <i
+										style="font-size:15px;" class="icon-home"></i></h1></a>
+					<p></p>
+
+					<p class="view"><a onclick="toggle_visibility('qualifications-menu');"
+							class="smoothScroll" href="#qualifications">Qualifications</a></p>
+						<div id="qualifications-menu" style="display: none">
+							<p>&emsp;<a class="smoothScroll" href="#third_year">Current -
+									Degree</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#second_year">2012 -
+									Degree</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#first_year">2011 -
+									Degree</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#school">2011 -
+									School</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#first_aid">2012 - First
+									Aid</a></p>
+						</div>
+
+					<p class="view"><a onclick="toggle_visibility('employment-menu');"
+							class="smoothScroll" href="#employment">Employment</a></p>
+						<div id="employment-menu" style="display: none">
+							<p>&emsp;<a class="smoothScroll" href="#tour">Current - University
+									Tour Guide</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#detica">2012 - BAESystems
+									Detica</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#golf_shop">2011 - Shop
+									Assistant</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#primary_school">2007, 2011
+									- Work Experience</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#volunteering">2006 - 2010
+									- Volunteering</a></p>
+							<p>&emsp;<a class="smoothScroll" href="#prefect">2007 - 2008 -
+									School Prefect</a></p>
+						</div>
+
+					<p><a class="smoothScroll" href="#interests">Interests</a></p>
+
+					<p><a class="smoothScroll" href="#other">Other Information</a></p>
+
+					<p><a class="smoothScroll" href="#references">References</a></p>
+
+					<p><a href="files/Josh_Wainwright_Resume.pdf"><i
+									class="icon-double-angle-down"></i> Download PDF</a></p>
+			</header>
+			<section id="section">
+				<div class="persist-area">
+				<h2 id="main_name_print">Josh Wainwright</h2>
+				<h2 id="name" class="persist-header">Personal Details</h2>
+					<div>
+						<dl>
+							<dt>Email</dt>
+								<dd><a
+										href="mailto:wainwright.ja@gmail.com">wainwright.ja@gmail.com</a></dd>
+							<dt>Address</dt>
+								<div class="second_address">
+									<dd class="address-type">(Term Time)</dd>
+									<dd>16 Seymore Close</dd>
+									<dd>Selly Oak</dd>
+									<dd>Birmingham</dd>
+									<dd>B29 6BP</dd>
+								</div>
+								<div class="first_address">
+									<dd class="address-type">(Holiday Time)</dd>
+									<dd>11 Green Meadows</dd>
+									<dd>Danbury</dd>
+									<dd>Essex</dd>
+									<dd>CM3 4LD</dd>
+								</div>
+							<dt>Telephone</dt>
+								<dd>07933 776025</dd>
+							<dt>Date of Birth</dt>
+								<dd>29th September, 1991</dd>
+						</dl>
+					</div>
+					<hr>
+				</div>
+
+				<div class="persist-area">
+				<h2 id="qualifications" class="persist-header">Qualifications</h2>
+					<!--<div id="compsci" class="scrollpast">
+						<dl>
+							<dt>
+								<dt>Current: University of Birmingham - Computer Science
+								MSci</dt>
+							</dt>
+						</dl>
+					</div>-->
+					<div id="third_year" class="scrollpast">
+						<dl>
+							<dt>2013: University of Birmingham - Physics and Astronomy BSc
+							2:1</dt>
+							<ul>
+								<li>Third year modules included Computational Modelling of
+								Physical Systems, Digital Image Processing, Physics Teaching in
+								Schools, Formation and Evolution of Galaxies and Atomic
+								Physics</li>
+								<li>Second year modules included Nuclear Physics, Quantum and
+								Classical Mechanics, Advanced Mathematics, Electromagnetism and
+								Statistical Physics</li>
+								<li>First year modules included Optics and Waves, Quantum and
+								Classical mechanics, Mathematics, Electronics and Electric
+								circuits and Temperature and Material Properties.</li>
+							</ul>
+							<dd>Degree also included practical laboratory work, computing
+								and programming, teamwork and presentation and communication
+								skills.</dd>
+								<dd>I acted as editor and contributor for a major group project
+								in 3rd year. Involved extensive research on a previously unknown
+								subject, Timescale for Reionization in the Early Universe,
+								original calculations and a presentation and detailed final
+								report produced by the team.</dd>
+						</dl>
+					</div>
+					<div id="school" class="scrollpast">
+						<dl>
+						<dt>2010: The Sandon School</dt>
+							<dl>
+								<dt>A-Levels</dt>
+									<dd>Physics A; Mathematics A; Chemistry B.</dd>
+								<dt>AS-Levels</dt>
+									<dd>Further Mathematics A; Biology A.</dd>
+								<dt>GCSEs</dt>
+									<dd>Seven grade A* (including Mathematics, Physics, Chemistry
+									and English literature); four grade A (including English
+									Language and Biology) and one grade B.</dd>
+							</dl>
+						</dl>
+					</div>
+
+					<div id="first_aid" class="scrollpast">
+						<dl>
+							<dt>2012: ITC Emergency First Aid at Work and Outdoor Incident
+							Management</dt>
+								<dd>Completed two day first aid course which involved minor and
+								major injuries, incident management and emergency CPR for both
+								the work environment and more difficult outdoor situations.</dd>
+						</dl>
+					</div>
+					<hr>
+				</div>
+
+				<div class="persist-area">
+				<h2 id="employment" class="persist-header">Employment</h2>
+					<div id="third_year">
+						<dl>
+							<dt id="detica" class="scrollpast">2012 - BAESystems Detica</dt>
+								<dd>Worked with an experienced web development team for a large
+								bussiness client for the summer. I developed a program to
+								streamline and increase the efficiency of web development within
+								the team.</dd>
+								<dd>The work involved consulting with the member of the team to
+								design the program to be as useful and focused as possible. I
+								also atteded meeting and </dd>
+							</dt>
+							<dt id="tour" class="scrollpast">2010 - 2013 - University
+							Representative Tour Guide</dt>
+								<dd>Involved giving tours to prospective students to university,
+								leading a group on a tour of the campus, answering questions and
+								spending time talking to students and parents.</dd>
+							</dt>
+							<dt id="golf_shop" class="scrollpast">2007 - 2010 - Shop
+							Assistant</dt>
+								<dd>Worked in a golf equipment and accessories shop and driving
+								range; participating in the giving of advice and the selling of
+								golf equipment and accessories to the public.</dd>
+							</dt>
+							<dt id="primary_school" class="scrollpast">2007, 2011 - Work
+							Experience</dt>
+								<dd>Worked at a local primary school assisting staff and
+								teaching pupils in a number of aged classes. Worked closely with
+								a number of staff members demonstrating ability to cooperate
+								easily and effectively with experienced workers and to
+								contribute to the running of a busy environment.</dd>
+							</dt>
+							<dt id="volunteering" class="scrollpast">2006 - present -
+							Volunteering</dt>
+								<dd>Helping out at holiday youth club, working with large
+								numbers of children of various ages and assisting in organising
+								and running different activities on a day to day basis. Included
+								interacting with children, parents and colleagues, and dealing
+								with technical equipment used throughout the sessions (eg video
+								camera, audio visual equipment and lighting rigs).</dd>
+							</dt>
+						</dl>
+					</div>
+					<hr>
+				</div>
+
+				<div class="persist-area">
+				<h2 id="interests" class="persist-header">Interests</h2>
+					<div id="interests">
+						<dl>
+							<dt>Computing</dt>
+								<dd>Am an advanced and interested user of a full range of
+								operating systems, with a particular understanding and interest
+								with Linux, and confident user of the LATEX typesetting
+								language. I have experience with C++, Java, FLTK, HTML, Bash and
+								Git. Am confident with all office applications and have
+								experience with MatLab, GNUPlot and various scientific computing
+								libraries, eg GSL, Root(CERN).</dd>
+							<dt>Judo</dt>
+								<dd>Trained for a number of years achieving an upper brown belt
+								(one before black) and competed on several occasions in regional
+								and inter-regional competitions. Also assisted other judokas,
+								both younger and older of varying grades and abilities, with
+								teaching and coaching as well as leading warm up and training
+								sessions.</dd>
+							<dt>Hockey</dt>
+								<dd>Helped with the running of a hockey club at school for
+								younger years.</dd>
+							<dt>Swimming</dt>
+								<dd>Achieved Bronze Medallion Life Saving Certificate (incl.
+								CPR).</dd>
+							<dt>Music</dt>
+								<dd>Taught myself piano and guitar. I am now at the standard
+								where I can confidently play the piano with others playing a
+								range of different instruments in the church service.</dd>
+							<dt>BSL</dt>
+								<dd>Currently taking a British Sign Language (BSL) course in my
+								spare time as this is something that has interested me for some
+								time and as I did not pursue languages academically is an area
+								of experience I would like to broaden.</dd>
+							<dt>Walking</dt>
+								<dd>I am also currently taking a walking qualification in summer
+								mountain walk leading (ML). This involves leading and overseeing
+								walks at high altitudes in all weathers, being responsible for a
+								group of mixed age walkers and having sufficient first aid
+								qualifications to cope with any negative situation that might
+								occur.</dd>
+						</dl>
+					</div>
+					<hr>
+				</div>
+
+				<div class="persist-area">
+				<h2 id="other" class="persist-header">Other Information</h2>
+					<div id="other">
+						<dl>
+							<dt>Driving Licence</dt>
+								<dd>Full, Clean UK Licence.</dd>
+						</dl>
+					</div>
+					<hr>
+				</div>
+
+				<div class="persist-area">
+				<h2 id="references" class="persist-header">References</h2>
+					<div id="references">
+						<dl>
+							<dt>References</dt>
+								<dd>Academic and personal references are available upon
+								request</dd>
+						</dl>
+					</div>
+					<hr>
+				</div>
+				<div class="no_print" style="margin-bottom: 90vh"></div>
+			</section>
+			<footer>
+			</footer>
+		</div>
+		<!-- <script src="javascripts/scale.fix.js"></script> -->
+		<!-- <script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		-->
+		<!-- <script type="text/javascript"
+src="javascripts/smoothscroll.js"></script> -->
+
+	</body>
+</html>

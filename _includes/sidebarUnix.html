@@ -1,0 +1,15 @@
+<ul class="menu">
+	<li><a href="/">Home</a></li>
+	<li><a href="/unix/">Unix</a></li>
+		<ul>
+		{% for page in site.pages %}
+			{% if page.unix == true %}
+				{% for pc in page.catagories %}
+					{% if pc == "unix" %}
+					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+					{% endif %}   <!-- cat-match-p -->
+				{% endfor %}  <!-- page-category -->
+			{% endif %}   <!-- resource-p -->
+		{% endfor %} <!-- page -->
+		</ul>
+</ul>

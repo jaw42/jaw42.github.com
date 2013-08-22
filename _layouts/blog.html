@@ -1,0 +1,66 @@
+---
+layout: nil
+---
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>{% if page.title %} {{ page.title }} | {% endif %}Josh Wainwright</title>
+
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/fontawesome.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				{% include nameHeader.html %}
+				<p></p>
+				{% include sidebarIndex.html %}
+				<p></p>
+
+				<ul class="blog_info">
+					<li>Recent Posts</li>
+					<ul>
+						{% for post in site.posts limit: 10 %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+
+					<li>Tags</li>
+					<ul>
+						{% for tag in page.tags %}
+							<li>{{ tag }}</li>
+						{% endfor %}
+					</ul>
+				</ul>
+
+			</header>
+			<section>
+				<h1 class="blog_title">{{ page.title }}</h1>
+				{{ content }}
+
+				<a NAME="bottom"></a>
+				<p><i>Published {{ page.date }}</i></p>
+					<div id="disqus_thread"></div>
+						<script type="text/javascript">
+							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+							var disqus_shortname = 'jaw42'; // required: replace example with your forum shortname
+
+							/* * * DON'T EDIT BELOW THIS LINE * * */
+							(function() {
+								var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+								dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+								(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+			</section>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+
+body {
+  padding:50px;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, sans-serif;
+  color:#777;
+  font-weight:300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+h1, h2 {
+  font-family: "Raleway";
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
+}
+
+.image{
+  width: 90px;
+  vertical-align:top;
+  transition: width 2s;
+  -moz-transition: width 2s; /* Firefox 4 */
+  -webkit-transition: width 2s; /* Safari and Chrome */
+  -o-transition: width 2s; /* Opera */
+}
+.image:target{
+  width: 400px;
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    padding:30px;
+  }  
+  .image:target{
+    width: 60%;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:0px;
+  }  
+  .image:target{
+    width: 80%;
+  }
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title> Open | Josh Wainwright</title>
+
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/fontawesome.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<a href="http://jaw42.github.io/"><h1 id="main_name">Josh Wainwright</a> <a href="/index.html"><i style="font-size:15px"; class="icon-home"></i></h1></a>
+
+				<p></p>
+
+				<ul class="menu">
+	<li><a href="/">Home</a></li>
+	<li><a href="/unix/">Unix</a></li>
+	<ul>
+		<li><a href="/unix/scripts/">Scripts</a></li>
+			<ul>
+			
+				   <!-- resource-p -->
+			
+				
+					
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				   <!-- resource-p -->
+			
+				
+					
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				
+					
+						
+						<li><a href="/unix/scripts/dwmstatus.html">dwm Status</a></li>
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				
+					
+						
+						<li><a href="/unix/scripts/potdwp.html">POTDWP</a></li>
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				
+					
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				
+					
+						
+						<li><a href="/unix/scripts/latextidy.html">LatexTidy</a></li>
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				
+					
+						
+						<li><a href="/unix/scripts/arandr.html">Arandr</a></li>
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				
+					
+						
+						<li><a href="/unix/scripts/open.html">Open</a></li>
+						   <!-- cat-match-p -->
+					  <!-- page-category -->
+				   <!-- resource-p -->
+			
+				   <!-- resource-p -->
+			
+				   <!-- resource-p -->
+			 <!-- page -->
+			</ul>
+	</ul>
+</ul>
+
+
+			</header>
+			<section>
+				<h1 id='open'>Open</h1>
+
+<p>While introducing a friend to GNU/Linux, he got frustrated trying to remember what program opens what type of file and asked &#8220;Why can&#8217;t I just type <code>open</code>? Thats all I want to do.&#8221;</p>
+
+<p>This isn&#8217;t the reason I made this scripts, but it serves that purpose to. This is a <em>universal open</em> script. Basically, for the majority of standard filetypes, just type <code>open fileName</code> and it will use the configured program to open that file.</p>
+
+<p>The main use I have for this is for further scripting or for filemanagers and the like. I do a lot of flitting between software, when I find something interesting I install it, play around for a week or so, then decide if I like it or not. This file means that I can easily configure all those programs quickly. If it might want to open a file with a different program, just <code>open</code> and it&#8217;ll happen.</p>
+
+<p>This also means, for the more stable programs that I am accustomed to, that if a different program changes, I don&#8217;t have to go finding the right setting to change it, I just edit the script slightly.</p>
+
+<p>For example, in a file manager, I want to open a pdf file, instead of having to remember that I&#8217;m using <code>xpdf</code> or <code>Zathura</code> or <code>Evince</code>, I just remember <code>open</code>.</p>
+
+<p>This also means that when I inevitably change my pdf reader, I don&#8217;t have to change it everywhere I might want to open one, file manager1, filemanager2, email handler, etc.</p>
+
+<p>The script makes use of a feature of bash called <em>indrirection</em>. This basically means that the contents of a variable can be used as the name of another variable.</p>
+
+<pre><code>$ var=foo $ foo=bar $ echo ${!var} bar</code></pre>
+
+<p>This makes this script very extensible with no changes. The basic usage involves adding the filetype extensions you want to manage, along with the associated programs, at the top of the script and you&#8217;re away.</p>
+
+<p>When run, the script checks the extension of the file against the set extensions in the arrays set by the user. When it finds the right extension, it uses the array it found it in to define which program should be used to open/run that file. If the file has no extention, or the extension cannot be found or is not defined, the script will instead look at the <a href='https://en.wikipedia.org/wiki/Internet_media_type'>mime-type</a> and use that instead.</p>
+<a href='https://github.com/jaw42/bin/blob/master/open'>
+<i class='icon-cloud-download'> </i> Download</a>
+			</section>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>
