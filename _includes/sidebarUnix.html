@@ -1,15 +1,52 @@
 <ul class="menu">
-	<li><a href="/">Home</a></li>
-	<li><a href="/unix/">Unix</a></li>
-		<ul>
-		{% for page in site.pages %}
-			{% if page.unix == true %}
-				{% for pc in page.catagories %}
-					{% if pc == "unix" %}
-					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-					{% endif %}   <!-- cat-match-p -->
-				{% endfor %}  <!-- page-category -->
-			{% endif %}   <!-- resource-p -->
-		{% endfor %} <!-- page -->
-		</ul>
+	{% for page in site.pages %}
+		{% for pc in page.catagories %}
+			{% if pc == "index" %}
+				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+				{% if page.title == "Unix" %}
+					<ul>
+					{% for page in site.pages %}
+						{% if page.unix == true %}
+							{% for pc in page.catagories %}
+								{% if pc == "unix" %}
+									<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+									{% if page.url contains "/scripts/" %}
+										<ul>
+										{% for page in site.pages %}
+											{% if page.unix == true %}
+												{% for pc in page.catagories %}
+													{% if pc == "scripts" %}
+													<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+													{% endif %}   <!-- cat-match-p -->
+												{% endfor %}  <!-- page-category -->
+											{% endif %}   <!-- resource-p -->
+										{% endfor %} <!-- page -->
+										</ul>
+									{% endif %}
+								{% endif %}   <!-- cat-match-p -->
+							{% endfor %}  <!-- page-category -->
+						{% endif %}   <!-- resource-p -->
+					{% endfor %} <!-- page -->
+					</ul>
+				{% endif %}
+			{% endif %}
+		{% endfor %}  <!-- page-category -->
+	{% endfor %}
 </ul>
+
+
+{% if page.url contains "scripts" %}
+	<ul>
+	{% for page in site.pages %}
+		{% if page.unix == true %}
+			{% for pc in page.catagories %}
+				{% if pc == "scripts" %}
+				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+				{% endif %}   <!-- cat-match-p -->
+			{% endfor %}  <!-- page-category -->
+		{% endif %}   <!-- resource-p -->
+	{% endfor %} <!-- page -->
+	</ul>
+{% else %}
+	<p>Nope</p>
+{% endif %}

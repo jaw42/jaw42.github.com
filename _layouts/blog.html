@@ -28,12 +28,14 @@ layout: nil
 						{% endfor %}
 					</ul>
 
-					<li>Tags</li>
-					<ul>
-						{% for tag in page.tags %}
+					{% for tag in page.tags %}
+						{% if forloop.length != 0 and forloop.first %}
+							<li>Tags</li>
+						{% endif %}
+						<ul>
 							<li>{{ tag }}</li>
-						{% endfor %}
-					</ul>
+						</ul>
+					{% endfor %}
 				</ul>
 
 			</header>

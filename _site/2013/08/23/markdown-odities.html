@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title> Setting up Jekyll | Josh Wainwright</title>
+		<title> Markdown Odities | Josh Wainwright</title>
 
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="/css/fontawesome.css">
@@ -106,29 +106,75 @@
 							<li>Tags</li>
 						
 						<ul>
-							<li>jekyll</li>
+							<li>markdown</li>
 						</ul>
 					
 						
 						<ul>
-							<li>blogging</li>
+							<li>jekyll</li>
 						</ul>
 					
 				</ul>
 
 			</header>
 			<section>
-				<h1 class="blog_title">Setting up Jekyll</h1>
-				<p>So, it turns out that the initial setup of jekyll, getting it installed and at least running was easy. Whats rather more difficult is getting anything to play along with it.</p>
+				<h1 class="blog_title">Markdown Odities</h1>
+				<p>I&#8217;ve recetly been finding some strange behaviour in the way markdown in interpreted by Jekyll. It seems to be localised to lists, specifically nested lists one within the other. This was happening while I was working on a couple of pages of the main part of this website, I&#8217;ll see if its reproduced here.</p>
 
-<p>I can&#8217;t seem to work out the way it handles files that I want to include in a webpage structre. I shall continue looking into that tomorrow.</p>
+<p>This shall be a list:</p>
 
-<p>Now</p>
+<ul>
+<li>
+<p>Item number one</p>
+</li>
 
-<h2 id='bed'>Bed</h2>
+<li>
+<p>Item number two</p>
+
+<ul>
+<li>item number two part b</li>
+
+<li>item number two part c</li>
+</ul>
+</li>
+
+<li>
+<p>item number three</p>
+</li>
+</ul>
+
+<p>The code used above is as simple as it could be:</p>
+
+<pre><code>- Item number one
+- Item number two
+	- item number two part b
+	- item number two part c
+- item number three</code></pre>
+
+<p>Whats happening is that the list item, <code>&lt;li&gt;</code> is being placed with a paragraph, <code>&lt;p&gt;</code> within it, with the text inside that, instead of just the text inside the list item. This occurs when using tabs to indent the lines.</p>
+
+<p>If instead, 4 spaces are used to indent, the result is even worse:</p>
+
+<ul>
+<li>Item number one</li>
+
+<li>Item number two - item number two part b - item number two part c</li>
+
+<li>item number three</li>
+</ul>
+
+<p>Again, the code is super simple, identical to before but with tabs converted to spaces (<code>:%s/\t/    /g</code> in vim).</p>
+
+<pre><code>- Item number one
+- Item number two
+    - item number two part b
+    - item number two part c
+- item number three</code></pre>
+
+<p>I shall investigate why this is happening and update this post accordingly.</p>
 
 				<a NAME="bottom"></a>
-				<p><i>Published 2013-08-19 00:00:00 +0100</i></p>
+				<p><i>Published 2013-08-23 00:54:37 +0100</i></p>
 					<div id="disqus_thread"></div>
 						<script type="text/javascript">
 							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

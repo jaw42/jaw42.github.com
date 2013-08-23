@@ -30,6 +30,9 @@ title: Home
 <tr>
 <td class="icon"><a href="https://play.google.com/music/listen"><i class="icon-headphones icon-large"></i></a></td>
 <td><a href="https://play.google.com/music/listen">Music</a></td>
+<td class="table_space"></td>
+<td class="icon"><a href="/blog.html"><i class="icon-adjust icon-large"></i></a></td>
+<td><a href="/blog.html">Blog</a></td>
 </tr>
 <tr>
 <td class="icon"><a href="http://google.com"><i class="icon-search icon-large"></i></a></td>

@@ -1,5 +1,5 @@
-{% capture url_parts %} {{ page.url | replace:'/'," " }}{% endcapture %}
-{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
+{% capture url_parts %} {{ page.url | replace:'/'," " }} {% endcapture %}
+{% capture num_parts %} {{ url_parts | number_of_words | minus: 1 }} {% endcapture %}
 {% assign previous="" %}
 <style>
 ol.breadcrumbs{

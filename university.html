@@ -1,3 +1,9 @@
+---
+layout: nil
+catagories: [index]
+title: University
+---
+
 <!doctype html>
 <html>
 	<head>
@@ -19,7 +25,7 @@
 	<body>
 		<div class="wrapper">
 			<header>
-				<a href="http://jaw42.github.com/"><h1 id="main_name">Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
+				<a href="/index.html"><h1 id="main_name">Josh Wainwright <i style="font-size:15px"; class="icon-home"></i></h1></a>
 					<p></p>
 
 					<p class="view"><a href="#" onclick="toggle_visibility('physics-menu');" class="smoothScroll" href="#physics">Physics</a></p>
@@ -33,7 +39,7 @@
 							<p>&emsp;<a class="smoothScroll" onclick="visible('image');" href="#imageH">Image Processing</a> <a class="smoothScroll" href="#imageH" onclick="toggle_visibility('image');"> <i class="icon-double-angle-right"></i></a></p>
 
 							<p>&emsp;<a class="smoothScroll" onclick="visible('teaching');" href="#teachingH">Physics Teaching in Schools</a> <a class="smoothScroll" href="#teachingH" onclick="toggle_visibility('teaching');"> <i class="icon-double-angle-right"></i></a></p>
-							
+
                             <p>&emsp;<a class="smoothScroll" onclick="visible('galaxies');" href="#labsH">Formation of Galaxies</a> <a class="smoothScroll" href="#galaxiesH" onclick="toggle_visibility('galaxies');"> <i class="icon-double-angle-right"></i></a></p>
 						</div>
 					<p class="view"><a class="smoothScroll" href="#computers">Computer Science</a></p>
@@ -48,9 +54,9 @@
 					<p>Physics and Astronomy: <a href="http://www.ph.bham.ac.uk/">www.ph.bham.ac.uk</a></p>
 					<p>WebCT: <a href="http://bham.blackboard.com/webct/cobaltMainFrame.dowebct">bham.blackboard.com/webct</a></p>
 					<p>These are some of the documents associated with my degree in Physics and Astronomy.</p>
-					
+
 					<h2>Term One</h2>
-					
+
 					<a href="#" onclick="toggle_visibility('compmod');" id="compmodH" ><h3>Computational Modelling of Physical Systems</h3></a>
 					<div id="compmod" style="display: none">
 						<table id="tfhover">
@@ -113,9 +119,9 @@
 							</tr>
 						</table>
 					</div>
-					
+
 					<h2>Term Two</h2>
-				
+
 					<a href="#" onclick="toggle_visibility('image');" id="imageH"><h3>Image Processing</h3></a>
 					<div id="image" style="display: none">
 						<table id="tfhover">
@@ -206,7 +212,7 @@
                             </tr>
 						</table>
 					</div>
-              
+
         <a href="#" onclick="toggle_visibility('galaxies');" id="galaxiesH"><h3>Formation and Evolution of Galaxies</h3></a>
 					<div id="galaxies" style="display: none">
 						<table id="tfhover">
@@ -216,7 +222,7 @@
 							</tr>
 						</table>
 					</div>
-					
+
 				<a href="#" onclick="toggle_visibility('group');" id="groupH"><h3>Group Studies</h3></a>
 					<div id="group" style="display: none">
 						<table id="tfhover">
@@ -234,7 +240,7 @@
 							</tr>
                          </table>
 					</div>
-              
+
 			<section>
 				<h2 id="computers" class=heading-not-first style="float:left;">Computer Science</h2>
 				<a href="http://www.cs.bham.ac.uk/internal/timetables/"><h2 class=heading-not-first style="color:#777; font-weight:bold; float:right "><i class="icon-calendar"></i></h2></a>
@@ -256,7 +262,7 @@
 						var now = new Date();
 						document.getElementById("spanPOSIX").innerHTML = now.getTime();
 
-						var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];  
+						var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 						var today = new Date();
 						document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
 					</script>
@@ -268,6 +274,6 @@
 		<!-- <script src="javascripts/scale.fix.js"></script> -->
 		<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 		<!-- <script type="text/javascript" src="javascripts/smoothscroll.js"></script> -->
-		
+
 	</body>
 </html>

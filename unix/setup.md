@@ -37,10 +37,10 @@ list of programs I use.
 	</tr>
 	<tr>
 		<td>Web Browser</td>
-		<td><a href="http://pwmt.org/projects/jumanji">Jumanji</a> - Very
+		<td><a href="http://portix.bitbucket.org/dwb/">dwb</a> - Very
 				fast light web browser built on the gtk2.0 webkit rendering
 		engine with support for plugins and considerable configuration.
-		Similar to dwb, uzbl, luakit.</td>
+		Similar to jumanji, uzbl, luakit.</td>
 		<td><a href="http://google.com/chrome">Google Chrome</a> - Fast
 				browser using Goodle's fork of Webkit, Blink, with builtin pdf
 		view and flash plugin. With sync to keep track of bookmarks settings
@@ -91,7 +91,9 @@ list of programs I use.
 	</tr>
 </table>
 
-##Others<a id="bottom"></a>
+
+##Others <a id="bottom"></a>
+
 <ul>
 <li>GUI Apps</li>
 <ul>
