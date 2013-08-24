@@ -1,6 +1,6 @@
 ---
 layout: blog
-date: 2013-08-22 23:54:37
+date: 2013-08-23 23:54:37
 tags: markdown jekyll
 title: "Markdown Odities"
 ---
