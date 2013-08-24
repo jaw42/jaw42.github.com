@@ -60,12 +60,6 @@ task itself. Now, if I need to, I can go to the archive file and see a list of
 all my completed tasks with the date created and date completed. One minus the
 other gives the length of time required to do that job.
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
 ---
 
 ####Notes

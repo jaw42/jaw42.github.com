@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title> Setting up Jekyll | Josh Wainwright</title>
+		<title> Watching Youtube in Mplayer | Josh Wainwright</title>
 
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="/css/fontawesome.css">
@@ -109,29 +109,65 @@
 							<li>Tags</li>
 						
 						<ul>
-							<li>jekyll</li>
+							<li>youtube</li>
 						</ul>
 					
 						
 						<ul>
-							<li>blogging</li>
+							<li>mplayer</li>
+						</ul>
+					
+						
+						<ul>
+							<li>script</li>
 						</ul>
 					
 				</ul>
 
 			</header>
 			<section>
-				<h1 class="blog_title">Setting up Jekyll</h1>
-				<p>So, it turns out that the initial setup of jekyll, getting it installed and at least running was easy. Whats rather more difficult is getting anything to play along with it.</p>
+				<h1 class="blog_title">Watching Youtube in Mplayer</h1>
+				<p>I have written previously about youtube-viewer and how it can be used to stream Youtube videos to your pc so that you can watch them without needing flash, or even the new HTML5 Youtube player.</p>
 
-<p>I can&#8217;t seem to work out the way it handles files that I want to include in a webpage structre. I shall continue looking into that tomorrow.</p>
+<p>After experiencing some serious internet slowness, I went through the help files and have added a couple of flags to my <code>yt</code> function from last time. Now, when I select a video to watch, it is downloaded using the quality that I specify, into a folder that I can then empty after watching the videos.</p>
 
-<p>Now</p>
+<p>The new script is shown below.</p>
 
-<h2 id='bed'>Bed</h2>
+<pre><code>#!/bin/bash
+
+#Quality setting 2 = 240p
+#                3 = 360p
+#                4 = 480p
+#                7 = 720p
+#                1 = 1080p
+
+qual=1
+dir=&quot;/home/josh/Videos/Youtube&quot;
+
+options=&quot;--download-dir=$dir -$qual -d&quot;
+
+if [ $# -eq 0 ]; then
+	youtube-viewer -S joshwainwright1 $options
+else
+	youtube-viewer &quot;$@&quot; $options
+fi
+
+if [ &quot;$(ls -A $dir)&quot; ]; then
+	open $dir/*
+
+	echo &quot;Delete all downloaded youtube videos?&quot;
+	select s in y n; do
+		break;
+	done;
+	s=($s)
+
+	if [[ s -eq y ]]; then
+		rm $dir/*
+	fi
+fi</code></pre>
 
 				<a NAME="bottom"></a>
-				<p><i>Published 2013-08-19 00:00:00 +0100</i></p>
+				<p><i>Published 2013-08-25 11:43:32 +0100</i></p>
 					<div id="disqus_thread"></div>
 						<script type="text/javascript">
 							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

@@ -50,5 +50,7 @@ and the script will work fine.
 
 <a href="dwmstatus.png"><img id="typography" width="100%" src="dwmstatus.png"></img></a>
 
+![dwmstatus bar in dwm](dwmstatus.png)
+
 <a href="https://github.com/jaw42/bin/blob/master/dwmstatus">
 <i class="icon-cloud-download"> </i> Download</a>

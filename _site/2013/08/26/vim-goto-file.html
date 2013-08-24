@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title> Setting up Jekyll | Josh Wainwright</title>
+		<title> Vim Goto File | Josh Wainwright</title>
 
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="/css/fontawesome.css">
@@ -109,29 +109,54 @@
 							<li>Tags</li>
 						
 						<ul>
-							<li>jekyll</li>
+							<li>vim</li>
 						</ul>
 					
 						
 						<ul>
-							<li>blogging</li>
+							<li>jekyll</li>
 						</ul>
 					
 				</ul>
 
 			</header>
 			<section>
-				<h1 class="blog_title">Setting up Jekyll</h1>
-				<p>So, it turns out that the initial setup of jekyll, getting it installed and at least running was easy. Whats rather more difficult is getting anything to play along with it.</p>
+				<h1 class="blog_title">Vim Goto File</h1>
+				<p>Learning vim is a pleasure.</p>
 
-<p>I can&#8217;t seem to work out the way it handles files that I want to include in a webpage structre. I shall continue looking into that tomorrow.</p>
+<p>My reasons? It is so well designed, from a user stand point, with so many usefully powerful features built in, that you can discover a great feature that loads of people have taken for granted and you&#8217;ve never heard of and think its fantastic.</p>
 
-<p>Now</p>
+<p>So, today I discovered <code>goto file</code>. Abbreviated to <code>gf</code> in either normal or visual mode, this allows you to place the cursor on a file name and open that file for editing immediately.</p>
 
-<h2 id='bed'>Bed</h2>
+<p>Obviously, a caveate is that vim must know where to find this file, and so it will look at the <code>path</code> setting and use that to search for the file name given. (If you&#8217;re in visual mode, then the file name is the selection, otherwise it uses some clever regex&#8217;s to work out where the filename starts and finishes, see the <code>isfname</code> setting.)</p>
+
+<p>The default setting for <code>path</code>, as can be seen by typing <code>:set path</code> is</p>
+
+<pre><code>path=.,/usr/include/,,</code></pre>
+
+<p>That means it will first search the location of the current file, <code>.</code>, then search the folder <code>/usr/include</code>, and finally the present working directory, <code>pwd</code>. This will cover most situations, since in order to include an external file, the program will need to know where it is. Thus, if the file has an absolute location, starting with <code>/</code>, then vim will follow that and find the file, or if a relative path, then that is generally relative to the current file, and so vim will be able to find that too.</p>
+
+<p>There are, however, the odd edge case where vim might not find the file. These generally are specific to a particular language. So for example, while working with some html and markup files, I found that vim didn&#8217;t find an included file. I was using the <a href=''>Jekyll</a> blog aware system which has a separate folder for included files, so the structure looks like this:</p>
+
+<pre><code>`-- Website
+    |-- _includes
+    |   `-- header.html
+    |-- _posts
+    |   `-- 2013-08-23-vim-goto-file.md
+    `index.md</code></pre>
+
+<p>Now, if I&#8217;m editing the post file, <code>2013-08-23-vim-goto-file.md</code>, then there is nothing else in that folder, so the included file cannot be there. Instead, it&#8217;s in a folder that is below the parent folder, <code>_includes</code>.</p>
+
+<p>To make this folder availible to vim to seach, I&#8217;ve added this line to my <code>.vimrc</code>:</p>
+
+<pre><code>path+=../**</code></pre>
+
+<p>That means, append to the end of the existing <code>path</code> variable, the value of the parent directory and any children. This means that anything below the parent of the current file will be availible.</p>
+
+<p>If this confuses vim, or means that conflicts happen and it starts opening the wrong files, this line could be added to the syntax file, or else specified that it only applies to certain syntax, so that the normal behavior remain for most filetypes, but when you open a <code>.html</code>, or <code>.md</code>, vim will search in this extra location.</p>
 
 				<a NAME="bottom"></a>
-				<p><i>Published 2013-08-19 00:00:00 +0100</i></p>
+				<p><i>Published 2013-08-26 18:16:32 +0100</i></p>
 					<div id="disqus_thread"></div>
 						<script type="text/javascript">
 							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

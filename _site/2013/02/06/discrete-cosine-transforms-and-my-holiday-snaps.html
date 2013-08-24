@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title> Setting up Jekyll | Josh Wainwright</title>
+		<title> DCT and my holiday snaps | Josh Wainwright</title>
 
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="/css/fontawesome.css">
@@ -104,34 +104,31 @@
 					</ul>
 
 					
-						
-						<br/>
-							<li>Tags</li>
-						
-						<ul>
-							<li>jekyll</li>
-						</ul>
-					
-						
-						<ul>
-							<li>blogging</li>
-						</ul>
-					
 				</ul>
 
 			</header>
 			<section>
-				<h1 class="blog_title">Setting up Jekyll</h1>
-				<p>So, it turns out that the initial setup of jekyll, getting it installed and at least running was easy. Whats rather more difficult is getting anything to play along with it.</p>
+				<h1 class="blog_title">DCT and my holiday snaps</h1>
+				<p>One of the modules that I&#8217;m doing this term at uni is called Digital Image Processing. To this end, I&#8217;ve become rather interested in some of the methods used to compress and manipulate digital images.</p>
 
-<p>I can&#8217;t seem to work out the way it handles files that I want to include in a webpage structre. I shall continue looking into that tomorrow.</p>
+<p>As the title doesn&#8217;t in any way suggest, this post is about the former.</p>
 
-<p>Now</p>
+<p>The discrete cousins transform its the basis of the algorithm used in jpeg compression. It involves some pretty neat ways of getting rid if bits of the image that aren&#8217;t as important as others so that the image gets smaller and so is easier to store. The way this is done varies between compression standards, so jpeg is didn&#8217;t to png is different to BMP, but jpeg is one of the most successful and also relatively easy to understand.</p>
 
-<h2 id='bed'>Bed</h2>
+<p>The discrete coding transform (DCT) involves some clever maths to separate an array of pixels with brightness values into an array of coefficients of different frequencies. That sounds a bit crazy, but you can represent any series of numbers with a bunch of waves superimposed at different frequencies. It follows then that you are able to break down a series of numbers, which is all pixel values are, into a bunch of cosine waves with coefficients to tell you how many of each frequency is needed.</p>
+
+<p>The compression comes now. The human eyes and brain are truly amazing, but they do have some limitations. For example, there are loads of different optical illusions that trick the obtain into thinking that something is happening in an image, or that the image looks one way when in fact it isn&#8217;t at all. One area that our eyes aren&#8217;t great at is when things change very rapidly, is very close together, in an image. So if you have a picture with lots of detail, lots of quickly changing values form bright to dark, then the brain will interpret that as a more simple image to more easily view it.</p>
+
+<p>We can takes advantage of this when dealing with images. Since we know that any complex region of an image wont be viewed in its entirety, ands that we have just developed a way of separating out the image into simple and complex components, that we can just leave out the complex parts and the brain is unlikely to notice the difference. And this is what is done in jpeg compression. Leave out the high frequencies because these represent the areas that are complex and changing quickly which we are unlikely to notice anyway.</p>
+
+<p>This can have fairly serious effects join the file size, reducing it by half or more depending join how much information you choose to sacrifice. I&#8217;ve written a short paper going into slightly more detail if you want to know more you can find it here.</p>
+
+<p>This compression technique is an example of lossy compressions since information is sacrificed in order to make the file size smaller. There are many lossless compression techniques that I use clever ways of representing all the information in a smaller way. I might have a look at some of those in the future.</p>
+
+<p>For now, just remember how much maths goes into that pic of you at the beach.</p>
 
 				<a NAME="bottom"></a>
-				<p><i>Published 2013-08-19 00:00:00 +0100</i></p>
+				<p><i>Published 2013-02-06 12:12:45 +0000</i></p>
 					<div id="disqus_thread"></div>
 						<script type="text/javascript">
 							/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
