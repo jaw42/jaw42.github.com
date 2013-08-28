@@ -1,0 +1,261 @@
+<gpx version='1.1'
+    creator='Josh Wainwright'
+    xmlns='http://www.topografix.com/GPX/1/1'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd'>
+    <rte>
+        <name>20110711</name>
+        <rtept lat='54.553690986888' lon='-3.2955885776698'>
+            <name>0</name>
+        </rtept>
+        <rtept lat='54.554770774468' lon='-3.2954681803536'>
+            <name>1</name>
+        </rtept>
+        <rtept lat='54.555801500057' lon='-3.2957328018808'>
+            <name>2</name>
+        </rtept>
+        <rtept lat='54.556653364483' lon='-3.2959144472324'>
+            <name>3</name>
+        </rtept>
+        <rtept lat='54.558448592995' lon='-3.2961260221856'>
+            <name>4</name>
+        </rtept>
+        <rtept lat='54.55957495879' lon='-3.2958524582099'>
+            <name>5</name>
+        </rtept>
+        <rtept lat='54.56086527147' lon='-3.2970532637875'>
+            <name>6</name>
+        </rtept>
+        <rtept lat='54.561539102652' lon='-3.2970746547166'>
+            <name>7</name>
+        </rtept>
+        <rtept lat='54.561785249301' lon='-3.2950719591924'>
+            <name>8</name>
+        </rtept>
+        <rtept lat='54.562354079544' lon='-3.2923061692118'>
+            <name>9</name>
+        </rtept>
+        <rtept lat='54.562785607657' lon='-3.2897679570546'>
+            <name>10</name>
+        </rtept>
+        <rtept lat='54.563074086825' lon='-3.2879984817012'>
+            <name>11</name>
+        </rtept>
+        <rtept lat='54.563141216709' lon='-3.2859126941476'>
+            <name>12</name>
+        </rtept>
+        <rtept lat='54.563127488639' lon='-3.2829737326332'>
+            <name>13</name>
+        </rtept>
+        <rtept lat='54.563063039013' lon='-3.2805744919739'>
+            <name>14</name>
+        </rtept>
+        <rtept lat='54.56316515464' lon='-3.2794177464369'>
+            <name>15</name>
+        </rtept>
+        <rtept lat='54.563941912096' lon='-3.2782047723178'>
+            <name>16</name>
+        </rtept>
+        <rtept lat='54.56491058405' lon='-3.2758377561424'>
+            <name>17</name>
+        </rtept>
+        <rtept lat='54.565370404783' lon='-3.2748467761353'>
+            <name>18</name>
+        </rtept>
+        <rtept lat='54.566050758283' lon='-3.2742493266086'>
+            <name>19</name>
+        </rtept>
+        <rtept lat='54.567413897317' lon='-3.2728224311669'>
+            <name>20</name>
+        </rtept>
+        <rtept lat='54.56835808245' lon='-3.2727745124381'>
+            <name>21</name>
+        </rtept>
+        <rtept lat='54.569115254377' lon='-3.2734168332487'>
+            <name>22</name>
+        </rtept>
+        <rtept lat='54.569914087352' lon='-3.27436984752'>
+            <name>23</name>
+        </rtept>
+        <rtept lat='54.570934263448' lon='-3.2756391883646'>
+            <name>24</name>
+        </rtept>
+        <rtept lat='54.571018399501' lon='-3.2761832281445'>
+            <name>25</name>
+        </rtept>
+        <rtept lat='54.571231586584' lon='-3.2772727191479'>
+            <name>26</name>
+        </rtept>
+        <rtept lat='54.571674277207' lon='-3.277905330023'>
+            <name>27</name>
+        </rtept>
+        <rtept lat='54.571363817571' lon='-3.2732549027505'>
+            <name>28</name>
+        </rtept>
+        <rtept lat='54.571233679685' lon='-3.2685328048634'>
+            <name>29</name>
+        </rtept>
+        <rtept lat='54.571039033368' lon='-3.2656650119515'>
+            <name>30</name>
+        </rtept>
+        <rtept lat='54.570738320881' lon='-3.2643408466103'>
+            <name>31</name>
+        </rtept>
+        <rtept lat='54.570399127872' lon='-3.2623967649211'>
+            <name>32</name>
+        </rtept>
+        <rtept lat='54.57014894308' lon='-3.2605328055511'>
+            <name>33</name>
+        </rtept>
+        <rtept lat='54.565669336369' lon='-3.2634879505079'>
+            <name>34</name>
+        </rtept>
+        <rtept lat='54.564757148698' lon='-3.2647743929807'>
+            <name>35</name>
+        </rtept>
+        <rtept lat='54.564038386703' lon='-3.2647521413307'>
+            <name>36</name>
+        </rtept>
+        <rtept lat='54.563540195581' lon='-3.2651233703142'>
+            <name>37</name>
+        </rtept>
+        <rtept lat='54.562904808866' lon='-3.2657223281386'>
+            <name>38</name>
+        </rtept>
+        <rtept lat='54.561952532778' lon='-3.2665434279303'>
+            <name>39</name>
+        </rtept>
+        <rtept lat='54.560547784896' lon='-3.2676597539784'>
+            <name>40</name>
+        </rtept>
+        <rtept lat='54.559679665084' lon='-3.2690246361751'>
+            <name>41</name>
+        </rtept>
+        <rtept lat='54.559134104453' lon='-3.2696262690133'>
+            <name>42</name>
+        </rtept>
+        <rtept lat='54.558282198024' lon='-3.2694451590709'>
+            <name>43</name>
+        </rtept>
+        <rtept lat='54.557565058958' lon='-3.2692682429199'>
+            <name>44</name>
+        </rtept>
+        <rtept lat='54.556984309302' lon='-3.2689409329573'>
+            <name>45</name>
+        </rtept>
+        <rtept lat='54.556484482948' lon='-3.269466631587'>
+            <name>46</name>
+        </rtept>
+        <rtept lat='54.555368716886' lon='-3.268736138246'>
+            <name>47</name>
+        </rtept>
+        <rtept lat='54.553721164892' lon='-3.2672933805795'>
+            <name>48</name>
+        </rtept>
+        <rtept lat='54.553133120497' lon='-3.2676617000798'>
+            <name>49</name>
+        </rtept>
+        <rtept lat='54.552643020941' lon='-3.2672599506393'>
+            <name>50</name>
+        </rtept>
+        <rtept lat='54.551868804011' lon='-3.2682409532588'>
+            <name>51</name>
+        </rtept>
+        <rtept lat='54.55159359385' lon='-3.2687735680398'>
+            <name>52</name>
+        </rtept>
+        <rtept lat='54.551055332753' lon='-3.2686795530292'>
+            <name>53</name>
+        </rtept>
+        <rtept lat='54.550829097966' lon='-3.2688271436201'>
+            <name>54</name>
+        </rtept>
+        <rtept lat='54.550593128736' lon='-3.2699021007267'>
+            <name>55</name>
+        </rtept>
+        <rtept lat='54.550143902337' lon='-3.2698881442657'>
+            <name>56</name>
+        </rtept>
+        <rtept lat='54.549517419453' lon='-3.2696367699946'>
+            <name>57</name>
+        </rtept>
+        <rtept lat='54.548890124779' lon='-3.2694626810213'>
+            <name>58</name>
+        </rtept>
+        <rtept lat='54.548432783974' lon='-3.2702214960824'>
+            <name>59</name>
+        </rtept>
+        <rtept lat='54.54825065817' lon='-3.2704477411456'>
+            <name>60</name>
+        </rtept>
+        <rtept lat='54.549344465874' lon='-3.2732646634371'>
+            <name>61</name>
+        </rtept>
+        <rtept lat='54.550322181122' lon='-3.2743000893218'>
+            <name>62</name>
+        </rtept>
+        <rtept lat='54.55120433608' lon='-3.2758737331326'>
+            <name>63</name>
+        </rtept>
+        <rtept lat='54.551192100951' lon='-3.277032957156'>
+            <name>64</name>
+        </rtept>
+        <rtept lat='54.5514518398' lon='-3.2779687631074'>
+            <name>65</name>
+        </rtept>
+        <rtept lat='54.552244918924' lon='-3.2794624330143'>
+            <name>66</name>
+        </rtept>
+        <rtept lat='54.552500547061' lon='-3.2807846980165'>
+            <name>67</name>
+        </rtept>
+        <rtept lat='54.553251126397' lon='-3.2820451953132'>
+            <name>68</name>
+        </rtept>
+        <rtept lat='54.553735437883' lon='-3.2829881308034'>
+            <name>69</name>
+        </rtept>
+        <rtept lat='54.553862824124' lon='-3.2836879393677'>
+            <name>70</name>
+        </rtept>
+        <rtept lat='54.554480247656' lon='-3.2847897195954'>
+            <name>71</name>
+        </rtept>
+        <rtept lat='54.554874692664' lon='-3.285729889282'>
+            <name>72</name>
+        </rtept>
+        <rtept lat='54.55589310806' lon='-3.2871536190393'>
+            <name>73</name>
+        </rtept>
+        <rtept lat='54.556371615488' lon='-3.2886377130372'>
+            <name>74</name>
+        </rtept>
+        <rtept lat='54.556941597785' lon='-3.2899700939064'>
+            <name>75</name>
+        </rtept>
+        <rtept lat='54.556616421292' lon='-3.2909649562838'>
+            <name>76</name>
+        </rtept>
+        <rtept lat='54.556252917946' lon='-3.2913400570314'>
+            <name>77</name>
+        </rtept>
+        <rtept lat='54.555757122988' lon='-3.2914790221683'>
+            <name>78</name>
+        </rtept>
+        <rtept lat='54.55534869585' lon='-3.2918526905266'>
+            <name>79</name>
+        </rtept>
+        <rtept lat='54.55466743078' lon='-3.2925269797508'>
+            <name>80</name>
+        </rtept>
+        <rtept lat='54.554257347924' lon='-3.2930552015707'>
+            <name>81</name>
+        </rtept>
+        <rtept lat='54.553474652771' lon='-3.2948086042068'>
+            <name>82</name>
+        </rtept>
+        <rtept lat='54.553376531751' lon='-3.2955786094448'>
+            <name>83</name>
+        </rtept>
+    </rte>
+</gpx>
