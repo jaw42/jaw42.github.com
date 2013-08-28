@@ -1,6 +1,6 @@
 ---
 layout: blog
-#date:   2013-08-20 15:20:06
+date:   2013-08-20 15:20:06
 tags: sublime vim editors
 title: Big Day - End of subl
 ---

@@ -1,15 +1,15 @@
 ---
 layout: blog
-#date:   2013-08-19 15:30:06
+date:   2013-08-19 15:30:06
 tags: jekyll blogging
 title:  "First Post With Jekyll"
 ---
-Recently, I decided to take anoth foray into the bloggin world, and have decided
+Recently, I decided to take another foray into the bloggin world, and have decided
 that a more down to earth approach was needed. To this end, this is the first
 blog post that is using the Jekyll blog aware static site generating framework.
 
 Basically, I'm writing this post in markdown (simple as you like), it'll then be
-interpretted by Jekyll which whill compile it, and all subsequent posts into a
+interpreted by Jekyll which whill compile it, and all subsequent posts into a
 blog to be served from the github servers. All I have to do on this end, once
 setup, is write the posts and push via git. Simple.
 
