@@ -1,0 +1,41 @@
+---
+layout: nil
+categories: [index]
+title: Walking
+---
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>{% if page.title %} {{ page.title }} | {% endif %}Josh Wainwright</title>
+
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/fontawesome.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				{% include nameHeader.html %}
+				<p></p>
+
+				{% include sidebarWalks.html %}
+
+			</header>
+			<section>
+				<h1>{{ page.title }}</h1>
+
+				<p>This is a log of the walks that I have completed, working
+				towards my mountain leader (ML) qualification. Each page shows
+				one walk with an image of the route, a description of the route,
+				the weather conditions and the participants.</p>
+
+				<p>They are sorted by date, yes!.</p>
+
+			</section>
+			<footer>
+			</footer>
+		</div>
+	</body>
+</html>
