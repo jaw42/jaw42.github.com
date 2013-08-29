@@ -1,7 +1,7 @@
 ---
 layout: scripts
 unix: true
-catagories: [scripts]
+categories: [scripts]
 title: Open
 ---
 #Open

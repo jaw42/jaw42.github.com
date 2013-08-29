@@ -1,20 +1,20 @@
 <ul class="menu">
 	{% for page in site.pages %}
-		{% for pc in page.catagories %}
+		{% for pc in page.categories %}
 			{% if pc == "index" %}
 				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 				{% if page.title == "Unix" %}
 					<ul>
 					{% for page in site.pages %}
 						{% if page.unix == true %}
-							{% for pc in page.catagories %}
+							{% for pc in page.categories %}
 								{% if pc == "unix" %}
 									<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 									{% if page.url contains "/scripts/" %}
 										<ul>
 										{% for page in site.pages %}
 											{% if page.unix == true %}
-												{% for pc in page.catagories %}
+												{% for pc in page.categories %}
 													{% if pc == "scripts" %}
 													<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 													{% endif %}   <!-- cat-match-p -->

@@ -1,6 +1,6 @@
 ---
 layout: unix
-catagories: [index]
+categories: [index]
 title: Unix
 ---
 #GNU/Linux

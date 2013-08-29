@@ -1,7 +1,7 @@
 ---
 layout: unix
 unix: true
-catagories: [unix]
+categories: [unix]
 title: Current Setup
 ---
 #Current Setup

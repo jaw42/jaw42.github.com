@@ -1,6 +1,6 @@
 ---
 layout: default
-catagories: [index]
+categories: []
 title: Home
 ---
 #Welcome

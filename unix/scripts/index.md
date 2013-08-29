@@ -1,7 +1,7 @@
 ---
 layout: unix
 unix: true
-catagories: [unix]
+categories: [unix]
 title: Scripts
 ---
 #Shell Scripts
@@ -16,7 +16,7 @@ Click the script at below for more info and a link to download it
 
 {% for page in site.pages %}
 {% if page.unix == true %}
-{% for pc in page.catagories %}
+{% for pc in page.categories %}
 {% if pc == "scripts" %}
 - [{{ page.title }}]({{ page.url }})
 {% endif %}   <!-- cat-match-p -->

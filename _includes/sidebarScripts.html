@@ -6,7 +6,7 @@
 			<ul>
 			{% for page in site.pages %}
 				{% if page.unix == true %}
-					{% for pc in page.catagories %}
+					{% for pc in page.categories %}
 						{% if pc == "scripts" %}
 						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 						{% endif %}   <!-- cat-match-p -->

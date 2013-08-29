@@ -1,7 +1,7 @@
 ---
 layout: unix
 unix: true
-catagories: [unix]
+categories: [unix]
 title: Fortune
 ---
 #Fortune

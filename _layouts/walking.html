@@ -17,13 +17,15 @@ layout: nil
 			<header>
 				{% include nameHeader.html %}
 				<p></p>
-
-				{% include sidebarUnix.html %}
+				{% include sidebarWalks.html %}
 
 			</header>
 			<section>
 				{% include breadcrumbs.html %}
+				<h1>{{ page.title }}</h1>
+				<p><img alt="20110710" src="{{ page.url | replace:'.html','.png' | replace:'/walking','maps'}}"></p>
 				{{ content }}
+				<p><img alt="20110710" src="{{ page.url | remove:'.html' | replace:'/walking','maps'}}_elev.png"></p>
 			</section>
 			<footer>
 			</footer>
