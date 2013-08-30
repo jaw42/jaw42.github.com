@@ -35,6 +35,7 @@ Below is my `.Xresources`. Have a look, and we'll go through it:
 	XTerm*faceName: DejaVuSansMono
 	XTerm*faceSize: 11
 	xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+	XTerm*selectToClipboard: true
 
 	! Common
 
@@ -139,3 +140,9 @@ this [page](https://wiki.archlinux.org/index.php/Xresources) for more info on
 the files themselves and
 [here](http://www.tldp.org/HOWTO/XWindow-User-HOWTO/moreconfig.html) for lots
 more info than you could need on using `Xresources` and `Xdefaults`.
+
+*Update*
+I've also been having issues with copy and paste actions recently. For XTerm,
+the PRIMARY selection is used by default. To change this to CLIPBOARD, I've
+added one line above. Now, selecting text will put it straight into the
+clipboard for pasting into other programs.
