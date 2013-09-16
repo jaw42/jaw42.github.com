@@ -18,11 +18,11 @@ title: Home
 <td><a href="calendar.html">Calendar</a></td>
 <td class="table_space"></td>
 <td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-github icon-large"></i></a></td>
-<td><a href="https://github.com/jaw42">Github</a></td>
+<td><a href="https://github.com/joshaw">Github</a></td>
 </tr>
 <tr>
-<td class="icon"><a href="http://htmlpreview.github.io/?https://raw.github.com/jaw42/Rawdog/master/output.html"><i class="icon-rss icon-large"></i></a></td>
-<td><a href="http://htmlpreview.github.io/?https://raw.github.com/jaw42/Rawdog/master/output.html">Reader</a></td>
+<td class="icon"><a href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html"><i class="icon-rss icon-large"></i></a></td>
+<td><a href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html">Reader</a></td>
 <td class="table_space"></td>
 <td class="icon"><a href="bookmarks.html"><i class="icon-bookmark-empty icon-large"></i></a></td>
 <td><a href="bookmarks.html">Bookmarks</a></td>

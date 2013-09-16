@@ -11,5 +11,5 @@ log in to set the screen layout on my dual screen setup. Change the
 resolutions as needed; currently I have a laptop connected to a larger
 main monitor.
 
-<a href="https://github.com/jaw42/dotfiles/raw/master/system/screenlayout.symlink/default.sh">
+<a href="https://github.com/joshaw/dotfiles/raw/master/system/screenlayout.symlink/default.sh">
 <i class="icon-cloud-download"> </i> Download</a>

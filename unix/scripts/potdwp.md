@@ -19,5 +19,5 @@ Usually, the National Geographic will provide a link to a high resolution
 version of the image. If availible, that is downloaded and used, if not, then
 the smaller sample on the webpage is used instead and the user notified.
 
-<a href="https://github.com/jaw42/bin/blob/master/bingWP">
+<a href="https://github.com/joshaw/bin/blob/master/bingWP">
 <i class="icon-cloud-download"> </i> Download</a>

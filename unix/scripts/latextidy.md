@@ -19,5 +19,5 @@ specified extensions and delete them. It has options to do this recursively,
 incase you've got a number of folders with redundant latex files in, and a
 `dry-run` option to display which files would be deleted if it was run normally.
 
-<a href="https://github.com/jaw42/bin/blob/master/LatextTidy">
+<a href="https://github.com/joshaw/bin/blob/master/LatextTidy">
 <i class="icon-cloud-download"> </i> Download</a>

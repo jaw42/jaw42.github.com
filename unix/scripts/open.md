@@ -53,5 +53,5 @@ defined, the script will instead look at the
 [mime-type](https://en.wikipedia.org/wiki/Internet_media_type) and use that
 instead.
 
-<a href="https://github.com/jaw42/bin/blob/master/open">
+<a href="https://github.com/joshaw/bin/blob/master/open">
 <i class="icon-cloud-download"> </i> Download</a>

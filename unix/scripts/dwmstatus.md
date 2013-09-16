@@ -52,5 +52,5 @@ and the script will work fine.
 
 ![dwmstatus bar in dwm](dwmstatus.png)
 
-<a href="https://github.com/jaw42/bin/blob/master/dwmstatus">
+<a href="https://github.com/joshaw/bin/blob/master/dwmstatus">
 <i class="icon-cloud-download"> </i> Download</a>
