@@ -43,7 +43,7 @@ problem, I could go back and look at the output from Chrome and Firefox. Now
 understanding what to look for, it is easy to see that these, too, where just
 overlaying the regular weight text on itself to mimic bold.
 
-![Midori's attempt at bold font synthesis](/files/blog/boldFont.svgz)
+![Midori's attempt at bold font synthesis](/files/blog/boldFont.png)
 
 This was the simplest fix in the world to manage. I had imported the font from
 Google with an `@import` in the CSS for the page. I had, however, neglected to
