@@ -1,6 +1,6 @@
 ---
 layout: blog
-date: 2013-09-20-14:07:58
+date: 2013-09-19-14:07:58
 tags: time linux hwclock softwareclock
 title: "Hardware Clock"
 ---
