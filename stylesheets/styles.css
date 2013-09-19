@@ -18,7 +18,7 @@ body {
 
 h1, h2, h3 {
   color:#222;
-  margin:0 0 20px;
+  margin:0 0 10px;
 }
 
 p, ol, table, pre, dl {
@@ -122,12 +122,12 @@ th, td {
 }
 
 dl {
-	padding: 0 0 0 30px;
+//	padding: 0 0 0 30px;
 	margin: 14px 0 0 0;
 }
 
 ul {
-	margin: 14px 0 0 0;
+	margin: 4px 0 0 0;
 }
 
 dt {
@@ -137,7 +137,7 @@ dt {
 
 div.second_address{
   float: right;
-  padding-right: 20%;
+  padding-right: 30%;
 }
 
 th {
@@ -204,7 +204,7 @@ hr {
   border:0;
   background:#e5e5e5;
   height:1px;
-  margin:0 0 20px;
+  margin:10px 0 10px 0;
 }
 
 footer {
@@ -298,7 +298,7 @@ li.menu-current:before {
 }
 
 .info_indent {
-	margin:0 0 0 40px;
+	margin:5px 0 0 40px;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -457,5 +457,9 @@ li.menu-current:before {
   div.second_address{
     float: right;
     padding-right: 30%;
+  }
+
+  div.second_address{
+    padding-right: 60%;
   }
 }
