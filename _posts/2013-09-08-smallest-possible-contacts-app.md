@@ -1,7 +1,7 @@
 ---
 layout: blog
 date: 2013-09-08-21:02:40
-tags:
+tags: google contacts c++
 title: "Smallest Possible Contacts App"
 ---
 

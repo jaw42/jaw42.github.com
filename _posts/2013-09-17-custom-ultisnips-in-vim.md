@@ -1,7 +1,7 @@
 ---
 layout: blog
 date: 2013-09-17-10:55:21
-tags:
+tags: vim ultisnips config
 title: "Custom Ultisnips in Vim"
 ---
 I moved away from [Snipmate](https://github.com/garbas/vim-snipmate) to
