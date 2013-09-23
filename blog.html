@@ -10,6 +10,8 @@ title: Blog
 		<meta http-equiv="X-UA-Compatible" content="chrome=1">
 		<title>{% if page.title %} {{ page.title }} | {% endif %}Josh Wainwright</title>
 
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+
 		<link rel="stylesheet" href="/css/styles.css">
 		<link rel="stylesheet" href="/css/fontawesome.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -29,6 +31,8 @@ title: Blog
 							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 						{% endfor %}
 					</ul>
+
+					<li><a href="/feed/index.html">RSS<a></li>
 
 				</ul>
 
