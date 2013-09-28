@@ -5,7 +5,7 @@
 				<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 					<ul>
 					{% if page.title == "Walking" %}
-						{% assign sorted_pages = site.pages | sort:"name" %}
+						{% assign sorted_pages = site.pages | sort:"path" %}
 						{% for page in sorted_pages %}
 							{% for pc in page.categories %}
 								{% if pc == "walk" %}
