@@ -27,13 +27,15 @@ only for carting around a few text files.
 
 Strange that. Cause I'm not sure what else I'd use it for. Most of my work is 
 programming, so that means, lots and lots of tiny plain text files and a few 
-compiled binaries. So thats 2, maybe 3 GB used. I'll obviously want a few 
-programs installed, but as I've said before, lean and fast is my preference, so 
-again, 2 or 3GB will do me fine. And the rest, well thats open to suggestion. 
-Obviously, I don't want to be filling the drive as that can cause performance 
-issues. But I am now pretty much set up with all the work that I wanted to bring 
-from my old machine, all the programs I need on a regular basis installed, and 
-still, I'm sitting at a comfortable __1%__ of the total drive.
+compiled binaries (even stuff thats not code, I always store in [plain 
+text](http://bettermess.com/a-plain-text-primer/)).  So thats 2, maybe 3 GB 
+used.  I'll obviously want a few programs installed, but as I've said before, 
+lean and fast is my preference, so again, 2 or 3GB will do me fine.  And the 
+rest, well thats open to suggestion.  Obviously, I don't want to be filling the 
+drive as that can cause performance issues. But I am now pretty much set up with 
+all the work that I wanted to bring from my old machine, all the programs I need 
+on a regular basis installed, and still, I'm sitting at a comfortable __1%__ of 
+the total drive.
 
 Another reason I'm not too bummed out at sacrificing some storage space is the 
 speed of SSDs. An SSD is similar to just one big memory stick. Everything is 
