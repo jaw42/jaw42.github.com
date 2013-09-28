@@ -146,3 +146,7 @@ I've also been having issues with copy and paste actions recently. For XTerm,
 the PRIMARY selection is used by default. To change this to CLIPBOARD, I've
 added one line above. Now, selecting text will put it straight into the
 clipboard for pasting into other programs.
+
+*Update*
+I've now moved away from Solarized theme, back to Molokai, so my colours have 
+changed. Check my [dotfile](http://github.com/joshaw/dotifles) for more info.
