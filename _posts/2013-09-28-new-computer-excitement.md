@@ -1,7 +1,7 @@
 ---
 layout: blog
 date: 2013-09-28-09:14:40
-tags: 
+tags: computer new hardware ssd
 title: "New Computer Excitement"
 ---
 A few weeks ago, I decided that a new computer was needed to replace my aging 
