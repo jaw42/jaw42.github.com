@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UNIVERSITY>
+	<COURSE>
+		<TITLE>Computer Science</TITLE>
+		<TIMETABLE>http://www.cs.bham.ac.uk/internal/timetables/2013/TT-PGCS1-S1.pdf</TIMETABLE>
+		<TERM>
+			<NUMBER>One</NUMBER>
+			<MODULE>
+				<TITLE>Software Workshop</TITLE>
+				<WEBSITE>https://canvas.bham.ac.uk/courses/4667</WEBSITE>
+				<WORKSHEET>
+					<NAME>Worksheet 0</NAME>
+					<DUE>10th October</DUE>
+					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet0/worksheet0.pdf?raw=true</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 1</NAME>
+					<DUE>17th October</DUE>
+					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet1/worksheet1.pdf?raw=true</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 2</NAME>
+					<DUE>24th October</DUE>
+					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet2/worksheet2.pdf?raw=true</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 3</NAME>
+					<DUE>10th October</DUE>
+					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet3/worksheet3.pdf?raw=true</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Introduction to Computer Science</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/21933/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Unknown</NAME>
+					<DUE>sometime</DUE>
+					<LINK>somethign</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Unknown</NAME>
+					<DUE>sometime</DUE>
+					<LINK>somethign</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Cryptography</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/20008/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Unknown</NAME>
+					<DUE>sometime</DUE>
+					<LINK>somethign</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Evaluation Methods and Statistics</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~howesa/teaching/EMS/EMS-current/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Unknown</NAME>
+					<DUE>sometime</DUE>
+					<LINK>somethign</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Databases</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~jab/Modules/Databases/13-14/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Week 2 Exercises</NAME>
+					<DUE>14th October 2013</DUE>
+					<LINK>http://www.cs.bham.ac.uk/~jab/Modules/Databases/13-14/Exercises/2week.html</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+			</MODULE>
+		</TERM>
+		<TERM>
+			<NUMBER>Two</NUMBER>
+		</TERM>
+	</COURSE>
+	<COURSE>
+		<TITLE>Physics</TITLE>
+		<TIMETABLE>../files/phys_sem2_timetable.pdf</TIMETABLE>
+		<TERM>
+			<NUMBER>One</NUMBER>
+			<MODULE>
+				<TITLE>Computational Modelling</TITLE>
+				<WEBSITE>SOMETHING</WEBSITE>
+				<WORKSHEET>
+					<NAME>Worksheet 1</NAME>
+					<DUE>10 October 2012</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/CompMod/worksheet1/Worksheet1_jaw097.pdf</LINK>
+					<GRADE>15/20</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 2</NAME>
+					<DUE>17 October 2012</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/CompMod/worksheet2/Worksheet2_jaw097.pdf</LINK>
+					<GRADE>13/20</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 3</NAME>
+					<DUE>24 October 2012</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/CompMod/worksheet3/Worksheet3_jaw097.pdf</LINK>
+					<GRADE>16/20</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 4</NAME>
+					<DUE>31 October 2012</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/CompMod/worksheet4/Worksheet4_jaw097.pdf</LINK>
+					<GRADE>17/20</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 5</NAME>
+					<DUE>07 November 2012</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/CompMod/worksheet5/Worksheet5_jaw097.pdf</LINK>
+					<GRADE>15/20</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Project</NAME>
+					<DUE>07 December 2012</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/CompMod/Project/Report/jaw097_FDTD.pdf</LINK>
+					<GRADE>86/100</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Physics Critique</TITLE>
+				<WEBSITE>#</WEBSITE>
+				<WORKSHEET>
+					<NAME>Quantum Computing</NAME>
+					<DUE>.</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/Critique/Qubits/mainfile.pdf?raw=true</LINK>
+					<GRADE>66/100</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Laboratory Report</TITLE>
+				<WEBSITE>#</WEBSITE>
+				<WORKSHEET>
+					<NAME>Nuclear Labs</NAME>
+					<DUE>.</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/Y3%20Lab/Report/main.pdf?raw=true</LINK>
+					<GRADE>57/100</GRADE>
+				</WORKSHEET>
+			</MODULE>
+		</TERM>
+		<TERM>
+			<NUMBER>Two</NUMBER>
+			<MODULE>
+				<TITLE>Image Processing</TITLE>
+				<WEBSITE>#</WEBSITE>
+				<WORKSHEET>
+					<NAME>Assessed Exercise 1</NAME>
+					<DUE>14th Feb 2013</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/ImageProcessing/Assessed_Exercise1/mainfile.pdf</LINK>
+					<GRADE>8/10</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Assessed Exercise 2</NAME>
+					<DUE>14th Mar 2013</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/ImageProcessing/Assessed_Exercise2/mainfile.pdf</LINK>
+					<GRADE>/10</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Teaching in Schools</TITLE>
+				<WEBSITE>#</WEBSITE>
+				<WORKSHEET>
+					<NAME>Log Sheet 1</NAME>
+					<DUE>7th Jan 2013 to 13th Jan 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/tree/master/TeachingInSchools/Josh_Wainwright_LogSheet_week1_alt.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 2</NAME>
+					<DUE>14th Jan 2013 to 20th Jan 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/tree/master/TeachingInSchools/Josh_Wainwright_LogSheet_week2.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 3</NAME>
+					<DUE>21st Jan 2013 to 27th Jan 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week3.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 4</NAME>
+					<DUE>28th Jan 2013 to 3rd Feb 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week4.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 5</NAME>
+					<DUE>4th Feb 2013 to 10th Feb 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week5.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 6</NAME>
+					<DUE>11th Feb 2013 to 17th Feb 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week6.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 7</NAME>
+					<DUE>18th Feb 2013 to 24th Feb 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week7.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 8</NAME>
+					<DUE>25th Feb 2013 to 3rd Mar 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week8.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 9</NAME>
+					<DUE>4th Mar 2013 to 10th Mar 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week9.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Log Sheet 10</NAME>
+					<DUE>11th Mar 2013 to 17th Mar 2013</DUE>
+					<LINK>http://htmlpreview.github.com/?https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_LogSheet_week10.html</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Proposal</NAME>
+					<DUE>Teaching in Schools Project Proposal</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Josh_Wainwright_Project_Proposal.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Problems Sheet 1</NAME>
+					<DUE>February 2013</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Problems1/Problems1_main.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Problems Sheet 2</NAME>
+					<DUE>March 2013</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Problems2/Problems2_main.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Presentation</NAME>
+					<DUE>The Role of Computers and the Internet in the Classroom</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Presentation/build/Presentation.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Report</NAME>
+					<DUE>University Physics Teaching in Schools</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/TeachingInSchools/Report/build/mainfile.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+			</MODULE>
+			<MODULE>
+				<TITLE>Group Studies</TITLE>
+				<WEBSITE>#</WEBSITE>
+				<WORKSHEET>
+					<NAME>Management Plan</NAME>
+					<DUE>.</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/Group%20Studies/Management%20Plan/Management_Plan.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Personal Statement</NAME>
+					<DUE>.</DUE>
+					<LINK>https://github.com/joshaw/year3physics/raw/master/Group%20Studies/Personl%20Statement/build/Personal_statement-J_Wainwright.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Group Studies Final Report</NAME>
+					<DUE>.</DUE>
+					<LINK>https://github.com/joshaw/year3physics/blob/master/Group%20Studies/Final%20Report%20Related/Final%20Report/build/mainfile.pdf?raw=true</LINK>
+					<GRADE>.</GRADE>
+				</WORKSHEET>
+			</MODULE>
+		</TERM>
+	</COURSE>
+</UNIVERSITY>
