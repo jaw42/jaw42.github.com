@@ -51,11 +51,11 @@
 			</MODULE>
 			<MODULE>
 				<TITLE>Cryptography</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/20008/</WEBSITE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~exr/teaching/lectures/crypto/13_14/</WEBSITE>
 				<WORKSHEET>
-					<NAME>Unknown</NAME>
-					<DUE>.</DUE>
-					<LINK>.</LINK>
+					<NAME>Assessed Exercise 1</NAME>
+					<DUE>14th October 2013</DUE>
+					<LINK>http://www.cs.bham.ac.uk/~exr/teaching/lectures/crypto/13_14/exercises/ex1.pdf</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
