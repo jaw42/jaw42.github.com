@@ -54,18 +54,18 @@
 				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/20008/</WEBSITE>
 				<WORKSHEET>
 					<NAME>Unknown</NAME>
-					<DUE>sometime</DUE>
-					<LINK>somethign</LINK>
+					<DUE></DUE>
+					<LINK></LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Evaluation Methods and Statistics</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/~howesa/teaching/EMS/EMS-current/</WEBSITE>
+				<WEBSITE>https://birmingham.instructure.com/courses/2032</WEBSITE>
 				<WORKSHEET>
-					<NAME>Unknown</NAME>
-					<DUE>sometime</DUE>
-					<LINK>somethign</LINK>
+					<NAME>EMS2</NAME>
+					<DUE>.</DUE>
+					<LINK>https://birmingham.instructure.com/courses/2032/files/173429/download</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
