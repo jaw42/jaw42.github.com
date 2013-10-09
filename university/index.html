@@ -69,32 +69,34 @@ title: University
 								document.write(modules[c].getElementsByTagName("WEBSITE")[0].childNodes[0].nodeValue);
 								document.write("\"> ¶</a></h3></li>");
 
-								document.write("<table>");
-								document.write("<tr><th>Due Date</th><th>Worksheet</th><th>Grade</th></tr>");
 								var worksheets=modules[c].getElementsByTagName("WORKSHEET");
-								for (d=0;d<worksheets.length;d++){
+								if (worksheets.length > 0){
+									document.write("<table>");
+									document.write("<tr><th>Due Date</th><th>Worksheet</th><th>Grade</th></tr>");
+									for (d=0;d<worksheets.length;d++){
 
-									document.write("<tr>");
-										document.write("<td>");
-										document.write(worksheets[d].getElementsByTagName("DUE")[0].childNodes[0].nodeValue);
-										document.write("</td>");
+										document.write("<tr>");
+											document.write("<td>");
+											document.write(worksheets[d].getElementsByTagName("DUE")[0].childNodes[0].nodeValue);
+											document.write("</td>");
 
-										document.write("<td><a href=\"");
-										document.write(worksheets[d].getElementsByTagName("LINK")[0].childNodes[0].nodeValue);
-										document.write("\">");
-										document.write(worksheets[d].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
-										document.write("</a></td>");
+											document.write("<td><a href=\"");
+											document.write(worksheets[d].getElementsByTagName("LINK")[0].childNodes[0].nodeValue);
+											document.write("\">");
+											document.write(worksheets[d].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+											document.write("</a></td>");
 
-										document.write("<td>");
-										document.write(worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue);
-										document.write("</td>");
-									document.write("</tr>");
+											document.write("<td>");
+											document.write(worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue);
+											document.write("</td>");
+										document.write("</tr>");
 
+									}
+									document.write("</table>");
 								}
-								document.write("</table>")
 
 							}
-							document.write("</ul>")
+							document.write("</ul>");
 
 						}
 
