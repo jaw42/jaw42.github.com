@@ -14,40 +14,10 @@
 					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet0/worksheet0.pdf?raw=true</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
-				<WORKSHEET>
-					<NAME>Worksheet 1</NAME>
-					<DUE>17th October</DUE>
-					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet1/worksheet1.pdf?raw=true</LINK>
-					<GRADE>-</GRADE>
-				</WORKSHEET>
-				<WORKSHEET>
-					<NAME>Worksheet 2</NAME>
-					<DUE>24th October</DUE>
-					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet2/worksheet2.pdf?raw=true</LINK>
-					<GRADE>-</GRADE>
-				</WORKSHEET>
-				<WORKSHEET>
-					<NAME>Worksheet 3</NAME>
-					<DUE>10th October</DUE>
-					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet3/worksheet3.pdf?raw=true</LINK>
-					<GRADE>-</GRADE>
-				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Introduction to Computer Science</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/21933/</WEBSITE>
-				<WORKSHEET>
-					<NAME>Unknown</NAME>
-					<DUE>sometime</DUE>
-					<LINK>somethign</LINK>
-					<GRADE>-</GRADE>
-				</WORKSHEET>
-				<WORKSHEET>
-					<NAME>Unknown</NAME>
-					<DUE>sometime</DUE>
-					<LINK>somethign</LINK>
-					<GRADE>12:18</GRADE>
-				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Cryptography</TITLE>
