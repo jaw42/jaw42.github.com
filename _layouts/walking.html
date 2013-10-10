@@ -20,7 +20,8 @@ layout: nil
 				<p><img alt="Walk Map" src="{{ page.url | replace:'.html','.png' | replace:'/walking','maps'}}"></p>
 				{{ content }}
 				<p><img alt="Walk elevation profile" src="{{ page.url | remove:'.html' | replace:'/walking','maps'}}_elev.png"></p>
-				<p><a href="{{ page.url | replace:'.html','.gpx' | replace:'/walking','maps'}}">Download gpx files.</p>
+				<p><a href="{{ page.url | replace:'.html','.gpx' | replace:'/walking','maps'}}">Download gpx files.</a></p>
+				{% include dateModified.html %}
 			</section>
 			<footer>
 			</footer>
