@@ -45,6 +45,22 @@ title: University
 						document.write("\"><h2 style=\"color:#777; font-weight:bold; float:right \"><i class=\"icon-calendar\"></i></h2></a>");
 						document.write("</h2>");
 
+						var links=courses[a].getElementsByTagName("USEFULLINK");
+						if (links.length > 0){
+
+							document.write("<ul>");
+							for (e=0;e<links.length;e++){
+
+								document.write("<li><a href=\"");
+								document.write(links[e].getElementsByTagName("LINK")[0].childNodes[0].nodeValue);
+								document.write("\">");
+								document.write(links[e].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+								document.write("</a></li>");
+
+							}
+							document.write("</ul>");
+						}
+
 						var terms=courses[a].getElementsByTagName("TERM");
 						for (b=0;b<terms.length;b++) {
 

@@ -3,6 +3,14 @@
 	<COURSE>
 		<TITLE>Computer Science</TITLE>
 		<TIMETABLE>http://www.cs.bham.ac.uk/internal/timetables/2013/TT-PGCS1-S1.pdf</TIMETABLE>
+		<USEFULLINK>
+			<LINK>http://cs.bham.ac.uk/internal</LINK>
+			<NAME>Computer Science</NAME>
+		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>https://birmingham.instructure.com/</LINK>
+			<NAME>Canvas</NAME>
+		</USEFULLINK>
 		<TERM>
 			<NUMBER>One</NUMBER>
 			<MODULE>
@@ -56,6 +64,10 @@
 	</COURSE>
 	<COURSE>
 		<TITLE>Physics</TITLE>
+		<USEFULLINK>
+			<LINK>http://www.birmingham.ac.uk/schools/physics/index.aspx</LINK>
+			<NAME>Physics</NAME>
+		</USEFULLINK>
 		<TIMETABLE>../files/phys_sem2_timetable.pdf</TIMETABLE>
 		<TERM>
 			<NUMBER>One</NUMBER>
