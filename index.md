@@ -64,36 +64,12 @@ Douglas Adams
 >like.
 Douglas Adams
 
-##Code Blocks
-	#!/bin/bash
-	echo "Hello World!"
-	return 1
+##Links
 
-In id lorem est, in consectetur risus. Vestibulum et lectus vel velit convallis
-ullamcorper. Phasellus et felis et eros egestas tincidunt non sed leo. Morbi
-blandit elit eu nisi rutrum quis dictum nunc imperdiet. Nulla sit amet tortor
-vel metus faucibus placerat. Phasellus pretium facilisis est, at bibendum quam
-imperdiet vitae. Proin mi dolor, feugiat ac rhoncus sed, congue sit amet sapien.
-Aliquam non aliquam lectus.
-
-Aliquam a tellus lorem, at interdum enim. Maecenas mi purus, condimentum vitae
-porttitor ac, dictum sit amet augue. Aenean sed leo sit amet ipsum dignissim
-bibendum. Fusce magna turpis, malesuada quis aliquam ut, iaculis sit amet
-ligula. Phasellus porttitor tellus elit, et vulputate dolor. Pellentesque ut
-turpis ligula, gravida dignissim augue. Aenean pharetra adipiscing augue vel
-tincidunt. Proin metus tellus, sodales quis sodales elementum, dignissim
-ultrices dolor. Donec pretium lacinia risus in venenatis. Nulla a diam felis.
-Sed imperdiet rutrum lectus. Pellentesque rutrum sagittis quam eget bibendum.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-no sea takimata sanctus est Lorem ipsum dolor sit amet.
+- [vimdoc](http://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
+- [muttdoc](http://www.mutt.org/doc/devel/manual.html)
+- [localhost](http://localhost:4000)
+- [Latex WikiBook](http://en.wikibooks.org/wiki/LaTeX)
 
 #Testing Headers
 
