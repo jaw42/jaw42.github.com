@@ -15,17 +15,23 @@
 			<NUMBER>One</NUMBER>
 			<MODULE>
 				<TITLE>Software Workshop</TITLE>
-				<WEBSITE>https://canvas.bham.ac.uk/courses/4667</WEBSITE>
+				<WEBSITE>https://canvas.bham.ac.uk/courses/java/msc</WEBSITE>
 				<WORKSHEET>
 					<NAME>Worksheet 0</NAME>
 					<DUE>10th October</DUE>
-					<LINK>https://github.com/joshaw/CompSci/blob/master/SoftwareWorkshop/Worksheet0/worksheet0.pdf?raw=true</LINK>
+					<LINK>http://www.cs.bham.ac.uk/internal/courses/java/msc/handouts/exercises/1-0.pdf</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 1</NAME>
+					<DUE>24th October</DUE>
+					<LINK>http://www.cs.bham.ac.uk/internal/courses/java/msc/handouts/exercises/1-1.pdf</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Introduction to Computer Science</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/internal/courses/java/msc/</WEBSITE>
+				<WEBSITE>https://birmingham.instructure.com/courses/1984</WEBSITE>
 			</MODULE>
 			<MODULE>
 				<TITLE>Cryptography</TITLE>
