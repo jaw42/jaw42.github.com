@@ -32,6 +32,18 @@
 			<MODULE>
 				<TITLE>Introduction to Computer Science</TITLE>
 				<WEBSITE>https://birmingham.instructure.com/courses/1984</WEBSITE>
+				<WORKSHEET>
+					<NAME>Assignment 1</NAME>
+					<DUE>1st November 2013</DUE>
+					<LINK>https://birmingham.instructure.com/courses/1984/assignments/1381</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Assignment 2</NAME>
+					<DUE>29th November 2013</DUE>
+					<LINK>https://birmingham.instructure.com/courses/1984/assignments/1382</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Cryptography</TITLE>
