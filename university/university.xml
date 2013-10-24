@@ -65,9 +65,21 @@
 				<TITLE>Evaluation Methods and Statistics</TITLE>
 				<WEBSITE>https://birmingham.instructure.com/courses/2032</WEBSITE>
 				<WORKSHEET>
+					<NAME>EMS1</NAME>
+					<DUE>1st October 2013</DUE>
+					<LINK>https://birmingham.instructure.com/courses/2032/wiki/practical1</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
 					<NAME>EMS2</NAME>
-					<DUE>.</DUE>
+					<DUE>7th October 2013</DUE>
 					<LINK>https://birmingham.instructure.com/courses/2032/modules/items/24066</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>EMS4</NAME>
+					<DUE>22nd October 2013</DUE>
+					<LINK>https://birmingham.instructure.com/courses/2032/wiki/practical4?module_item_id=30043</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
