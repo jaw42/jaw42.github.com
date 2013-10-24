@@ -80,9 +80,18 @@ title: University
 								document.write("\"> ¶</a></h3></li>");
 
 								var worksheets=modules[c].getElementsByTagName("WORKSHEET");
+								var gradeColumn = false;
 								if (worksheets.length > 0){
 									document.write("<table>");
-									document.write("<tr><th>Due Date</th><th>Worksheet</th><th>Grade</th></tr>");
+									document.write("<tr><th>Due Date</th><th>Worksheet</th>");
+									for (d=0;d<worksheets.length;d++){
+										if (worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue != "-"){
+											document.write("<th>Grade</th>");
+											gradeColumn = true;
+											break
+										}
+									}
+									document.write("</tr>");
 									for (d=0;d<worksheets.length;d++){
 
 										document.write("<tr>");
@@ -96,9 +105,11 @@ title: University
 											document.write(worksheets[d].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
 											document.write("</a></td>");
 
-											document.write("<td>");
-											document.write(worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue);
-											document.write("</td>");
+											if (gradeColumn){
+												document.write("<td>");
+												document.write(worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue);
+												document.write("</td>");
+											}
 										document.write("</tr>");
 
 									}
