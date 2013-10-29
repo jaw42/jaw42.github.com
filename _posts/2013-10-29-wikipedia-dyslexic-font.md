@@ -25,11 +25,11 @@ dyslexia.
 Its called [OpenDyslexic](http://opendyslexic.org/) and is described by its 
 designers as
 
-	OpenDyslexic is a new open sourced font created to increase readability for 
-	readers with dyslexia. The typeface includes regular, bold, italic, and 
-	bold-italic styles. It is being updated continually and improved based on 
-	input from dyslexic users. There are no restrictions on using OpenDyslexic 
-	outside of attribution.
+>OpenDyslexic is a new open sourced font created to increase readability for 
+>readers with dyslexia. The typeface includes regular, bold, italic, and 
+>bold-italic styles. It is being updated continually and improved based on 
+>input from dyslexic users. There are no restrictions on using OpenDyslexic 
+>outside of attribution.
 
 There are not many, as far as I know, sites that have an option to allow 
 readers to use this particular alternative font, but Wikipedia being such a 
