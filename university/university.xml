@@ -31,7 +31,13 @@
 				<WORKSHEET>
 					<NAME>Worksheet 2</NAME>
 					<DUE>7th November 2013</DUE>
-					<LINK>https://birmingham.instructure.com/courses/4667/files/214224/download?wrap=1</LINK>
+					<LINK>https://www.cs.bham.ac.uk/internal/courses/java/msc/handouts/exercises/1-2.pdf</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 3</NAME>
+					<DUE>21st November 2013</DUE>
+					<LINK>https://www.cs.bham.ac.uk/internal/courses/java/msc/handouts/exercises/1-3.pdf</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
