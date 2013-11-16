@@ -7,36 +7,41 @@ title: Home
 
 <table class="menu">
 <tr>
-<td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-envelope icon-large"></i></a></td>
+<td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="fa fa-envelope-o fa-lg fa-fw"></i></a></td>
 <td><a href="https://mail.google.com/mail/u/0/?shva=1#inbox">Mail</a></td>
 <td class="table_space"></td>
-<td class="icon"><a href="https://www.dropbox.com/home"><i class="icon-cloud-upload icon-large"></i></a></td>
+<td class="icon"><a href="https://www.dropbox.com/home"><i class="fa fa-dropbox fa-lg fa-fw"></i></a></td>
 <td><a href="https://www.dropbox.com/home">Dropbox</a></td>
 </tr>
 <tr>
-<td class="icon"><a href="calendar.html"><i class="icon-calendar icon-large"></i></a></td>
+<td class="icon"><a href="calendar.html"><i class="fa fa-calendar fa-lg fa-fw"></i></a></td>
 <td><a href="calendar.html">Calendar</a></td>
 <td class="table_space"></td>
-<td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="icon-github icon-large"></i></a></td>
+<td class="icon"><a href="https://mail.google.com/mail/u/0/?shva=1#inbox"><i class="fa fa-github fa-lg fa-fw"></i></a></td>
 <td><a href="https://github.com/joshaw">Github</a></td>
 </tr>
 <tr>
-<td class="icon"><a href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html"><i class="icon-rss icon-large"></i></a></td>
+<td class="icon"><a 
+href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html"><i class="fa fa-rss fa-lg fa-fw"></i></a></td>
 <td><a href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html">Reader</a></td>
 <td class="table_space"></td>
-<td class="icon"><a href="bookmarks.html"><i class="icon-bookmark-empty icon-large"></i></a></td>
+<td class="icon"><a href="bookmarks.html"><i class="fa fa-bookmark-o fa-lg fa-fw"></i></a></td>
 <td><a href="bookmarks.html">Bookmarks</a></td>
 </tr>
 <tr>
-<td class="icon"><a href="https://play.google.com/music/listen"><i class="icon-headphones icon-large"></i></a></td>
+<td class="icon"><a href="https://play.google.com/music/listen"><i class="fa fa-headphones fa-lg fa-fw"></i></a></td>
 <td><a href="https://play.google.com/music/listen">Music</a></td>
 <td class="table_space"></td>
-<td class="icon"><a href="/blog.html"><i class="icon-adjust icon-large"></i></a></td>
+<td class="icon"><a href="/blog.html"><i class="fa fa-adjust fa-lg fa-fw"></i></a></td>
 <td><a href="/blog.html">Blog</a></td>
 </tr>
 <tr>
-<td class="icon"><a href="http://google.com"><i class="icon-search icon-large"></i></a></td>
+<td class="icon"><a href="http://google.com"><i class="fa fa-search fa-lg fa-fw"></i></a></td>
 <td><a href="http://google.com">Search</a></td>
+<td class="table_space"></td>
+<td class="icon"><a 
+href="http://www.rememberthemilk.com/home/wainwright.ja/"><i class="fa fa-check-square-o fa-lg fa-fw"></i></a></td>
+<td><a href="http://www.rememberthemilk.com/home/wainwright.ja/">Todo</a></td>
 </tr>
 </table>
 
