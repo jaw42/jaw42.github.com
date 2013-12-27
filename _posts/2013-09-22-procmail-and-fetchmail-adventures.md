@@ -32,113 +32,113 @@ First, `fetchmailrc`:
 
 And, of course, `procmailrc`:
 
-	PROCMAIL_DIR=$HOME/.mail
-	SHELL=/bin/bash
+    PROCMAIL_DIR=$HOME/.mail
+    SHELL=/bin/bash
 
-	LOGFILE=$PROCMAIL_DIR/procmail.log
+    LOGFILE=$PROCMAIL_DIR/procmail.log
 
-	MAILDIR=$HOME/Mail/
-	DEFAULT=$HOME/Mail/
+    MAILDIR=$HOME/Mail/
+    DEFAULT=$HOME/Mail/
 
-	VERBOSE=on
+    VERBOSE=on
 
 
-	#######################################################	
-	#                       Filters                       #
-	#######################################################
+    #######################################################	
+    #                       Filters                       #
+    #######################################################
 
-	###################
-	#  Mailing Lists  #
-	###################
+    ###################
+    #  Mailing Lists  #
+    ###################
 
-	:0
-	* ^TO_mutt-users
-	.MailingLists/.mutt/
+    :0
+    * ^TO_mutt-users
+    .MailingLists/.mutt/
 
-	:0
-	* ^TO_vim_use
-	.MailingLists/.vim/
+    :0
+    * ^TO_vim_use
+    .MailingLists/.vim/
 
-	:0
-	* ^TO_todotxt
-	.MailingLists/.todotxt/
+    :0
+    * ^TO_todotxt
+    .MailingLists/.todotxt/
 
-	:0
-	* ^TO_nail-devel
-	.MailingLists/.s-nail-devel/
+    :0
+    * ^TO_nail-devel
+    .MailingLists/.s-nail-devel/
 
-	:0
-	* ^TO_arch-announce
-	.MailingLists/.arch/
-	
-	####################
-	#  Useful Filters  #
-	####################
+    :0
+    * ^TO_arch-announce
+    .MailingLists/.arch/
+    
+    ####################
+    #  Useful Filters  #
+    ####################
 
-	:0
-	* ^(From|To).*@bham.ac.uk
-	.Birmingham_Uni/.bhamemail/
+    :0
+    * ^(From|To).*@bham.ac.uk
+    .Birmingham_Uni/.bhamemail/
 
-	:0
-	* ^To.*cahbassenfell@gmail.com
-	.Church/.Bassenfell/.CAHBassenfellgmail/
+    :0
+    * ^To.*cahbassenfell@gmail.com
+    .Church/.Bassenfell/.CAHBassenfellgmail/
 
-	:0
-	* ^From.*ubcu.org.uk
-	.Church/.UBCU/
+    :0
+    * ^From.*ubcu.org.uk
+    .Church/.UBCU/
 
-	:0
-	* ^(From|To).*city-church.org.uk
-	.Church/.City/
+    :0
+    * ^(From|To).*city-church.org.uk
+    .Church/.City/
 
-	:0
-	* .*judo
-	.Judo/
+    :0
+    * .*judo
+    .Judo/
 
-	:0
-	* pianofiles
-	.Pianofiles/
+    :0
+    * pianofiles
+    .Pianofiles/
 
-	:0
-	* ^(To|From).*paypal
-	.Receipts/.Paypal/
+    :0
+    * ^(To|From).*paypal
+    .Receipts/.Paypal/
 
-	:0
-	* ^(From|To).*(rachel)
-	.Rachel/
+    :0
+    * ^(From|To).*(rachel)
+    .Rachel/
 
-	:0
-	* ^(From | To).*(ubuntu | linux)
-	.Linux/
+    :0
+    * ^(From | To).*(ubuntu | linux)
+    .Linux/
 
-	:0
-	* (vodaphone|orange)
-	.Phone/
+    :0
+    * (vodaphone|orange)
+    .Phone/
 
-	:0
-	* ^From.*@glassesdirect.co.uk
-	.Receipts/.Glasses_Direct/
+    :0
+    * ^From.*@glassesdirect.co.uk
+    .Receipts/.Glasses_Direct/
 
-	:0
-	* baesystems
-	.Jobs/.Internships/.Detica/
+    :0
+    * baesystems
+    .Jobs/.Internships/.Detica/
 
-	:0
-	* redspottedhanky
-	.Receipts/.Trains/
+    :0
+    * redspottedhanky
+    .Receipts/.Trains/
 
-	:0
-	* ^From.*dinopc
-	.Receipts/.DinoPC/
+    :0
+    * ^From.*dinopc
+    .Receipts/.DinoPC/
 
-	:0
-	* ^From.*gumtree
-	.Receipts/.Gumtree/
+    :0
+    * ^From.*gumtree
+    .Receipts/.Gumtree/
 
-	###############
-	#  Otherwise  #
-	###############
+    ###############
+    #  Otherwise  #
+    ###############
 
-	:0
-	* ^From.*(facebook|aldi|youtube)
-	.bin/
+    :0
+    * ^From.*(facebook|aldi|youtube)
+    .bin/
