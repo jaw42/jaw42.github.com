@@ -4,6 +4,7 @@ date: 2013-09-22-14:46:47
 tags: procmail fetchmail mutt email
 title: "Procmail and Fetchmail Adventures"
 ---
+
 I had a sudden desire recently to not rely on the internet connection to my
 gmail IMAP server, but to download my emails periodically with fetchmail, and to
 do the sorting that is usually taken care of in my multiple lovely Gmail 
