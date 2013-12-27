@@ -21,9 +21,8 @@ title: Home
 <td><a href="https://github.com/joshaw">Github</a></td>
 </tr>
 <tr>
-<td class="icon"><a 
-href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html"><i class="fa fa-rss fa-lg fa-fw"></i></a></td>
-<td><a href="http://htmlpreview.github.io/?https://raw.github.com/joshaw/Rawdog/master/output.html">Reader</a></td>
+<td class="icon"><a href="http://feedly.com/beta"><i class="fa fa-rss fa-lg fa-fw"></i></a></td>
+<td><a href="http://feedly.com/beta">Reader</a></td>
 <td class="table_space"></td>
 <td class="icon"><a href="bookmarks.html"><i class="fa fa-bookmark-o fa-lg fa-fw"></i></a></td>
 <td><a href="bookmarks.html">Bookmarks</a></td>
