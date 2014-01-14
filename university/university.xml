@@ -12,6 +12,29 @@
 			<NAME>Canvas</NAME>
 		</USEFULLINK>
 		<TERM>
+			<NUMBER>Two</NUMBER>
+			<MODULE>
+				<TITLE>Human Computer Interaction</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/21253/</WEBSITE>
+			</MODULE>
+			<MODULE>
+				<TITLE>Data Structures</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~jry/teaching/FundamentalsDataStructures/</WEBSITE>
+			</MODULE>
+			<MODULE>
+				<TITLE>Operating Systems and Networks</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/26255/</WEBSITE>
+			</MODULE>
+			<MODULE>
+				<TITLE>Software Engineering</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~rzb/teachingFSE2013.htm</WEBSITE>
+			</MODULE>
+			<MODULE>
+				<TITLE>Intelligent Data Analysis</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~pxt/ida.html</WEBSITE>
+			</MODULE>
+		</TERM>
+		<TERM>
 			<NUMBER>One</NUMBER>
 			<MODULE>
 				<TITLE>Software Workshop</TITLE>
@@ -200,25 +223,6 @@
 					<LINK>http://www.cs.bham.ac.uk/~jab/Modules/Databases/13-14/Exercises/9week.html</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
-			</MODULE>
-		</TERM>
-		<TERM>
-			<NUMBER>Two</NUMBER>
-			<MODULE>
-				<TITLE>Human Computer Interaction</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/21253/</WEBSITE>
-			</MODULE>
-			<MODULE>
-				<TITLE>Data Structures</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/~jry/teaching/FundamentalsDataStructures/</WEBSITE>
-			</MODULE>
-			<MODULE>
-				<TITLE>Operating Systems and Networks</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/26255/</WEBSITE>
-			</MODULE>
-			<MODULE>
-				<TITLE>Software Engineering</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/~rzb/teachingFSE2013.htm</WEBSITE>
 			</MODULE>
 		</TERM>
 	</COURSE>
