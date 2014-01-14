@@ -2,7 +2,7 @@
 <UNIVERSITY>
 	<COURSE>
 		<TITLE>Computer Science</TITLE>
-		<TIMETABLE>http://www.cs.bham.ac.uk/internal/timetables/2013/TT-PGCS1-S1.pdf</TIMETABLE>
+		<TIMETABLE>http://www.cs.bham.ac.uk/internal/timetables/2013/TT-PGCS1-S2.pdf</TIMETABLE>
 		<USEFULLINK>
 			<LINK>http://cs.bham.ac.uk/internal</LINK>
 			<NAME>Computer Science</NAME>
@@ -13,6 +13,10 @@
 		</USEFULLINK>
 		<TERM>
 			<NUMBER>Two</NUMBER>
+			<MODULE>
+				<TITLE>Software Workshop 2</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/26261/</WEBSITE>
+			</MODULE>
 			<MODULE>
 				<TITLE>Human Computer Interaction</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/21253/</WEBSITE>
@@ -37,7 +41,7 @@
 		<TERM>
 			<NUMBER>One</NUMBER>
 			<MODULE>
-				<TITLE>Software Workshop</TITLE>
+				<TITLE>Software Workshop 1</TITLE>
 				<WEBSITE>https://cs.bham.ac.uk/internal/courses/java/msc</WEBSITE>
 				<WORKSHEET>
 					<NAME>Worksheet 0</NAME>

@@ -37,12 +37,11 @@ title: University
 					var courses=xmlDoc.getElementsByTagName("COURSE");
 					for (a=0;a<courses.length;a++) {
 
-
 						document.write("<h2>");
 						document.write(courses[a].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
 						document.write("<a href=\"");
 						document.write(courses[a].getElementsByTagName("TIMETABLE")[0].childNodes[0].nodeValue);
-						document.write("\"><h2 style=\"color:#777; font-weight:bold; float:right \"><i class=\"icon-calendar\"></i></h2></a>");
+						document.write("\"><h2 style=\"color:#777; font-weight:bold; float:right \">#<i class=\"icon-calendar\"></i></h2></a>");
 						document.write("</h2>");
 
 						var links=courses[a].getElementsByTagName("USEFULLINK");
