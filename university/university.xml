@@ -16,10 +16,22 @@
 			<MODULE>
 				<TITLE>Software Workshop 2</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/26261/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Worksheet 1</NAME>
+					<DUE>21st January 2014</DUE>
+					<LINK>http://www.cs.bham.ac.uk/internal/courses/java/msc/sem2/handouts/exercises/2-1.pdf</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Human Computer Interaction</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/21253/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Specification</NAME>
+					<DUE>2014</DUE>
+					<LINK>http://www.cs.bham.ac.uk/~rjh/courses/IntroductionToHCI/2013-14/Coursework%20Specification.pdf</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Data Structures</TITLE>
