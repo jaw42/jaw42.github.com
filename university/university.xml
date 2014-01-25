@@ -15,11 +15,17 @@
 			<NUMBER>Two</NUMBER>
 			<MODULE>
 				<TITLE>Software Workshop 2</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/internal/modules/2013/26261/</WEBSITE>
+				<WEBSITE>https://www.cs.bham.ac.uk/internal/courses/java/msc/sem2/</WEBSITE>
 				<WORKSHEET>
 					<NAME>Worksheet 1</NAME>
 					<DUE>21st January 2014</DUE>
 					<LINK>http://www.cs.bham.ac.uk/internal/courses/java/msc/sem2/handouts/exercises/2-1.pdf</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Worksheet 2</NAME>
+					<DUE>28st January 2014</DUE>
+					<LINK>https://www.cs.bham.ac.uk/internal/courses/java/msc/sem2/handouts/exercises/worksheet2.pdf</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
 			</MODULE>
@@ -44,10 +50,6 @@
 			<MODULE>
 				<TITLE>Software Engineering</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/~rzb/teachingFSE2013.htm</WEBSITE>
-			</MODULE>
-			<MODULE>
-				<TITLE>Intelligent Data Analysis</TITLE>
-				<WEBSITE>http://www.cs.bham.ac.uk/~pxt/ida.html</WEBSITE>
 			</MODULE>
 		</TERM>
 		<TERM>
