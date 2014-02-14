@@ -46,6 +46,12 @@
 			<MODULE>
 				<TITLE>Operating Systems and Networks</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/~bxb/Teaching.html#osan13-14</WEBSITE>
+				<WORKSHEET>
+					<NAME>Exercise 1</NAME>
+					<DUE>23rd February 2014</DUE>
+					<LINK>http://www.batten.eu.org/~igb/ex1.pdf</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Software Engineering</TITLE>
