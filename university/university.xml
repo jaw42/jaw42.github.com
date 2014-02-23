@@ -40,6 +40,12 @@
 					<LINK>http://www.cs.bham.ac.uk/internal/courses/java/msc/sem2/handouts/exercises/2-4.pdf</LINK>
 					<GRADE>-</GRADE>
 				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Team Programming</NAME>
+					<DUE>24th March 2014</DUE>
+					<LINK>https://codex.cs.bham.ac.uk/svn/jaw097/OsakaProject/</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Human Computer Interaction</TITLE>
