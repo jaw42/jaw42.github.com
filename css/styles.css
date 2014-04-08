@@ -308,6 +308,10 @@ li.menu-current:before {
 	margin-bottom: 10px;
 }
 
+p.tinydate {
+	font-size: 6px;
+}
+
 /*******************
 *  Blog Specific  *
 *******************/
@@ -331,7 +335,6 @@ img {
 	margin-left: 0em;
 	margin-right: 0em;
 }
-
 
 @media print, screen and (max-width: 960px) {
 
