@@ -6,3 +6,4 @@ url: "http://joshaw.github.io/blog"
 permalinks: pretty
 
 category-list: [index,unix,scripts]
+markdown: kramdown
