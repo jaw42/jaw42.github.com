@@ -27,6 +27,10 @@
 			<LINK>SoftwareWorkshop.html</LINK>
 			<NAME>Software Workshop Notes</NAME>
 		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>DataStructures.html</LINK>
+			<NAME>Data Structures Notes</NAME>
+		</USEFULLINK>
 		<TERM>
 			<NUMBER>Two</NUMBER>
 			<MODULE>
