@@ -309,7 +309,8 @@ li.menu-current:before {
 }
 
 p.tinydate {
-	font-size: 6px;
+	font-size: 9px;
+	font-family: sans;
 }
 
 /*******************
@@ -422,6 +423,10 @@ img {
 		margin-left: 0em;
 		margin-right: 0em;
 	}
+
+	ul {
+		padding-left: 20px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -475,6 +480,10 @@ img {
 		text-align:center;
 		margin-left: 0em;
 		margin-right: 0em;
+	}
+
+	ul {
+		padding-left: 10px;
 	}
 
 }
