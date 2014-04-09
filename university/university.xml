@@ -11,6 +11,22 @@
 			<LINK>https://birmingham.instructure.com/</LINK>
 			<NAME>Canvas</NAME>
 		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>CompsciRevision.html</LINK>
+			<NAME>CompSci Notes</NAME>
+		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>DatabaseRevision.html</LINK>
+			<NAME>Databases Notes</NAME>
+		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>Statistics.html</LINK>
+			<NAME>Statistics Notes</NAME>
+		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>SoftwareWorkshop.html</LINK>
+			<NAME>Software Workshop Notes</NAME>
+		</USEFULLINK>
 		<TERM>
 			<NUMBER>Two</NUMBER>
 			<MODULE>
