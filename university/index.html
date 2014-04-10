@@ -84,11 +84,13 @@ title: University
 									document.write("<table>");
 									document.write("<tr><th>Due Date</th><th>Worksheet</th>");
 									for (d=0;d<worksheets.length;d++){
+										/*
 										if (worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue != "-"){
 											document.write("<th>Grade</th>");
 											gradeColumn = true;
 											break
 										}
+										*/
 									}
 									document.write("</tr>");
 									for (d=0;d<worksheets.length;d++){
