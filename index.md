@@ -37,10 +37,6 @@ title: Home
 <tr>
 <td class="icon"><a href="http://google.com"><i class="fa fa-search fa-lg fa-fw"></i></a></td>
 <td><a href="http://google.com">Search</a></td>
-<td class="table_space"></td>
-<td class="icon"><a 
-href="http://www.rememberthemilk.com/home/wainwright.ja/"><i class="fa fa-check-square-o fa-lg fa-fw"></i></a></td>
-<td><a href="http://www.rememberthemilk.com/home/wainwright.ja/">Todo</a></td>
 </tr>
 </table>
 
