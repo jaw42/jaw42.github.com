@@ -103,7 +103,8 @@ title: University
 											document.write("\">");
 											document.write(worksheets[d].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
 											document.write("</a></td>");
-
+											
+											gradeColumn = false;
 											if (gradeColumn){
 												document.write("<td>");
 												document.write(worksheets[d].getElementsByTagName("GRADE")[0].childNodes[0].nodeValue);
