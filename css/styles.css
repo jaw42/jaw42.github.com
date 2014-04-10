@@ -1,7 +1,7 @@
 /*@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);*/
 /*@import url(http://fonts.googleapis.com/css?family=Raleway:300);*/
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700);
-@import url(http://fonts.googleapis.com/css?family=Merriweather:300);
+/* @import url(http://fonts.googleapis.com/css?family=Merriweather:300); */
 
 html {
 	height: 100%;
@@ -196,7 +196,7 @@ td.icon{
 }
 
 header {
-	width:270px;
+	width:255px;
 	float:left;
 	position:fixed;
 }

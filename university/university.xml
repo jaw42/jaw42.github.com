@@ -2,7 +2,7 @@
 <UNIVERSITY>
 	<COURSE>
 		<TITLE>Computer Science</TITLE>
-		<TIMETABLE>http://www.cs.bham.ac.uk/internal/timetables/2013/TT-PGCS1-S2.pdf</TIMETABLE>
+		<TIMETABLE>http://www.cs.bham.ac.uk/internal/timetables/2013/TT-PGCS1-R.pdf</TIMETABLE>
 		<USEFULLINK>
 			<LINK>http://cs.bham.ac.uk/internal</LINK>
 			<NAME>Computer Science</NAME>
@@ -80,6 +80,18 @@
 			<MODULE>
 				<TITLE>Data Structures</TITLE>
 				<WEBSITE>http://www.cs.bham.ac.uk/~jry/teaching/FundamentalsDataStructures/</WEBSITE>
+				<WORKSHEET>
+					<NAME>Assessment 1</NAME>
+					<DUE>11th March 2014</DUE>
+					<LINK>https://birmingham.instructure.com/courses/2076/files/536411/download</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Assessment 2</NAME>
+					<DUE>28th March 2014</DUE>
+					<LINK>https://birmingham.instructure.com/courses/2076/files/577225/download</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
 			</MODULE>
 			<MODULE>
 				<TITLE>Operating Systems and Networks</TITLE>
