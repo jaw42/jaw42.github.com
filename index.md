@@ -24,8 +24,8 @@ title: Home
 <td class="icon"><a href="http://feedly.com/beta"><i class="fa fa-rss fa-lg fa-fw"></i></a></td>
 <td><a href="http://feedly.com/beta">Reader</a></td>
 <td class="table_space"></td>
-<td class="icon"><a href="bookmarks.html"><i class="fa fa-bookmark-o fa-lg fa-fw"></i></a></td>
-<td><a href="bookmarks.html">Bookmarks</a></td>
+<td class="icon"><a href="ebookmarks.html"><i class="fa fa-bookmark-o fa-lg fa-fw"></i></a></td>
+<td><a href="ebookmarks.html">Bookmarks</a></td>
 </tr>
 <tr>
 <td class="icon"><a href="https://play.google.com/music/listen"><i class="fa fa-headphones fa-lg fa-fw"></i></a></td>
