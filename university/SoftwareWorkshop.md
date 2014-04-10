@@ -60,16 +60,30 @@ Title: Software Workshop
 
 - Property that holds before and after each repetition of a code loop.
 
-~~~
-	int j = 9
-	for (int i=0; i<10; i++) {
-    	j--;
-	}
-~~~
+  ~~~
+  int j = 9
+  for (int i=0; i<10; i++) {
+  	j--;
+  }
+  ~~~
 
 - A loop invariant is the fact that `i + j = 9`
 - Also `i >= 0 && i < 10`
 	- because of the termination condition of the loop
+- Ex.
+	
+	  int n = 10;
+	  int i = n;
+	  result = 1;
+	  while (i > 0) {
+	  	result = result * i;
+	  	i--;
+	  }
+
+	- Calculates the factorial of the value, `n`.
+	- Loop invariant:
+		- result = (`n`!)/(`i`!)
+		- 0 <= `i` < 10
 
 ### Arrays
 
@@ -156,17 +170,17 @@ int[] array = new int[100];
 	- eg, a connection was lost
 - Works for non-checked exceptions that are not found at compile time.
 
-~~~
-try {
-    // do some code which might cause an exeption
-} catch (ExeptionType1 e1) {
-    // what to do if the exeption happened
-} catch (ExeptionType2 e2) {
-    // what to do if a different exeption happened
-} finally {
-    // what to do whatever happens
-}
-~~~
+  ~~~
+  try {
+      // do some code which might cause an exeption
+  } catch (ExeptionType1 e1) {
+      // what to do if the exeption happened
+  } catch (ExeptionType2 e2) {
+      // what to do if a different exeption happened
+  } finally {
+      // what to do whatever happens
+  }
+  ~~~
 
 ## Inheritance
 - A subclass inherits from its *unique* superclass.
@@ -230,3 +244,47 @@ try {
 - Can be a more elegant solution
 - Allows the creation of recursive data structures which can be manipulated 
   with far less code.
+
+### Lists
+- Simple data structure to store information in a row.
+- Terminology
+	- First element (x0) is *head* of the list
+	- Remaining elements (x1, x2, ..., xn-1) is the *tail* of the list.
+	- The *empty list* contains no elements.
+
+## Graphical User Interfaces
+- `java.awt`
+	- Original GUi toolkit in JDK 1.1
+	- Implemented using native GUI libraries of the operating system
+	- Not portable
+- `javax.swing`
+	- Portable GUI toolkit added in Java 2
+	- Extends `java.awt`
+	- Platform independant
+	- Slower
+
+### GUI `ActionListner`s
+- Must import `java.awt.event.*;`
+- Allows a class to handle events
+- A class that `implements ActionListener` is added to a button or other 
+  component to define that that class handles the event from that button etc.
+
+  ~~~
+  import javax.swing.*;
+  import java.awt.event.*;
+
+  public class MyPanel extends JPanel implements ActionListener {
+  	  JTextField t = new JTextField(4);
+
+  	  public MyPanel () {
+  		...
+  		add(t);
+  		t.addActionListener(this);
+  	  }
+
+  	  public void actionPerformed(ActionEvent e) {
+  		... t.getText() ...
+  		...
+  	  }
+  }
+  ~~~
