@@ -21,7 +21,7 @@
 		</USEFULLINK>
 		<USEFULLINK>
 			<LINK>CompsciRevision.html</LINK>
-			<NAME>Intro to CompSci Notes</NAME>
+			<NAME>Intro to Computer Science Notes</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
 			<LINK>SoftwareWorkshop.html</LINK>
@@ -30,6 +30,10 @@
 		<USEFULLINK>
 			<LINK>Statistics.html</LINK>
 			<NAME>Statistics Notes</NAME>
+		</USEFULLINK>
+		<USEFULLINK>
+			<LINK>OperatingSystems.html</LINK>
+			<NAME>Operating Systems and Networks Notes</NAME>
 		</USEFULLINK>
 		<TERM>
 			<NUMBER>Two</NUMBER>
