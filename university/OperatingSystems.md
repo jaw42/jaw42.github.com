@@ -363,4 +363,121 @@ title: Operating Systems and Networks
 	- Metropolitan Area Network (MAN)
 		- Wireless Wide Area Network (WWAN)
 
-### LAN
+|--
+| Method   | Distance    | Bandwidth | Latency (ms)   | Technology       |
+| :-----   | :-------    | :-------- | :------        | :---------       |
+| LAN      | 1-2 km      | 10-1000   | Low (1-10)     | Ethernet         |
+| WAN      | Worldwide   | 0.01-600  | High (100-500) | Satellite, cable |
+| MAN      | 2-50km      | 1-150     | Low (1-10)     | ATM, ethernet    |
+| WLAN     | 0.15-1.5 km | 2-11      | Medium (5-20)  | Routers          |
+| WWAN     | Worldwide   | 0.01-2    | High (100-500) |                  |
+| WPAN     | 0-0.1 km    | 1-5       | Low            | Bluetooth, GSM   |
+| Internet | Worldwide   | 0.6-600   | High (100-500) |                  |
+
+### Mode of Transmission
+- *Packet Transmission*
+	- Messages divided into packets containing binary data
+	- Packets queued in buffers berfore sent onto link
+	- QoS not guaranteed
+- *Data Streaming*
+	- Links guarantee QoS
+	- Used for multimedia traffic
+	- Higher bandwidth
+
+### Switching Schemes
+- Broadcasts
+	- Ethernet, wireless
+	- Send messages to *all* nodes
+	- Nodes listen for own messages
+		- Carrier sensing
+- Circuit switching
+	- Phone networks
+- Packet switching
+	- TCP/IP
+	- Store and forward
+	- Unpredictable delays
+- Frame/cell relay
+	- ATM
+	- Bandwith and latency guaranteed
+		- Virtual path
+	- Samll, fixed size packets
+		- Padded if necessary
+	- Avoids error checking at nodes
+		- Use reliable links
+
+### OSI Protocol Summary
+- Open Systems Interconnection Model
+
+|--
+| Layer | Description | Example |
+| :---- | :---------- | :------ |
+| Application | Protocols for specific applications | HTTP, FTP, SMTP |
+| Presentation | Protocols for independant data representation and encryption if required |CORBA, CDR |
+| Session | Protocols for failure detection and recovery | |
+| Transport | Message-level communication between ports attached to processes | TCP, UDP |
+| Network | Packate-level transmission on a given network. Requires routing in WANs and Internet| IP, ATM |
+| Data Link | Packet-level transmission between nodes connected by a physical link | Ethernet MAC, ATM cell transfer |
+| Physical | Transmit sequence of binary data using various mediums | Signalling, IDSN |
+
+### IP
+- Transmission mechanism used by TCP and UDP
+- Uses other protocols
+	- **ARP** (Address Resolution Protocol)
+		- Associates an IP address with the physical address
+		- Host makes an ARP packet broadcast to everybody, all ignore except
+		  the host that the IP address belongs to.
+	- **RARP** (Reverse Address Resolution Protocol)
+		- Works in the reverse of ARP
+	- **ICMP** (Internet Control Message Protocol)
+		- Mechanism to send (by host and routes) notifications about the
+		  datagram back to the sender.
+- Best effort delivery
+- Unreliable and connectionless protocol
+- No error checking
+- Suscepible to noise and dropped packets
+- Must be paired with another protocol to be reliable
+- Packets in two parts
+	- Header
+		1. Version - 4 bytes
+		1. Header length
+		1. Service type
+		1. Total length 
+		1. Time to live
+		1. Protocol
+		1. Header checksum
+		1. Source IP address
+		1. Desination IP address
+
+### Routing
+- Necessary in non-broadcasting networks (Internet)
+- Each node stores a table of state
+	- Includes cost information of links to other nodes
+	- Determines route taken by packet
+- Periodically updates the table and sends to neighbours
+
+#### RIP Routing Algorithm
+- **Update**
+	- Every 30 seconds, or when the local table changes, send update on each 
+	  non-faulty outgoing link
+- **Propogation**
+	- When router X finds thay router Y has a shorter path to router Z, it will
+	  update its local table.
+	- Any faster path is quickly propogated to neighbouring routes through the
+	  *update* process.
+- 3 timers
+	- Periodic
+	- Expiration
+	- Garbage collection
+- Slow in convergence
+- Most of the time system reaches stability fast.
+
+#### Congestion Control
+- Used when load on network is high
+	- ~80% capacity
+- Strategies
+	- Packet dropping
+		- Reliability of delivery is reduced
+		- Some packets can afford to be dropped more than others (MPEG)
+	- Reduce rate of transmission
+	- Transmit congestion information to each node
+		- QoS guaranteed (ATM)
