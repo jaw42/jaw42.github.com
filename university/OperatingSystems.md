@@ -448,6 +448,58 @@ title: Operating Systems and Networks
 		1. Source IP address
 		1. Desination IP address
 
+### IP Address
+- Identifies a computer
+- IPv4
+	- 32 bits binary number
+	- 4 parts (octet) each 0-255
+		- 0000 0000 → 1111 1111
+	- Used in `ip_src` and `ip_dest` in IP datagram
+- Split into two portions
+	- Network portion
+		- Device address
+	- Host ID portion
+		- Uniquely identifies the device on its network
+
+#### First Octet 
+- Gives the class
+- Cannot be 127
+	- Kept for troubleshooting and testing localhost
+		- `localhost`: 127.0.0.1
+
+|--
+| Class | Range | Highbits | # Networks | # Hosts |
+| :---- | :---- | :------- | :--------- | :------ |
+| A | 1-126 | 0 | 126 (2⁷-2) | 16,777,214 (2²⁴-2) |
+| B | 128-191 | 10 | 16,382 (2¹⁴-2) | 65,534 (2¹⁶-2) |
+| C | 192-223 | 110 | 2,097,150 (2²¹-2) | 254 (2⁸-2) |
+| D | 224-239 | 1110 | Multicast | |
+| E | 240-254 | 1111 | Research |
+
+#### Network Mask
+- Known as just Mask
+- Identifies the part of the address which is the network address
+	- Class A: 255.0.0.0
+	- Class B: 255.255.0.0
+	- Class C: 255.255.255.0
+- Also used by protocols to decide if a packet is for internal machine or not
+- Used for working out whether computers are on the same network or not.
+
+#### Private IP Address
+- If a packet with a private-reserved address reaches a router at the "edge" of
+  an organisation, it will not go out.
+	- Class A: 10.0.0.0 to 10.255.255.255
+	- Class B: 172.16.0.0 to 172.31.255.255
+	- Class C: 192.168.0.0 to 192.168.255.255
+- Originally for testing and training
+- Some companies assign these reserved addresses for their internal use
+	- One the firewall they use *Network Address Translation* (**NAT**) to
+	  extend the range of addresses in IPv4.
+	
+#### Subnet
+TODO
+lecture 13, slide 13
+
 ### Routing
 - Necessary in non-broadcasting networks (Internet)
 - Each node stores a table of state
