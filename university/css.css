@@ -1,3 +1,8 @@
+/*
+Created:  Thu 21 Nov 2013 10:04:50 am
+Modified: Thu 17 Apr 2014 01:53:15 pm
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic&subset=latin);
 
 html, body {
@@ -123,7 +128,6 @@ p#heart{
 body#index li {
 	margin-bottom: 1em;
 }
-
 
 /* iPad
 -------------------------------------------------------- */
