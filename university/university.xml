@@ -1,8 +1,3 @@
-<!--
-Created:  Mon 7 Oct 2013 10:04:50 am
-Modified: Thu 17 Apr 2014 01:51:03 pm
--->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <UNIVERSITY>
 	<COURSE>
@@ -522,3 +517,8 @@ Modified: Thu 17 Apr 2014 01:51:03 pm
 		</TERM>
 	</COURSE>
 </UNIVERSITY>
+
+<!--
+Created:  Mon 7 Oct 2013 10:04:50 am
+Modified: Sat 19 Apr 2014 11:44 am
+-->
