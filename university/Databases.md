@@ -11,6 +11,7 @@ title: Database Notes.
 * * *
 
 ## Tables, Attributes and Entities
+
 ### Attribute
 - The names of the different information in a table, ie column headers
 
@@ -105,6 +106,7 @@ title: Database Notes.
   within a particular organisation
 
 ### Keys
+
 #### Superkey
 - Determines all other attributes in the table
 - Trivially, the set of all attributes must be a superkey in order to prevent 
@@ -209,6 +211,7 @@ title: Database Notes.
 	- **1** or **more**
 
 ## Types of Relationship
+
 #### Unary
 - Contains just a single entity
 	- eg **subject -> *requires* -> subject** 
@@ -237,7 +240,8 @@ title: Database Notes.
 		- course1 and course2 cannot be the same
 - Only makes sense in the 1:1 and M:N cases
 
-## Entity Relationship Models and Diagrams (ERM & ERD)
+## Entity Relationship Models and Diagrams
+
 ### ERM
 - Just the concept of thinking about a database as consisting of: 
 	- Entities
@@ -247,6 +251,7 @@ title: Database Notes.
   situation
 
 ### ERD's
+
 #### Chen Model
 - Rectangles represent entity types
 	- Weak entity types are shown with a double rectangle
@@ -286,6 +291,7 @@ title: Database Notes.
 ![Crows Foot Model diagram][2]
 
 ## Sets
+
 ### Membership Relationships
 - **a** is a member of **A**
 	- a &isin; A
@@ -325,5 +331,5 @@ title: Database Notes.
 
 <!--
 Created:  Thu 10 Apr 2014 10:04:50 am
-Modified: Wed 23 Apr 2014 05:11 pm
+Modified: Thu 24 Apr 2014 11:27 am
 -->
