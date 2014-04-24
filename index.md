@@ -71,22 +71,20 @@ Douglas Adams
 - [localhost](http://localhost:4000)
 - [Latex WikiBook](http://en.wikibooks.org/wiki/LaTeX)
 
-#Testing Headers
-
-Here, we shall test some of the headers availible from markdown syntax.
-
-- Some bullet points
-- I think
-
 #Heading Number 1
 h1 header
+
 ##Heading Number 2
 h2 header
+
 ###Heading Number 3
 h3 header
+
 ####Heading Number 4
 h4 header
+
 #####Heading Number 5
 h5 header
+
 ######Heading Number 6
 h6 header
