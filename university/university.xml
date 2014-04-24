@@ -12,7 +12,7 @@
 			<NAME>Canvas</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
-			<LINK>DatabaseRevision.html</LINK>
+			<LINK>Databases.html</LINK>
 			<NAME>Databases Notes</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
@@ -20,8 +20,8 @@
 			<NAME>Data Structures Notes</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
-			<LINK>CompsciRevision.html</LINK>
-			<NAME>Intro to Computer Science Notes</NAME>
+			<LINK>IntroToCompSci.html</LINK>
+			<NAME>Introduction to Computer Science Notes</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
 			<LINK>SoftwareWorkshop.html</LINK>
@@ -29,7 +29,7 @@
 		</USEFULLINK>
 		<USEFULLINK>
 			<LINK>Statistics.html</LINK>
-			<NAME>Statistics Notes</NAME>
+			<NAME>Evaluation Methods and Statistics Notes</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
 			<LINK>OperatingSystems.html</LINK>
