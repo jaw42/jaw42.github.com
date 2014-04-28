@@ -369,9 +369,13 @@ title: Evaluation Methods and Statistics
 	- Ethics
 
 # TODO
- - Central limit theorem
+- Central limit theorem
+- Family-wise errors
+- Type 1 and 2 errors
+- Counterbalancing
+- Sample matching
 
 <!--
 Created:  Wed 9 Apr 2014 10:04:50 am
-Modified: Sat 19 Apr 2014 12:11 pm
+Modified: Mon 28 Apr 2014 11:12 am
 -->
