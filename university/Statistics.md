@@ -147,6 +147,28 @@ title: Evaluation Methods and Statistics
 - is the value of r reliable?
 - can we reject the hypotheses that there is no correlation?
 
+## Errors
+- **Type 1 Error**
+	- False positive
+		- When we beleive there is a genuine effect but really there isn't.
+- **Type 2 Error**
+	- False negative
+		- When be beleive there is no effect, but really there is.
+		- Lot of variation between samples
+		- Too stringent controls for type 1 errors
+		- Low power statistics to find effects.
+- **Family-wise Error rate**
+	- Rate of errors when using multiple tests (a family of tests)
+	- Ex
+		- We have 3 tests in the family of tests
+		- Fisher's level of 0.05 as the level of significance
+		- Probability of false positive (type 1 error) in all these tests is 
+		  0.95×0.95×0.95 = 0.875
+		- So probability of type 1 error is 1-0.857 = 0.143
+	- This is far greater than the error rate for each test individually.
+	- Use a different test to remove the increased probability of type 1 errors 
+	  (ANOVA).
+		
 ## Regression
 - Significance of a predictor variable on an outcome variable
 - Allows the future values of the outcome to be predicted based on the known 
@@ -231,6 +253,7 @@ title: Evaluation Methods and Statistics
   are given two different treatments.
 
 ### ANOVA
+- Use instead of multiple t-tests (remove family-wise errors)
 - Assumes
 	- Normally distributed data
 	- Equality of variance
@@ -369,13 +392,10 @@ title: Evaluation Methods and Statistics
 	- Ethics
 
 # TODO
-- Central limit theorem
-- Family-wise errors
-- Type 1 and 2 errors
 - Counterbalancing
 - Sample matching
 
 <!--
 Created:  Wed 9 Apr 2014 10:04:50 am
-Modified: Mon 28 Apr 2014 11:12 am
+Modified: Sun 04 May 2014 09:45 pm
 -->
