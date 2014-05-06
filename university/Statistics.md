@@ -33,6 +33,13 @@ title: Evaluation Methods and Statistics
 - **Dependant** variables are what is measured in the experiment.
 	- They are *dependant* on the conditions of the experiment and are so 
 	  interesting enough to be measured.
+	- Two types of DV variation
+		1. Unsystematic
+			- Differences due to unknown (or unmeasured) factors
+			- eg change in room environment from condition 1 to 2, personality
+		1. Systematic
+			- Differences due to the change in IV
+			- Interesting in measuring.
 
 ### Randomisation
 - Without randomisation, bias is introduced to the sample.
@@ -60,7 +67,7 @@ title: Evaluation Methods and Statistics
   allow us to reject H1 because all we have is an absence of evidence.
 - H0 is fundamentally different. We can reject H0 as soon as we see a vulture 
   in the campus.
-- **H0 is falsifiable. It is the *null hypothesis* **.
+- **H0 is falsifiable.** It is the *null hypothesis*.
 
 ### Null Hypothesis
 - The significance of a test tells us if it reasonable to reject the null 
@@ -106,7 +113,7 @@ title: Evaluation Methods and Statistics
 	- But this gives zero when the differences cancel each other out
 - Sum of squares
 	- Sum of absolute differences.
-	- sum( (y- mean(y))^2 )
+	- sum( (y- mean(y))² )
 	- Increases as the variability increases (good) but also as the amount of 
 	  data increases.
 - Variance
@@ -234,9 +241,9 @@ title: Evaluation Methods and Statistics
 
 #### Standard T-Test
 - Between Subjects
-- Independant means t-test
-- Used when there are exactly 2 groupt to be tested
-	- eg. control group vs. expermimental group
+- Independent means t-test
+- Used when there are exactly 2 groups to be tested
+	- eg control group vs experimental group
 - Are two sets of data significantly different from one another?
 
 #### Paired T-Test
@@ -248,7 +255,7 @@ title: Evaluation Methods and Statistics
 - Can only compare two groups at a time
 - Bad practice to use multiple times for a single experiment.
 - Used for "Before vs. After" experiments where the *same* individuals are 
-  measured before and after the application of some sort of treatmnent.
+  measured before and after the application of some sort of treatment.
 - Also used for "Left vs. Right" experiments where two sides of an individual 
   are given two different treatments.
 
@@ -258,7 +265,7 @@ title: Evaluation Methods and Statistics
 	- Normally distributed data
 	- Equality of variance
 	- Interval or ratio data
-	- Independant data.
+	- Independent data.
 
 #### One-Way ANOVA
 - Similar to a t-test
@@ -287,8 +294,8 @@ title: Evaluation Methods and Statistics
 
 ### Levene's Test
 - Equality of Variance.
-	- Variance in populations is rougly equal
-	- Homogeinity of Variance
+	- Variance in populations is roughly equal
+	- Homogeneity of Variance
 
 ### Mauchly's Test of Sphericity
 - Test the hypothesis that the variances of the differences are equal (H0)
@@ -302,7 +309,7 @@ title: Evaluation Methods and Statistics
 - Exploratory data analysis
 - Pairwise comparisons
 	- Like performing t-tests on all the pairs of means in the data
-- eg LSD (Lest Significat Differences)
+- eg LSD (Lest Significant Differences)
 - eg Bonferroni
 - eg Tukey's Test
 
@@ -313,11 +320,39 @@ title: Evaluation Methods and Statistics
 
 ## Experiments
 
+### Types of Experiment
+- **Between Subjects**
+	- Two or more groups of participants
+	- Each participant takes part in one of the conditions.
+	- No-one does both conditions
+	- Reduces error rates from effects such as people learning how to perform 
+	  better from the first condition.
+	- Also used when the same participant cannot take place in both conditions
+		- eg "Effect of single gender schooling"
+	- Controlled with *sample matching*
+		- Match the sample of participants in the two groups so that there is 
+		  no bias towards one or the other group.
+- **Within Subjects**
+	- Single group of participants
+	- Each member of the group takes part in all of the conditions of the 
+	  experiment
+	- Used when taking part in one condition is likely to have little or no 
+	  effect on the results of others
+		- eg "Effect of secondary task on driving"
+	- Controlled with *counterbalancing*
+		- If there is a small chance, or small effect, from learning or bordem 
+		  etc. through the duration of the experiement, some of the 
+		  participants can perform the experiments in reverse order to reduce 
+		  the effect.
+			- Some perform Case1 then Case2, others Case2 then Case1.
+		- Practice effects
+		- Boredem effects
+
 ### Stroop
 
 ### Fitt's Law
 
-### Secondary Tast While Driving
+### Secondary Test While Driving
 
 ## Scientific Process
 1. Generate a hypothesis
@@ -392,10 +427,8 @@ title: Evaluation Methods and Statistics
 	- Ethics
 
 # TODO
-- Counterbalancing
-- Sample matching
 
 <!--
-Created:  Wed 9 Apr 2014 10:04:50 am
-Modified: Sun 04 May 2014 09:45 pm
+Created:  Wed 09 Apr 2014 10:04 am
+Modified: Tue 06 May 2014 11:40 am
 -->
