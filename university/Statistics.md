@@ -240,12 +240,12 @@ title: Evaluation Methods and Statistics
 - Two (or more) continuous variables
 - Allows prediction of variable based on the value of others
 
-### Lavene's Test
+### Levene's Test
 - Tests for homogeneity of variances
 - Null hypothesis is that the variences are equal.
 - Want it to be big
 	- Says that there is no difference between the variances in the population.
-	
+
 ### T-Test
 - Most basic form of statistical test
 - Causal inference
@@ -284,6 +284,12 @@ title: Evaluation Methods and Statistics
 	- Equality of variance
 	- Interval or ratio data
 	- Independent data.
+- Reported as
+	- `f(dof_m,dof_r) = f-ratio, p < p-value`
+	- `dof_m` = degrees of freedom of the levels
+		- K-1 (number of levels - 1)
+	- `dof_r` = degrees of freedom
+		- N-K (number of participants - number of levels)
 
 #### One-Way ANOVA
 - Similar to a t-test
@@ -339,6 +345,7 @@ title: Evaluation Methods and Statistics
 	- Like performing t-tests on all the pairs of means in the data
 - eg LSD (Lest Significant Differences)
 - eg Bonferroni
+	- How would you correct for type 1 errors? Bonferroni
 - eg Tukey's Test
 
 ### F-Ratio
@@ -443,7 +450,7 @@ title: Evaluation Methods and Statistics
 	- Post hoc tests
 	- T-test
 	- Shapiro-Wilk
-	- Lavene's Test
+	- Levene's Test
 	- F-ratio
 	- 1-way ANOVA
 	- 2-way ANOVA
@@ -549,9 +556,12 @@ Conditions
 > mytab[mytab$Name=="Jane"]
 4 Jane 7 175
 
+Levene's Test
+> levene.test()
+
 ~~~
 
 <!--
 Created:  Wed 09 Apr 2014 10:04 am
-Modified: Thu 08 May 2014 03:57 pm
+Modified: Thu 08 May 2014 04:45 pm
 -->
