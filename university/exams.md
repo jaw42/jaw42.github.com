@@ -6,20 +6,20 @@ title: Exam Timetable
 # Exam Timetable
 
 |---
-| Day | Date | Start | Module Code | Exam Code | Exam Title | Room | Seat | Duration
+| Day       | Date  | Start  | Exam Title                              | Room                | Seat
 | -------
-| Wednesday | 07/05/2014 | 14:00:00 | 6 26260 | A30297 | LM Software Workshop 1 (MSc) | New Gym | 117 | 01:30:00
-| Monday | 12/05/2014 | 14:00:00 | 6 26261 | A30299 | LM Software Workshop 2 (MSc) | Sports Hall | 302 | 01:30:00
-| Wednesday | 14/05/2014 | 14:00:00 | 6 23856 | A28423 | LM Evalu Methods & Statistics | Avon Room | 5 | 01:30:00
-| Monday | 19/05/2014 | 14:00:00 | 6 21933 | A27228 | LM Fundamentals: Intro to Computer Science | New Gym | 74 | 01:30:00
-| Wednesday | 21/05/2014 | 09:30:00 | 6 21936 | A27229 | LM Fundamentals: Software Engineering main exam | Arthur Thomson Hall | 9 | 01:30:00
-| Friday | 30/05/2014 | 09:30:00 | 6 21923 | A27227 | LM Fundamentals: Databases main exam | Great Hall | 216 | 01:30:00
-| Monday | 02/06/2014 | 14:00:00 | 6 20008 | A22648 | LM Cryptography | Muirhead 121 | 10 | 01:30:00
-| Tuesday | 03/06/2014 | 09:30:00 | 6 21921 | A27544 | LM Fundamentals: Data Struct main exam | New Gym | 88 | 01:30:00
-| Wednesday | 04/06/2014 | 09:30:00 | 6 26255 | A30291 | LM Operat Syst + Network 
-| (MSc) | Avon Room | 172 | 01:30:00
+| Wednesday | 07/05 | 2pm    | Software Workshop 1 (MSc)               | New Gym             | 117 
+|* * * | * * * | * * *| * * * | * * * | * * *
+| Monday    | 12/05 | 2pm    | Software Workshop 2 (MSc)               | Sports Hall         | 302 
+| Wednesday | 14/05 | 2pm    | Evalu Methods & Statistics              | Avon Room           | 5   
+| Monday    | 19/05 | 2pm    | Fundamentals: Intro to Computer Science | New Gym             | 74  
+| Wednesday | 21/05 | 9:30am | Fundamentals: Software Engineering      | Arthur Thomson Hall | 9   
+| Friday    | 30/05 | 9:30am | Fundamentals: Databases main exam       | Great Hall          | 216 
+| Monday    | 02/06 | 2pm    | Cryptography                            | Muirhead 121        | 10  
+| Tuesday   | 03/06 | 9:30am | Fundamentals: Data Struct main exam     | New Gym             | 88  
+| Wednesday | 04/06 | 9:30am | Operat Syst + Network (MSc)             | Avon Room           | 172 
 
-<!-- vim : fo-=
+<!-- vim : fo-=tc
 Created  : Thu 08 May 2014 06:32 pm
-Modified : Thu 08 May 2014 06:33 pm
+Modified : Thu 08 May 2014 10:33 pm
 -->
