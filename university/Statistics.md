@@ -126,6 +126,8 @@ title: Evaluation Methods and Statistics
 ### Correlation (r)
 - A measure of the relationship between variables
 - Pearson's r as a quantitative measure of correlation
+- Requires two continuous variables
+- Gives no information on causation
 - *Co-vary*
 	- If the scores for one variable change, the scores for the other variable 
 	  will chane in a predictable way.
@@ -178,6 +180,7 @@ title: Evaluation Methods and Statistics
 		
 ## Regression
 - Significance of a predictor variable on an outcome variable
+- Requires two (or more) continuous variables
 - Allows the future values of the outcome to be predicted based on the known 
   current value of the predictor.
 - Predictor can be continuous or categorical.
@@ -228,16 +231,31 @@ title: Evaluation Methods and Statistics
 ## Statistical Tests
 
 ### Correlation Test
+- Two continuous variables
 - Reported as 
 	- r(`degrees of freedom`) = `coefficient`, p< `P-value`
 	- eg r(82)=-0.79, p<0.001
+
+### Regression Test
+- Two (or more) continuous variables
+- Allows prediction of variable based on the value of others
+
+### Lavene's Test
+- Tests for homogeneity of variances
+- Null hypothesis is that the variences are equal.
+- Want it to be big
+	- Says that there is no difference between the variances in the population.
 	
 ### T-Test
 - Most basic form of statistical test
+- Causal inference
+- *Requires* 1 continuous variable and 1 catagorical variable with 2 levels
 - If the sample mean difference is larger than we expect
 	- We have collected two samples by chance that are atypical of the 
 	  population, **or**
 	- The two samples are from different populations.
+- Between participants: independant t-test
+- Within participants: dependant t-test
 
 #### Standard T-Test
 - Between Subjects
@@ -270,12 +288,22 @@ title: Evaluation Methods and Statistics
 #### One-Way ANOVA
 - Similar to a t-test
 - Used to compare the means from *three or more* groups
+- *Requires* 1 continuous variable and 1 catagorical variable with 2 or more 
+  levels.
 
 #### Two-Way ANOVA
 - Compare means of *two or more* groups in response to *two different 
   independant variables*.
 - Allows an experiment which where participants are exposed to a varying level 
   of two different treatments.
+- *Requires* 1 continuous variable and 2 catagorical variables.
+  
+  |--
+  | Type    | ANOVA Used              |
+  | ------- | ----------
+  | Between | Two way Unrelated ANOVA |
+  | Within  | Two way Related ANOVA   |
+  | Mixed   | Two way Mixed ANOVA     |
 
 ### Linear Regression
 - Comparing the means of groups along a continuum of *three or more* treatment 
@@ -426,9 +454,104 @@ title: Evaluation Methods and Statistics
 - Little Albert
 	- Ethics
 
-# TODO
+## Basic R Commands
+
+~~~
+> seq(1,5)
+> 1:10
+[1] 1 2 3 4 5
+
+> rep(1,5)
+[1] 1 1 1 1 1
+
+Assignment
+> a<-b
+
+Concatenation
+> c(a, b)
+> c(1:10,rep(1,4))
+
+Vector index
+> d
+[1] 1 2 3 4 5 6 7 8
+> d[3]
+3
+> d[2:4]
+[1] 2 3 4
+> d<6
+[1] TRUE TRUE TRUE TRUE TRUE FALSE FALSE FALSE
+> d[d<6]
+[1] 1 2 3 4 5
+
+Sort vectors
+> sort()
+
+Sample randomly
+> sample(1:46,6)
+
+Simulate samples from probability
+> rnorm(5, mean=3, sd=1)
+[1] 1.704127 3.636264 4.137285 4.825439 3.034183
+
+Round numbers
+> round()
+
+Common stats functions
+> mean(x)
+> length(x)
+> median(x)
+> sd(x)
+> var(x)
+> sum(x)
+> summary(x)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  27.00   43.75   53.00   51.65   60.00   71.00
+
+Functions
+> my.plot <- function( n ) {
++   x <- rnorm( n, mean=10, sd=1 )
++   plot(hist(x), add=TRUE)
++ }
+> my.plot(10)
+> my.plot(50)
+> my.plot(100)
+> my.plot(1000)
+
+Read data
+> x <- scan("data.dat")
+
+Read tabular data
+> mytab<-read.table("mytable.txt",header=TRUE)
+> mytab
+   Name Shoe.size Height
+1  Fred         9    170
+2   Jim        10    180
+3  Bill         9    185
+4  Jane         7    175
+5  Jill         6    170
+6 Janet         8    180
+
+Write data
+> write(x, "ouput.dat")
+
+Access columns
+> mytab$Height
+> mytab[,3]
+[1] 170 180 185 175 170 180
+
+Access Rows
+> mytab[4,]
+4 Jane 7 175
+> mytab[5,3]
+[1] 170
+
+Conditions
+> mytab[mytab$Name=="Jane"]
+4 Jane 7 175
+
+~~~
 
 <!--
 Created:  Wed 09 Apr 2014 10:04 am
-Modified: Tue 06 May 2014 11:40 am
+Modified: Thu 08 May 2014 03:57 pm
 -->
