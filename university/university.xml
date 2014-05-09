@@ -12,10 +12,6 @@
 			<NAME>Canvas</NAME>
 		</USEFULLINK>
 		<USEFULLINK>
-			<LINK>exams.html</LINK>
-			<NAME>Exam Timetable</NAME>
-		</USEFULLINK>
-		<USEFULLINK>
 			<LINK>Databases.html</LINK>
 			<NAME>Databases Notes</NAME>
 		</USEFULLINK>
@@ -528,5 +524,5 @@
 
 <!--
 Created:  Mon 7 Oct 2013 10:04:50 am
-Modified: Fri 09 May 2014 08:59 am
+Modified: Wed 23 Apr 2014 04:42 pm
 -->
