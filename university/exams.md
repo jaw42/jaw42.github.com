@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 title: Exam Timetable
 ---
 
@@ -21,5 +21,5 @@ title: Exam Timetable
 
 <!-- vim : fo-=
 Created  : Thu 08 May 2014 06:32 pm
-Modified : Thu 08 May 2014 06:33 pm
+Modified : Thu 08 May 2014 06:37 pm
 -->
