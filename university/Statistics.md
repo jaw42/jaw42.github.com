@@ -12,21 +12,21 @@ title: Evaluation Methods and Statistics
 
 ## Data Types
 
-1. ### Categorical
-	1. Nominal Data
-		- Data ascribing objects or values to distinct catagories
-		- eg names, identifiers, high, low
-	1. Ordinal Data
-		- Data that can be ordered
-		- eg a person's favourite ice creams.
+### Categorical
+1. Nominal Data
+	- Data ascribing objects or values to distinct catagories
+	- eg names, identifiers, high, low
+1. Ordinal Data
+	- Data that can be ordered
+	- eg a person's favourite ice creams.
 
-1. ### Continuous
-	1. Interval Data
-		- Like ordinal, but with the addition that we know the size of the gaps 
-	  	  betweeen points on the scale
-	1. Ratio Data
-		- Like interval, but the scale has a zero point
-		- eg reaction times.
+### Continuous
+1. Interval Data
+	- Like ordinal, but with the addition that we know the size of the gaps 
+	  betweeen points on the scale
+1. Ratio Data
+	- Like interval, but the scale has a zero point
+	- eg reaction times.
 
 ## Variables
 - **Idependant** variables define the conditions of the experiment.
@@ -89,7 +89,7 @@ title: Evaluation Methods and Statistics
   account any grouping of data.
 	- eg normal distribution.
 
-#### Central Limit Theorem
+### Central Limit Theorem
 - Distribution of means that would be expected if the sample size was infinite 
   and the mean was calculated for each sample.
 
@@ -99,7 +99,7 @@ title: Evaluation Methods and Statistics
 - If the population is normal, the sampling distribution of the mean will be 
   exactly normal regardless of the sample size.
 
-#### Degrees of Freedom
+### Degrees of Freedom
 - In general degrees of freedom is
 	- The number of data points minus the number of parameters that went into 
 	  the calculation.
@@ -563,5 +563,5 @@ Levene's Test
 
 <!--
 Created:  Wed 09 Apr 2014 10:04 am
-Modified: Thu 08 May 2014 04:45 pm
+Modified: Mon 12 May 2014 10:16 am
 -->
