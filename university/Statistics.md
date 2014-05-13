@@ -559,6 +559,9 @@ Conditions
 Levene's Test
 > levene.test()
 
+Linear Regression
+> lm(cond1~cond2)
+
 ~~~
 
 <!--
