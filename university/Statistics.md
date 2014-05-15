@@ -219,7 +219,8 @@ title: Evaluation Methods and Statistics
 	- SSM = SST - SSR
 
 ### Evaluating the Model
-- If SSM is large, the model has made big improvements of just using the mean.
+- If SSM is large, the model has made big improvements over just using the 
+  mean.
 - If SSM is small then the model has made little improvement over the mean.
 - **R²** shows how much improvement has been made:
 	- R² = SSM / SST
@@ -231,6 +232,7 @@ title: Evaluation Methods and Statistics
 ## Statistical Tests
 
 ### Correlation Test
+- Pearson's r Correlation Coefficient
 - Two continuous variables
 - Reported as 
 	- r(`degrees of freedom`) = `coefficient`, p< `P-value`
@@ -239,6 +241,12 @@ title: Evaluation Methods and Statistics
 ### Regression Test
 - Two (or more) continuous variables
 - Allows prediction of variable based on the value of others
+- `y = mx + c`
+- Comparing the means of groups along a continuum of *three or more* treatment 
+  levels.
+- Can also be used for three or more treatments set at regular intervals
+- Provides a graph with a line of best fit that passes as close as possible to 
+  all the data points.
 
 ### Levene's Test
 - Tests for homogeneity of variances
@@ -311,13 +319,6 @@ title: Evaluation Methods and Statistics
   | Within  | Two way Related ANOVA   |
   | Mixed   | Two way Mixed ANOVA     |
 
-### Linear Regression
-- Comparing the means of groups along a continuum of *three or more* treatment 
-  levels.
-- Can also be used for three or more treatments set at regular intervals
-- Provides a graph with a line of best fit that passes as close as possible to 
-  all the data points.
-
 ### Shapiro-Wilk
 - Is the data normally distributed?
 - Compares sample distribution to normal distribution
@@ -325,6 +326,7 @@ title: Evaluation Methods and Statistics
   test will be statistically significant.
 - Want it to be **non-significant**
 	- p > 0.05
+- Performed before any test that requires normal data.
 
 ### Levene's Test
 - Equality of Variance.
@@ -566,5 +568,5 @@ Linear Regression
 
 <!--
 Created:  Wed 09 Apr 2014 10:04 am
-Modified: Mon 12 May 2014 10:16 am
+Modified: Wed 14 May 2014 12:50 pm
 -->
