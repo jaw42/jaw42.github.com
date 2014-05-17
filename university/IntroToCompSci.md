@@ -133,10 +133,10 @@ title: Introduction to Computer Science Notes.
   maximum size of the bits.
 - Gives foundation of two's complement.
 - To find the two's complement of a number:
-	- Positive numbers (and zero) always begin with at least one leading zero 
-	  but are otherwise identical to unsigned numbers.
-	- Invert all bits.
-	- Add 1.
+	1. Positive numbers (and zero) always begin with at least one leading zero 
+	   but are otherwise identical to unsigned numbers.
+	1. Invert all bits.
+	1. Add 1.
 - So all negative numbers start with a leading one.
 - Range of -2<sup>n-1</sup>-1 to 2<sup>n-1</sup>-1
 - The ranges are then:
