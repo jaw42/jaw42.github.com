@@ -12,15 +12,14 @@ title: Exam Timetable
 | Monday    | 12/05 | 2pm    | Software Workshop 2        | Sports Hall         | 302
 | Wednesday | 14/05 | 2pm    | Evalu Methods & Statistics | Avon Room           | 5
 | Monday    | 19/05 | 2pm    | Intro to Computer Science  | New Gym             | 74
-| * * *     | * * * | * * *  | * * *                      | * * *               | * * *
 | Wednesday | 21/05 | 9:30am | Software Engineering       | Arthur Thomson Hall | 9
 | Friday    | 30/05 | 9:30am | Databases                  | Great Hall          | 216
+| * * *     | * * * | * * *  | * * *                      | * * *               | * * *
 | Monday    | 02/06 | 2pm    | Cryptography               | Muirhead 121        | 10
 | Tuesday   | 03/06 | 9:30am | Data Struct                | New Gym             | 88
 | Wednesday | 04/06 | 9:30am | Operat Syst + Network      | Avon Room           | 172
 
 <!-- vim : fo-=tc
-Modified : Thu 15 May 2014 10:08 am
 Created  : Thu 08 May 2014 06:32 pm
-Modified : Thu 15 May 2014 10:08 am
+Modified : Fri 30 May 2014 12:50 pm
 -->
