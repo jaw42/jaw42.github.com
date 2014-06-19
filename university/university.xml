@@ -44,6 +44,37 @@
 			<NAME>Cryptography Notes</NAME>
 		</USEFULLINK>
 		<TERM>
+			<NUMBER>Three</NUMBER>
+			<MODULE>
+				<TITLE>Summer Project</TITLE>
+				<WEBSITE>http://www.cs.bham.ac.uk/~szh/mscprojects/MSciprojects2014.html</WEBSITE>
+				<WORKSHEET>
+					<NAME>Proposal</NAME>
+					<DUE>20th June 2014</DUE>
+					<LINK>.</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Beggining of Inspection Week</NAME>
+					<DUE>7th July 2014</DUE>
+					<LINK>.</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Beggining of Presentation Week</NAME>
+					<DUE>26th August 2014</DUE>
+					<LINK>.</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+				<WORKSHEET>
+					<NAME>Deadline for Dissertation</NAME>
+					<DUE>11th September 2014</DUE>
+					<LINK>.</LINK>
+					<GRADE>-</GRADE>
+				</WORKSHEET>
+			</MODULE>
+		</TERM>
+		<TERM>
 			<NUMBER>Two</NUMBER>
 			<MODULE>
 				<TITLE>Software Workshop 2</TITLE>
@@ -528,5 +559,5 @@
 
 <!--
 Created:  Mon 7 Oct 2013 10:04:50 am
-Modified: Sat 10 May 2014 05:49 pm
+Modified: Thu 19 Jun 2014 10:50 AM
 -->
